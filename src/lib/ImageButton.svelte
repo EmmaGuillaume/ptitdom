@@ -14,7 +14,9 @@
 
 <button
 	on:click={() => handleClick(image)}
-	class={`w-full h-full border-4 ${active === true ? 'border-blue-600 rounded-md' : ''} `}
+	class={`w-full h-full border-4 border-gray rounded overflow-hidden ${
+		active === true ? 'border-green' : ''
+	} `}
 >
-	<img class="object-cover h-full w-full" src={image.src} alt={image.alt} srcset="" />
+	<img class="object-cover w-full aspect-square" src={image.src} alt={image.alt} srcset="" />
 </button>
