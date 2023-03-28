@@ -4,8 +4,10 @@
 <h1 class="text-blue-500 underline">Ptit Dom Qizz</h1>
 
 <section>
-	<img src="" alt="" />
+	<img src=".../static/images" alt="" />
 	<img src="" alt="" />
 	<img src="" alt="" />
 	<img src="" alt="" />
 </section>
+
+<a href="/chooseTheme" class="underline">Questions</a>
