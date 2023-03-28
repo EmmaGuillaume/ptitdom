@@ -25,16 +25,13 @@
 	}
 </script>
 
-<div class=" h-[600px] overflow-y-scroll">
-	<div class="grid gap-4 grid-cols-3 grid-rows-2 mx-20 mb-10">
-		{#each categorieData.images as categorie}
-			<ImageButton src={categorie.src} onClick={setSelectedImages} />
-			<!-- <img src={categorie.src} alt="" srcset="" /> -->
+<!-- <div class=" h-[600px] overflow-y-scroll mr-[120px] ml-[120px] justify-between"> -->
+	<div class="grid gap-4 grid-cols-3 grid-rows-2 mx-20 mb-10 w-full">
+		{#each categorieData.images as image}
 			<ImageButton {image} onClick={setSelectedImages} />
-			<!-- <img src={categorie.src} alt="" srcset="" /> -->
 		{/each}
 	</div>
-</div>
+<!-- </div> -->
 
 <a
 	href="/theme"
