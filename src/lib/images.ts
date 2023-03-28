@@ -50,7 +50,11 @@ export const themes: TThemes[] = [
     categoriesName: [
       {
         name: 'chaises',
-        cover: '/images/voiture3.jpg'
+        cover: '/images/chaise1.jpg'
+      },
+      {
+        name: 'tables',
+        cover: '/images/table1.jpg'
       }
     ]
   }
@@ -134,6 +138,46 @@ export const categories: TCategorie[] = [
         src: '/images/voiture3.jpg',
         alt: 'image de voiture3',
         categorie: 'voitures'
+      }
+    ]
+  },
+  {
+    name: "chaises",
+    images: [
+      {
+        src: '/images/chaise1.jpg',
+        alt: 'image de chaise',
+        categorie: 'chaises'
+      },
+      {
+        src: '/images/chaise2.jpg',
+        alt: 'image de chaise',
+        categorie: 'chaises'
+      },
+      {
+        src: '/images/chaise3.jpg',
+        alt: 'image de chaise',
+        categorie: 'chaises'
+      }
+    ]
+  },
+  {
+    name: "tables",
+    images: [
+      {
+        src: '/images/table1.jpg',
+        alt: 'image de table',
+        categorie: 'tables'
+      },
+      {
+        src: '/images/table2.jpeg',
+        alt: 'image de table',
+        categorie: 'tables'
+      },
+      {
+        src: '/images/table3.jpg',
+        alt: 'image de table',
+        categorie: 'tables'
       }
     ]
   }
