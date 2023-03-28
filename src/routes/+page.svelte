@@ -23,7 +23,7 @@
 		>Commencer la sélection
 	</a>
 	<a
-		href="/choose"
+		href="/modeEmploi"
 		class="w-72 p-4 text-center bg-gray-800 text-neutral-50 font-mono font-bold text-xl"
 		>Mode d’emploi
 	</a>
