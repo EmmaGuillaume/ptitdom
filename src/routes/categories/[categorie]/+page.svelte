@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Nav from '$lib/Nav.svelte';
 	import ImageButton from '$lib/ImageButton.svelte';
 	import type { TCategorie, TImage } from '$lib/images';
 	import { selectedImages } from '../../../stores';
@@ -25,6 +26,7 @@
 	}
 </script>
 
+<Nav />
 <!-- <div class=" h-[600px] overflow-y-scroll mr-[120px] ml-[120px] justify-between"> -->
 <h2 class="decoration-black text-3xl font-mono font-bold mt-28 mx-16 capitalize mb-7">
 	{categorieData.name}

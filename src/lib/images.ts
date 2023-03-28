@@ -78,11 +78,6 @@ export const categories: TCategorie[] = [
         src: '/images/vache2.jpg',
         alt: 'image de vache',
         categorie: 'vaches'
-      },
-      {
-        src: '/images/vache3.jpg',
-        alt: 'image de vache',
-        categorie: 'vaches'
       }
     ]
   },

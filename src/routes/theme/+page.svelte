@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Nav from '$lib/Nav.svelte';
 	import { categories, type TImage, type TThemes } from '$lib/images';
 	import type { TCategorie } from '$lib/images';
 
@@ -8,6 +9,7 @@
 </script>
 
 <main class="ml-24 mt-20">
+	<Nav />
 	<a href="../" class="decoration-black text-3xl font-mono font-bold">Accueil</a>
 	<h2 class="decoration-black text-2xl font-mono font-bold mt-[31px]">Visiter les thèmes</h2>
 	{#each themes as theme}
