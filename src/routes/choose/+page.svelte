@@ -4,6 +4,7 @@
 	import { selectedImages } from '../../stores';
 	import type { TCategorie } from '$lib/images';
 
+	$selectedImages = [];
 	export let data: { images: TImage[]; categories: TCategorie[] };
 
 	const { images, categories } = data;
