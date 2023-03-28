@@ -20,7 +20,12 @@
 
 	<a
 		href="/modeEmploi"
-		class=" mb-9 flex items-center justify-center h-12 w-72 p-4 text-center rounded-2xl border-solid border-2 font-mono font-bold text-xl"
+		class=" flex items-center justify-center h-12 w-72 p-4 text-center rounded-2xl border-solid border-2 font-mono font-bold text-xl"
 		>Mode d’emploi
+	</a>
+	<a
+		href="/legacy"
+		class=" mb-9 flex items-center justify-center h-12 w-72 p-4 text-center rounded-2xl border-solid border-2 font-mono font-bold text-xl"
+		>Mentions légales
 	</a>
 </div>
