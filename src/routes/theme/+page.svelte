@@ -2,13 +2,28 @@
 	import type { TImage } from '$lib/images';
 	import type { TCategorie } from '$lib/images';
 
-	export let data: { images: TImage[] };
-	export let cate: { categories: TCategorie[] };
+	export let data: { images: TImage[]; categories: TCategorie[] };
 
-	const { categories } = cate;
-	const { images } = data;
+	const { images, categories } = data;
 </script>
 
-<main class="my-12 mx-12">
-	<h2 class="text-4xl">Choisir le thème</h2>
-</main>
+{#each images as images}
+	{#if images.categorie == 'voiture'}
+		<section>
+			<h3>voiture</h3>
+			<img src={images.src} alt="" />
+		</section>
+	{/if}
+	{#if images.categorie == 'chat'}
+		<section>
+			<h3>Chat</h3>
+			<img src={images.src} alt="" />
+		</section>
+	{/if}
+	{#if images.categorie == 'vache'}
+		<section>
+			<h3>Chien</h3>
+			<img src={images.src} alt="" />
+		</section>
+	{/if}
+{/each}
