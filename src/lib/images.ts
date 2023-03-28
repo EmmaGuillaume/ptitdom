@@ -24,27 +24,27 @@ export const images: TImage[] = [
   {
     src: '/images/chat1.jpg',
     alt: 'image de chat',
-    categorie:'chat'
+    categorie: 'chat'
   },
   {
     src: '/images/chat2.jpg',
     alt: 'image de chat',
-    categorie:'chat'
+    categorie: 'chat'
   },
   {
     src: '/images/vache1.jpg',
     alt: 'image de vache',
-    categorie:'vache'
+    categorie: 'vache'
   },
   {
     src: '/images/vache2.jpg',
     alt: 'image de vache',
-    categorie:'vache'
+    categorie: 'vache'
   },
   {
     src: '/images/vache3.jpg',
     alt: 'image de vache',
-    categorie:'vache'
+    categorie: 'vache'
   }
 ]
 
@@ -54,6 +54,6 @@ export type TCategorie = string
 
 export const categories: TCategorie[] = [
   "chat",
-  "chien",
+  "vache",
   "voiture"
 ]
