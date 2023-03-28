@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<h1>Ptit Dom Qizz</h1>
+<h1 class="text-blue-500 underline">Ptit Dom Qizz</h1>
 
 <section>
 	<img src="" alt="" />
