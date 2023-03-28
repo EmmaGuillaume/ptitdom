@@ -1,5 +1,5 @@
 <h1 class="decoration-black text-3xl font-mono font-bold mt-28 mx-16">Mode d’emploi :</h1>
-<p class="text-xl font-mono mx-28 mt-12">
+<p class="text-xl font-mono mx-28 mt-12 mb-36">
 	Voici le mode d’emploi du site. <br />
 
 	Premièrement, sélectionnez les images que vous voulez pour pouvoir faire le jeu des images. Vous
@@ -19,3 +19,10 @@
 	confidentiel en privé afin de pouvoir retrouver vos images sélectionnés quand vous vous
 	reconnecterez sur le site. <br /> <br />
 </p>
+
+<a
+	href="../"
+	class="w-72 p-4 text-center bg-gray-800 text-neutral-50 font-mono font-bold text-xl mx-28"
+>
+	Retour à l'accueil
+</a>
