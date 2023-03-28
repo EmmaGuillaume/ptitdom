@@ -13,6 +13,11 @@
 
 <div class="justify-center items-center flex-col flex gap-7 mt-7">
 	<a
+		href="/theme"
+		class="w-72 p-4 text-center bg-gray-800 text-neutral-50 font-mono font-bold text-xl"
+		>Créer un thème
+	</a>
+	<a
 		href="/choose"
 		class="w-72 p-4 text-center bg-gray-800 text-neutral-50 font-mono font-bold text-xl"
 		>Commencer la sélection
