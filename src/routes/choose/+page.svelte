@@ -28,27 +28,14 @@
 
 <p>Page choose</p>
 
-<div class="grid gap-4 grid-cols-3 grid-rows-3 mx-6">
+<div class="grid gap-4 grid-cols-3 grid-rows-2 mx-20 mb-10">
 	{#each images as image}
-		{#if images.categorie == 'voiture'}
-			<section>
-				<h3>voiture</h3>
-				<ImageButton {image} onClick={setSelectedImages} />
-			</section>
-		{/if}
-		{#if images.categorie == 'chat'}
-			<section>
-				<h3>Chat</h3>
-				<ImageButton {image} onClick={setSelectedImages} />
-			</section>
-		{/if}
-		{#if images.categorie == 'vache'}
-			<section>
-				<h3>Chien</h3>
-				<ImageButton {image} onClick={setSelectedImages} />
-			</section>
-		{/if}
+		<ImageButton {image} onClick={setSelectedImages} />
 	{/each}
-
-	<a href="/play" class="p-4 bg-gray-200 rounded-md">Start a game !</a>
 </div>
+
+<a
+	href="/play"
+	class="w-72 p-4 text-center rounded-2xl border-solid border-4 font-mono font-bold text-xl block mx-auto"
+	>Start a game !</a
+>

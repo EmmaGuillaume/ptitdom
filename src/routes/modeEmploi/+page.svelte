@@ -22,7 +22,7 @@
 
 <a
 	href="../"
-	class="w-72 p-4 text-center bg-gray-800 text-neutral-50 font-mono font-bold text-xl mx-28"
+	class="w-72 p-4 text-center rounded-2xl border-solid border-4 font-mono font-bold text-xl mx-28"
 >
 	Retour à l'accueil
 </a>

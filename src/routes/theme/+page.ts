@@ -1,15 +1,15 @@
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from '../$types';
 
-import { images } from '$lib/images.ts';
-import { categories } from '$lib/images.ts';
+
+import { themes } from '$lib/images.ts';
 
 export const load = (() => {
 
 
   try {
 
-    return { images, categories }
+    return { themes }
   } catch (err) {
 
     throw error(404, 'Not found');

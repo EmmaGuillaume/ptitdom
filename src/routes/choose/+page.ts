@@ -5,7 +5,6 @@ import { images } from '$lib/images.ts';
 
 export const load = (() => {
 
-
   try {
 
     return {images}

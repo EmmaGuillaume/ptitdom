@@ -5,55 +5,105 @@ export type TImage = {
   categorie: string
 }
 
-export const images: TImage[] = [
+export type TCategorie = {
+  name: string,
+  images: TImage[]
+}
+export type TThemes = {
+  name: string,
+  categoriesName: {
+    name: string,
+    cover: string
+  }[]
+}
+
+
+export const themes: TThemes[] = [
   {
-    src: '/images/voiture1.jpg',
-    alt: 'image de voiture1',
-    categorie: 'voiture'
+    name: 'Animaux',
+    categoriesName: [
+      {
+        name: 'chats',
+        cover: '/images/chat2.jpg'
+      },
+      {
+        name: 'vaches',
+        cover: '/images/vache3.jpg'
+      }
+    ]
   },
   {
-    src: '/images/voiture2.jpg',
-    alt: 'image de voiture2',
-    categorie: 'voiture'
-  },
-  {
-    src: '/images/voiture3.jpg',
-    alt: 'image de voiture3',
-    categorie: 'voiture'
-  },
-  {
-    src: '/images/chat1.jpg',
-    alt: 'image de chat',
-    categorie: 'chat'
-  },
-  {
-    src: '/images/chat2.jpg',
-    alt: 'image de chat',
-    categorie: 'chat'
-  },
-  {
-    src: '/images/vache1.jpg',
-    alt: 'image de vache',
-    categorie: 'vache'
-  },
-  {
-    src: '/images/vache2.jpg',
-    alt: 'image de vache',
-    categorie: 'vache'
-  },
-  {
-    src: '/images/vache3.jpg',
-    alt: 'image de vache',
-    categorie: 'vache'
+    name: 'Véhicules',
+    categoriesName: [
+      {
+        name: 'voitures',
+        cover: '/images/voiture3.jpg'
+      }
+    ]
   }
 ]
 
-
-
-export type TCategorie = string
-
 export const categories: TCategorie[] = [
-  "chat",
-  "vache",
-  "voiture"
+  {
+    name: "vaches",
+    images: [
+      {
+        src: '/images/vache3.jpg',
+        alt: 'image de vache',
+        categorie: 'vaches'
+      },
+
+      {
+        src: '/images/vache1.jpg',
+        alt: 'image de vache',
+        categorie: 'vaches'
+      },
+      {
+        src: '/images/vache2.jpg',
+        alt: 'image de vache',
+        categorie: 'vaches'
+      },
+      {
+        src: '/images/vache3.jpg',
+        alt: 'image de vache',
+        categorie: 'vaches'
+      }
+    ]
+  },
+  {
+    name: 'chats',
+    images: [
+      {
+        src: '/images/chat1.jpg',
+        alt: 'image de chat',
+        categorie: 'chats'
+      },
+      {
+        src: '/images/chat2.jpg',
+        alt: 'image de chat',
+        categorie: 'chats'
+      },
+    ]
+  },
+  {
+    name: "voitures",
+    images: [
+      {
+        src: '/images/voiture1.jpg',
+        alt: 'image de voiture1',
+        categorie: 'voitures'
+      },
+      {
+        src: '/images/voiture2.jpg',
+        alt: 'image de voiture2',
+        categorie: 'voitures'
+      },
+      {
+        src: '/images/voiture3.jpg',
+        alt: 'image de voiture3',
+        categorie: 'voitures'
+      }
+    ]
+  }
+
 ]

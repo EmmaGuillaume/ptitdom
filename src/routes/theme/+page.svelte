@@ -1,29 +1,15 @@
 <script lang="ts">
-	import type { TImage } from '$lib/images';
+	import type { categories, TImage, TThemes } from '$lib/images';
 	import type { TCategorie } from '$lib/images';
 
-	export let data: { images: TImage[]; categories: TCategorie[] };
+	export let data: { themes: TThemes[] };
 
-	const { images, categories } = data;
+	const { themes } = data;
 </script>
 
-{#each images as images}
-	{#if images.categorie == 'voiture'}
-		<section>
-			<h3>voiture</h3>
-			<img src={images.src} alt="" />
-		</section>
-	{/if}
-	{#if images.categorie == 'chat'}
-		<section>
-			<h3>Chat</h3>
-			<img src={images.src} alt="" />
-		</section>
-	{/if}
-	{#if images.categorie == 'vache'}
-		<section>
-			<h3>Chien</h3>
-			<img src={images.src} alt="" />
-		</section>
-	{/if}
+{#each themes as theme}
+	<h3>{theme.name}</h3>
+	{#each theme.categoriesName as categorie}
+		<a href={`/categories/${categorie.name}`}><img src={categorie.cover} alt="" /></a>
+	{/each}
 {/each}
