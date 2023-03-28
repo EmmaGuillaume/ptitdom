@@ -29,6 +29,10 @@ export const themes: TThemes[] = [
       {
         name: 'vaches',
         cover: '/images/vache3.jpg'
+      },
+      {
+        name: 'peruche',
+        cover: '/images/vache3.jpg'
       }
     ]
   },
