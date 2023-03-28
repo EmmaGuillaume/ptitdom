@@ -26,11 +26,11 @@
 </script>
 
 <!-- <div class=" h-[600px] overflow-y-scroll mr-[120px] ml-[120px] justify-between"> -->
-	<div class="grid gap-4 grid-cols-3 grid-rows-2 mx-20 mb-10 w-full">
-		{#each categorieData.images as image}
-			<ImageButton {image} onClick={setSelectedImages} />
-		{/each}
-	</div>
+<div class="grid gap-5 grid-cols-3 grid-rows-2 mx-20 mb-10 w-full">
+	{#each categorieData.images as image}
+		<ImageButton {image} onClick={setSelectedImages} />
+	{/each}
+</div>
 <!-- </div> -->
 
 <a
