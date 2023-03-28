@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { TImage } from './images';
 
-	export let image: TImage;
+	export let src: string;
 	export let onClick: (image: TImage) => void;
 
 	$: active = false;
@@ -13,10 +13,10 @@
 </script>
 
 <button
-	on:click={() => handleClick(image)}
+	on:click={() => handleClick()}
 	class={`w-full h-full border-4 border-gray rounded overflow-hidden ${
 		active === true ? 'border-green' : ''
 	} `}
 >
-	<img class="object-cover w-full aspect-square" src={image.src} alt={image.alt} srcset="" />
+	<img class="object-cover w-full aspect-square" {src} alt="alt" srcset="" />
 </button>
