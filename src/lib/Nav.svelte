@@ -1,7 +1,6 @@
 <script>
 	import { selectedImages } from '../stores';
 	$: images = $selectedImages.length;
-	//let countImg = images.length;
 </script>
 
 <a href="/my-images" class="text-black fixed top-10 right-10 flex flex-row items-center gap-2"
