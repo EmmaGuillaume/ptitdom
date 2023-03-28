@@ -1,7 +1,9 @@
 <script lang="ts">
 	import type { TImage } from '$lib/images';
+	import { selectedImages } from '../../stores';
 
-	export let data: { images: TImage[] };
+	$selectedImages = [];
+	export let data: { images: TImage[]; categories: TCategorie[] };
 
 	const { images } = data;
 	//console.log({ data });
