@@ -1,3 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-<p>EMMA LA BEST</p>
+<script lang="ts">
+</script>
+
+<h1>Ptit Dom Qizz</h1>
+
+<section>
+	<img src="" alt="" />
+	<img src="" alt="" />
+	<img src="" alt="" />
+	<img src="" alt="" />
+</section>
