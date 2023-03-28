@@ -26,16 +26,22 @@
 	//console.log({ data });
 </script>
 
-<p>Page choose</p>
+<p class="decoration-black text-3xl font-mono font-bold mt-28 mx-16 mb-12">Choisir des images</p>
 
 <div class="grid gap-4 grid-cols-3 grid-rows-2 mx-20 mb-10">
 	{#each images as image}
 		<ImageButton {image} onClick={setSelectedImages} />
 	{/each}
 </div>
-
-<a
-	href="/play"
-	class="w-72 p-4 text-center rounded-2xl border-solid border-4 font-mono font-bold text-xl block mx-auto"
-	>Start a game !</a
->
+<div class="flex flex-row">
+	<a
+		href="../"
+		class="flex items-center justify-center h-12 w-72 p-4 text-center rounded-2xl border-solid border-2 font-mono font-bold text-xl block mx-auto"
+		>Revenir à l’accueil</a
+	>
+	<a
+		href="/play"
+		class="flex items-center justify-center h-12 w-72 p-4 text-center rounded-2xl border-solid border-2 font-mono font-bold text-xl block mx-auto"
+		>Start a game !
+	</a>
+</div>
