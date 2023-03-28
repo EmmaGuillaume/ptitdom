@@ -3,7 +3,10 @@
 	import type { TImage } from '$lib/images';
 	import { selectedImages } from '../../stores';
 
+	$selectedImages = [];
+
 	export let data: { images: TImage[] };
+	const { images } = data;
 
 	function setSelectedImages(image: TImage) {
 		const index = $selectedImages.findIndex((img) => img.src === image.src);
@@ -20,7 +23,6 @@
 			]);
 		}
 	}
-	const { images } = data;
 	//console.log({ data });
 </script>
 

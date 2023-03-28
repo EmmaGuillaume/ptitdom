@@ -1,6 +1,4 @@
 <script lang="ts">
-	import type { TImage } from '$lib/images';
-	import { each } from 'svelte/internal';
 	import { selectedImages } from '../../stores';
 
 	const images = $selectedImages;
