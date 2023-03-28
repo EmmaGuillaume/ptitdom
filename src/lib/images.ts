@@ -118,6 +118,26 @@ export const categories: TCategorie[] = [
         src: '/images/perruche3.jpg',
         alt: 'image de perruche',
         categorie: 'perruches'
+      },
+      {
+        src: '/images/perruche4.jpg',
+        alt: 'image de perruche',
+        categorie: 'perruches'
+      },
+      {
+        src: '/images/perruche5.jpg',
+        alt: 'image de perruche',
+        categorie: 'perruches'
+      },
+      {
+        src: '/images/perruche6.jpg',
+        alt: 'image de perruche',
+        categorie: 'perruches'
+      },
+      {
+        src: '/images/perruche7.jpg',
+        alt: 'image de perruche',
+        categorie: 'perruches'
       }
     ]
   },
