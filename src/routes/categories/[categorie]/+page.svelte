@@ -27,7 +27,7 @@
 
 <div class="grid gap-4 grid-cols-3 grid-rows-2 mx-20 mb-10">
 	{#each categorieData.images as image}
-		<ImageButton src={image.src} onClick={() => setSelectedImages(image)} />
+		<ImageButton {image} onClick={setSelectedImages} />
 		<!-- <img src={categorie.src} alt="" srcset="" /> -->
 	{/each}
 </div>
