@@ -10,5 +10,5 @@
 	<img src="" alt="" />
 </section>
 
-<a href="/chooseTheme" class="underline">Questions</a>
+<a href="/theme" class="underline">Questions</a>
 <a href="/choose" class="p-4 bg-gray-200 rounded-md">Start a game !</a>
