@@ -31,8 +31,8 @@ export const themes: TThemes[] = [
         cover: '/images/vache3.jpg'
       },
       {
-        name: 'peruche',
-        cover: '/images/vache3.jpg'
+        name: 'perruches',
+        cover: '/images/perruche1.jpeg'
       }
     ]
   },
@@ -41,6 +41,15 @@ export const themes: TThemes[] = [
     categoriesName: [
       {
         name: 'voitures',
+        cover: '/images/voiture3.jpg'
+      }
+    ]
+  },
+  {
+    name: 'Meubles',
+    categoriesName: [
+      {
+        name: 'chaises',
         cover: '/images/voiture3.jpg'
       }
     ]
@@ -56,7 +65,6 @@ export const categories: TCategorie[] = [
         alt: 'image de vache',
         categorie: 'vaches'
       },
-
       {
         src: '/images/vache1.jpg',
         alt: 'image de vache',
@@ -90,6 +98,26 @@ export const categories: TCategorie[] = [
     ]
   },
   {
+    name: 'perruches',
+    images: [
+      {
+        src: '/images/perruche1.jpeg',
+        alt: 'image de perruche',
+        categorie: 'perruches'
+      },
+      {
+        src: '/images/perruche2.jpg',
+        alt: 'image de perruche',
+        categorie: 'perruches'
+      },
+      {
+        src: '/images/perruche3.jpg',
+        alt: 'image de perruche',
+        categorie: 'perruches'
+      }
+    ]
+  },
+  {
     name: "voitures",
     images: [
       {
@@ -109,5 +137,4 @@ export const categories: TCategorie[] = [
       }
     ]
   }
-
 ]
