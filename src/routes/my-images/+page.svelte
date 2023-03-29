@@ -10,8 +10,8 @@
 	}
 </script>
 
-<h2 class="decoration-black text-3xl font-mono font-bold mt-28 mx-16">Les cartes choisies</h2>
-<div class="grid gap-5 grid-cols-3 mx-20 mb-10">
+<h2 class="decoration-black text-3xl font-mono font-bold mt-20 mx-16 mb-16">Les cartes choisies</h2>
+<div class=" grid gap-5 grid-cols-1 mx-24 xl:grid-cols-5 sm:grid-cols-3">
 	{#each images as image}
 		<img
 			on:click={del}
@@ -30,11 +30,11 @@
 		}
 	</style>
 {/if}
-<div class="flex flex-row">
-	<BackButton href="/theme" />
+<div class="flex flex-col my-16 md:flex-row">
 	<a
 		href="/play"
 		class="startgame bg-green mb-9 flex items-center justify-center h-12 w-72 p-4 text-center rounded-2xl font-mono font-bold text-xl block mx-auto"
 		>Commencer le jeu
 	</a>
+	<BackButton href="/theme" />
 </div>

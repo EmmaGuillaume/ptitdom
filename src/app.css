@@ -14,15 +14,3 @@ body::-webkit-scrollbar-thumb {
     background-color: #222;
     border-radius: 20px;
 }
-
-div::-webkit-scrollbar {
-    width: 7px;
-}
-div::-webkit-scrollbar-track {
-    background: #ccc;
-    border-radius: 20px;
-}
-div::-webkit-scrollbar-thumb {
-    background-color: #222;
-    border-radius: 20px;
-}
