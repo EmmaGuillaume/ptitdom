@@ -7,7 +7,7 @@
 	export let links: TLink[];
 </script>
 
-<div class="ariane">
+<div class="ariane text-xl">
 	{#each links as link}
 		<a href={link.src}>{link.name}</a>
 	{/each}
