@@ -18,7 +18,7 @@
 			class="z-0 grid gap-4 grid-cols-2 mx-2 mb-10 md:grid-cols-3 xl:grid-cols-8 xl:mx-0 xl:gap-4"
 		>
 			{#each theme.categoriesName as categorie}
-				<a href={`/categories/${categorie.name}`} class="w-full md:w-full relative"
+				<a href={`/categories/${categorie.name}`} class="w-full relative md:w-2/3 xl:w-full"
 					><img
 						src={categorie.cover}
 						alt={categorie.name}
