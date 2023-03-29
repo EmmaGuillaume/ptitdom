@@ -3,7 +3,7 @@
 	$: images = $selectedImages.length;
 </script>
 
-<a href="/my-images" class="text-black fixed top-10 right-10 flex flex-row items-center gap-2"
+<a href="/my-images" class="z-20 text-black fixed top-10 right-10 flex flex-row items-center gap-2"
 	><img class="relative" src="/images/img.svg" alt="" />
 	<h2 class="decoration-black text-3xl font-mono font-bold">Mes images</h2>
 	{#if images != 0}
