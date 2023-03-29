@@ -22,6 +22,7 @@
 			return ($selectedImages = [...$selectedImages, image]);
 		} else {
 			// Object found, remove it from the array
+
 			return ($selectedImages = [
 				...$selectedImages.slice(0, index),
 				...$selectedImages.slice(index + 1)
