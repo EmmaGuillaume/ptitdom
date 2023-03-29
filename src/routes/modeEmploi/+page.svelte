@@ -4,8 +4,8 @@
 
 </script>
 
-<h1 class="decoration-black text-3xl font-mono font-bold mt-28 mx-16">Mode d’emploi :</h1>
-<p class="text-xl font-mono mx-28 mt-12 mb-36">
+<h1 class="decoration-black sm:text-3xl text-2xl font-mono font-bold sm:mt-28 mt-14 sm:mx-16 mx-14">Mode d’emploi :</h1>
+<p class="sm:text-xl text-base font-mono sm:mx-28 mx-14 sm:mt-12 mt-8 sm:mb-36 mb-4">
 	Voici le mode d’emploi du site. <br />
 
 	Premièrement, sélectionnez les images que vous voulez pour pouvoir faire le jeu des images. Vous
@@ -21,7 +21,7 @@
 	Une fois que vous avez vos images, cliquez sur commencer l’exercice pour démarrer le jeu. <br />
 	<br />
 
-	<strong class="font bold">Avertissement</strong> : Nous vous conseillons de garder votre code
+	<strong class="">Avertissement</strong> : Nous vous conseillons de garder votre code
 	confidentiel en privé afin de pouvoir retrouver vos images sélectionnés quand vous vous
 	reconnecterez sur le site. <br /> <br />
 </p>

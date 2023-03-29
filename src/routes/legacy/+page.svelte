@@ -4,8 +4,8 @@
 
 </script>
 
-<h1 class="decoration-black text-3xl font-mono font-bold mt-28 mx-16">Mentions légales :</h1>
-<p class="text-xl font-mono mx-28 mt-12 mb-36">
+<h1 class="decoration-black sm:text-3xl text-2xl font-mono font-bold sm:mt-28 mt-14 sm:mx-16 mx-14">Mentions légales :</h1>
+<p class="sm:text-xl text-base font-mono sm:mx-28 mx-14 sm:mt-12 mt-8 sm:mb-36 mb-8">
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec leo leo, suscipit non dui nec,
 	vehicula ultricies purus. Aliquam eget sapien scelerisque, faucibus lacus in, hendrerit nibh.
 	Aenean ac leo at neque porta venenatis vel eu ipsum. Integer congue tincidunt lorem. In
