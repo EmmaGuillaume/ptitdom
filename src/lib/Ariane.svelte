@@ -7,8 +7,18 @@
 	export let links: TLink[];
 </script>
 
-<div class="">
+<div class="ariane">
 	{#each links as link}
 		<a href={link.src}>{link.name}</a>
 	{/each}
 </div>
+
+<style>
+	.ariane a + a::before {
+		content: ' > ';
+		@apply inline-block mx-2;
+	}
+	.ariane a:hover {
+		@apply underline;
+	}
+</style>
