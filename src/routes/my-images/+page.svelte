@@ -1,4 +1,5 @@
 <script lang="ts">
+	import BackButton from '$lib/BackButton.svelte';
 	import { selectedImages } from '../../stores';
 
 	const images = $selectedImages;
@@ -35,9 +36,5 @@
 		class="startgame bg-green mb-9 flex items-center justify-center h-12 w-72 p-4 text-center rounded-2xl font-mono font-bold text-xl block mx-auto"
 		>Commencer le jeu
 	</a>
-	<a
-		href="/theme"
-		class="mb-9 flex items-center justify-center h-12 w-72 p-4 text-center rounded-2xl border-solid border-2 font-mono font-bold text-xl block mx-auto"
-		>Revenir à l’accueil</a
-	>
+	<BackButton href="/theme" />
 </div>

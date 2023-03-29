@@ -1,14 +1,14 @@
 <script lang="ts">
 </script>
 
-<h1 class="decoration-black text-3xl font-mono font-bold text-center mt-24">
+<h1 class="decoration-black text-3xl font-mono font-bold text-center mt-5 sm:mt-24">
 	Bienvenue sur le jeu des images
 </h1>
 <p class="text-center text-xl mt-3 p-8">
 	Basée sur l’approche ABA, le jeu des images sert pour faciliter l’apprentissage du vocabulaire.
 </p>
 <div class="justify-center flex mt-4">
-	<img src="../../images/mainimg.png" alt="" />
+	<img class="w-36 sm:w-auto" src="../../images/mainimg.png" alt="" />
 </div>
 
 <div class="justify-center items-center flex-col flex gap-7 mt-7">
