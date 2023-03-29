@@ -14,6 +14,9 @@ module.exports = {
       'green': "#A1D1A9"
     },
     extend: {
+      screens:{
+        'xs': '500px'
+      },
       dropShadow: {
         'card': '8px 10px #D9D9D9'
       },
