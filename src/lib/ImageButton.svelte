@@ -22,7 +22,7 @@
 
 <button
 	on:click={() => handleClick(image)}
-	class={`w-full h-full border-4 border-gray rounded overflow-hidden ${
+	class={`w-full h-full border-8 border-gray rounded overflow-hidden ${
 		active === true ? 'border-green' : ''
 	} `}
 >
