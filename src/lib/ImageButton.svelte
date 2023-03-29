@@ -26,5 +26,5 @@
 		active === true ? 'border-green' : ''
 	} `}
 >
-	<img class="object-cover w-full aspect-square" src={image.src} alt="alt" srcset="" />
+	<img class="object-cover w-full h-full aspect-square" src={image.src} alt="alt" srcset="" />
 </button>

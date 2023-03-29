@@ -32,7 +32,7 @@
 <h2 class="decoration-black text-3xl font-mono font-bold mt-28 mx-16 capitalize mb-7">
 	{categorieData.name}
 </h2>
-<div class="grid gap-5 grid-cols-3 mx-20 mb-10">
+<div class="grid gap-5 grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 xl:grid-cols-5 mx-20 mb-10">
 	{#each categorieData.images as image}
 		<ImageButton {image} onClick={setSelectedImages} />
 	{/each}
