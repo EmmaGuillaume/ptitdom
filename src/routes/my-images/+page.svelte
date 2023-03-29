@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Ariane from '$lib/Ariane.svelte';
 	import BackButton from '$lib/BackButton.svelte';
 	import { selectedImages } from '../../stores';
 
@@ -11,6 +12,12 @@
 </script>
 
 <h2 class="decoration-black text-3xl font-mono font-bold mt-20 mx-16 mb-16">Les cartes choisies</h2>
+<Ariane
+	links={[
+		{ name: 'Bibliothèque', src: '/themes' },
+		{ name: 'Mes images', src: '/my-images' }
+	]}
+/>
 <div class=" grid gap-5 grid-cols-1 mx-24 xl:grid-cols-5 sm:grid-cols-3">
 	{#each images as image}
 		<img
@@ -36,5 +43,5 @@
 		class="startgame bg-green mb-9 flex items-center justify-center h-12 w-72 p-4 text-center rounded-2xl font-mono font-bold text-xl block mx-auto"
 		>Commencer le jeu
 	</a>
-	<BackButton href="/theme" />
+	<BackButton href="/themes" />
 </div>

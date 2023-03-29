@@ -13,7 +13,7 @@
 
 <div class="justify-center items-center flex-col flex gap-7 mt-7">
 	<a
-		href="/theme"
+		href="/themes"
 		class="flex items-center justify-center h-12 w-72 p-4 text-center rounded-2xl border-solid border-2 font-mono font-bold text-xl"
 		>Commencer le jeu
 	</a>
