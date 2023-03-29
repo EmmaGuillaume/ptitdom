@@ -2,7 +2,7 @@
 	import Nav from '$lib/Nav.svelte';
 	import ImageButton from '$lib/ImageButton.svelte';
 	import type { TCategorie, TImage } from '$lib/images';
-	import { selectedImages } from '../../../stores';
+	import { selectedImages, validation } from '../../../stores';
 	import BackButton from '$lib/BackButton.svelte';
 
 	export let data;
@@ -10,12 +10,14 @@
 	const { categorieData } = data as { categorieData: TCategorie };
 
 	function setSelectedImages(image: TImage) {
+		$validation = false;
 		const index = $selectedImages.findIndex((img: TImage) => img.src === image.src);
-		console.log($selectedImages);
+		//console.log($selectedImages);
 
-		console.log($selectedImages, index);
+		//console.log($selectedImages, index);
 		if (index === -1) {
 			// Object not found, add it to the array
+			$validation = true;
 			return ($selectedImages = [...$selectedImages, image]);
 		} else {
 			// Object found, remove it from the array
