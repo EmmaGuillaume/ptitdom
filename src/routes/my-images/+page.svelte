@@ -10,7 +10,7 @@
 </script>
 
 <h2 class="decoration-black text-3xl font-mono font-bold mt-28 mx-16">Les cartes choisies</h2>
-<div class="grid gap-5 grid-cols-3 grid-rows-2 mx-20 mb-10">
+<div class="grid gap-5 grid-cols-3 grid-rows-2 mx-20 mb-10 xl:grid-cols-3 xl:grid-rows-3">
 	{#each images as image}
 		<img
 			on:click={del}
