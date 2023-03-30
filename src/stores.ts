@@ -3,6 +3,6 @@ import { writable } from 'svelte/store'
 
 
 export const selectedImages = writable<TImage[] | []>([]);
-localStorage.setItem('selectedImages', selectedImages);
+// localStorage.setItem('selectedImages', selectedImages);
 
 export const validation = writable<boolean>(false);
