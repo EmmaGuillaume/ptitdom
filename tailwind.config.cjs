@@ -19,7 +19,9 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'patrick': 'PatrickHand'
+        'patrick': 'PatrickHand',
+        'noto-regular': 'NotoSansRegular',
+        'noto-bold': 'NotoSansBold'
       },
       screens: {
         'xs': '500px'
