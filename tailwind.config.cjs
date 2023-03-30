@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     colors: {
       'primary': '#262626',
-      'secondary': "7F7F7F",
-      'tertiary': "BFBFBF",
+      'secondary': "#7F7F7F",
+      'tertiary': "#BFBFBF",
       'white': '#FFFFFF',
       'yellow': '#FFF172',
       'blue': '#74DAD5',
@@ -15,7 +15,9 @@ module.exports = {
       'green': "#76C89C",
       'black-op': "rgba(0, 0, 0, 0.3)",
       'red': "#A51810",
-      'grey': "#4A4A4A"
+      'grey': "#4A4A4A",
+      'light-grey': "#DDDDDD"
+      
     },
     extend: {
       fontFamily: {
@@ -24,7 +26,8 @@ module.exports = {
         'noto-bold': 'NotoSansBold'
       },
       screens: {
-        'xs': '500px'
+        'xs': '500px',
+        'lmd': '900px'
       },
       dropShadow: {
         'card': '8px 10px #D9D9D9'

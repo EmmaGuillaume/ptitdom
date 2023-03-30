@@ -2,10 +2,19 @@
 	import BackButton from '$lib/BackButton.svelte';
 </script>
 
+<<<<<<< HEAD
 <h1 class="ml-20 mt-10 mb-10">Mentions légales</h1>
 <div class="flex mr-20">
 	<div class="ml-40 h-auto w-[6px] bg-pink rounded-2xl" />
 	<div class="ml-48">
+=======
+<BackButton href="../" myclass="sm:ml-20 ml-10 mt-10"/>
+
+<h1 class="sm:ml-20 ml-10 mt-10 sm:mb-10 mb-5">Mentions légales</h1>
+<div class="flex sm:mr-20 mr-10">
+	<div class="sm:ml-40 ml-10 h-auto w-[4px] min-w-[4px] bg-pink rounded-2xl"></div>
+	<div class="ml-5">
+>>>>>>> 044165fd804ae0a617b394ca08c439ee51eddfe3
 		<p>
 			<span>Éditeur de contenu :</span> Le groupe d’étudiants MMI (Métiers du multimédia et de
 			l’internet) comprenant :
@@ -48,10 +57,17 @@
 	</div>
 </div>
 
+<<<<<<< HEAD
 <h1 class="ml-20 mt-10 mb-10">Conception</h1>
 <div class="flex mr-20">
 	<div class="ml-40 h-auto w-[6px] bg-pink rounded-2xl" />
 	<div class="ml-48">
+=======
+<h1 class="sm:ml-20 ml-10 mt-10 sm:mb-10 mb-5">Conception</h1>
+<div class="flex sm:mr-20 mr-10">
+	<div class="sm:ml-40 ml-10 h-auto w-[4px] min-w-[4px] bg-pink rounded-2xl"></div>
+	<div class="ml-5">
+>>>>>>> 044165fd804ae0a617b394ca08c439ee51eddfe3
 		<p>
 			<span>Création :</span> Le groupe d'étudiant MMI, Bild
 			<br /><br />
@@ -60,10 +76,17 @@
 	</div>
 </div>
 
+<<<<<<< HEAD
 <h1 class="ml-20 mt-10 mb-10">Conditions Générales d’Utilisation (CGU)</h1>
 <div class="flex mr-20">
 	<div class="ml-40 h-auto w-[6px] bg-pink rounded-2xl" />
 	<div class="ml-48">
+=======
+<h1 class="sm:ml-20 ml-10 mt-10 sm:mb-10 mb-5">Conditions Générales d’Utilisation (CGU)</h1>
+<div class="flex sm:mr-20 mr-10">
+	<div class="sm:ml-40 ml-10 h-auto w-[4px] min-w-[4px] bg-pink rounded-2xl"></div>
+	<div class="ml-5">
+>>>>>>> 044165fd804ae0a617b394ca08c439ee51eddfe3
 		<p>
 			Constituant le <span>contrat</span> entre la société IUT Bordeaux Montaigne, l'Utilisateur,
 			l'accès au site doit être précédé de <span>l'acceptation de ces CGU.</span> L'accès à cette
@@ -75,10 +98,17 @@
 	</div>
 </div>
 
+<<<<<<< HEAD
 <h1 class="ml-20 mt-10 mb-10">Propriété intellectuelle</h1>
 <div class="flex mr-20">
 	<div class="ml-40 h-auto w-[6px] bg-pink rounded-2xl" />
 	<div class="ml-48">
+=======
+<h1 class="sm:ml-20 ml-10 mt-10 sm:mb-10 mb-5">Propriété intellectuelle</h1>
+<div class="flex sm:mr-20 mr-10">
+	<div class="sm:ml-40 ml-10 h-auto w-[4px] min-w-[4px] bg-pink rounded-2xl"></div>
+	<div class="ml-5">
+>>>>>>> 044165fd804ae0a617b394ca08c439ee51eddfe3
 		<p>
 			<span>Tous</span> les éléments présents sur le <span>site</span> (photographie, logo,
 			illustration) sont protégés par la loi en vigueur au titre de la
@@ -93,10 +123,17 @@
 	</div>
 </div>
 
+<<<<<<< HEAD
 <h1 class="ml-20 mt-10 mb-10">Champ d’application / contenu utilisateur</h1>
 <div class="flex mr-20">
 	<div class="ml-40 h-auto w-[6px] bg-pink rounded-2xl" />
 	<div class="ml-48">
+=======
+<h1 class="sm:ml-20 ml-10 mt-10 sm:mb-10 mb-5">Champ d’application / contenu utilisateur</h1>
+<div class="flex sm:mr-20 mr-10">
+	<div class="sm:ml-40 ml-10 h-auto w-[4px] min-w-[4px] bg-pink rounded-2xl"></div>
+	<div class="ml-5">
+>>>>>>> 044165fd804ae0a617b394ca08c439ee51eddfe3
 		<p>
 			Description des services : Nous proposons des services <span>non-marchands,</span> car le site
 			internet est une <span>application web gratuite sans achats intégrés.</span>
@@ -113,10 +150,17 @@
 	</div>
 </div>
 
+<<<<<<< HEAD
 <h1 class="ml-20 mt-10 mb-10">Responsabilité</h1>
 <div class="flex mr-20">
 	<div class="ml-40 h-auto w-[6px] bg-pink rounded-2xl" />
 	<div class="ml-48">
+=======
+<h1 class="sm:ml-20 ml-10 mt-10 sm:mb-10 mb-5">Responsabilité</h1>
+<div class="flex sm:mr-20 mr-10">
+	<div class="sm:ml-40 ml-10 h-auto w-[4px] min-w-[4px] bg-pink rounded-2xl"></div>
+	<div class="ml-5">
+>>>>>>> 044165fd804ae0a617b394ca08c439ee51eddfe3
 		<p>
 			Bien que les informations sur le site soient réputées fiables, le site se réserve la faculté
 			d'une non-garantie de la <span>fiabilité</span> des sources.
@@ -147,10 +191,17 @@
 	</div>
 </div>
 
+<<<<<<< HEAD
 <h1 class="ml-20 mt-10 mb-10">RGPD :</h1>
 <div class="flex mr-20">
 	<div class="ml-40 h-auto w-[6px] bg-pink rounded-2xl" />
 	<div class="ml-48">
+=======
+<h1 class="sm:ml-20 ml-10 mt-10 sm:mb-10 mb-5">RGPD :</h1>
+<div class="flex sm:mr-20 mr-10">
+	<div class="sm:ml-40 ml-10 h-auto w-[4px] min-w-[4px] bg-pink rounded-2xl"></div>
+	<div class="ml-5">
+>>>>>>> 044165fd804ae0a617b394ca08c439ee51eddfe3
 		<p>
 			Selon le Règlement général sur la protection des données du 25 mai 2018 et conformément à la
 			loi n°78-17 du 6 janvier relative à l’informatique, aux fichiers et aux libertés, la collecte
@@ -190,6 +241,10 @@
 			pas respectés, vous pouvez adresser une réclamation à la CNIL.
 		</p>
 	</div>
+<<<<<<< HEAD
 </div>
 
 <BackButton href="../" />
+=======
+</div>
+>>>>>>> 044165fd804ae0a617b394ca08c439ee51eddfe3
