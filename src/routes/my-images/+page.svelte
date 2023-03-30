@@ -1,40 +1,40 @@
 <script lang="ts">
-	import Ariane from '$lib/Ariane.svelte';
 	import BackButton from '$lib/BackButton.svelte';
-	import ImgDel from '$lib/ImgDel.svelte';
+	import GameNav from '$lib/GameNav.svelte';
+	import ImageButton from '$lib/ImageButton.svelte';
+	import { setSelectedImages } from '$lib/selected';
 	import { selectedImages } from '../../stores';
 
 	const images = $selectedImages;
 	$: countImg = $selectedImages.length;
 </script>
 
-<div class="mx-28">
-	<h2 class="decoration-black text-3xl font-patrick font-bold mt-20 mb-16">Les cartes choisies</h2>
-	<Ariane
-		links={[
-			{ name: 'Bibliothèque', src: '/themes' },
-			{ name: 'Mes images', src: '/my-images' }
-		]}
-	/>
+<div class="mx-12 sm:mx-28 min-h-screen">
+	<div class="mt-11">
+		<!-- <Ariane
+			links={[
+				{ name: 'Bibliothèque', src: '/themes' },
+				{ name: 'Mes images', src: '/my-images' }
+			]}
+		/> -->
+		<BackButton href="/themes" />
+	</div>
+
+	<h2 class="decoration-black text-3xl font-patrick font-bold mt-6 mb-8">Les images choisies</h2>
+	<img src="/images/icons/light.svg" alt="" class="inline-block mr-4 mb-10" />
+	<p class="decoration-black text-xl font-patrick font-bold inline-block">
+		Cliquez sur une image pour la sélectionner !
+	</p>
 	<div class=" grid gap-5 grid-cols-1 xl:grid-cols-5 sm:grid-cols-3">
 		{#each images as image}
-			<ImgDel {image} />
+			<ImageButton {image} onClick={setSelectedImages} />
 		{/each}
 	</div>
 	{#if countImg == 0}
 		<p class="text-xl font-patrick mt-12 mb-36">Vous n'avez pas encore selectionné d'images :(</p>
-		<style>
-			.startgame {
-				display: none;
-			}
-		</style>
 	{/if}
-	<div class="flex flex-col my-16 md:flex-row">
-		<a
-			href="/play"
-			class="startgame bg-green mb-9 flex items-center justify-center h-12 w-72 p-4 text-center rounded-2xl font-patrick font-bold text-xl block mx-auto"
-			>Commencer le jeu
-		</a>
-		<BackButton href="/themes" />
-	</div>
+
+	<GameNav disabled={countImg === 0} />
 </div>
+<img class="absolute bottom-0 left-0 -z-10" src="/images/stain/yellow-bottom-left.png" alt="" />
+<img class="absolute bottom-0 right-0 -z-10" src="/images/stain/orange-bottom-right.png" alt="" />
