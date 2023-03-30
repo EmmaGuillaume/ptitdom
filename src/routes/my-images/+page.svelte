@@ -1,14 +1,11 @@
 <script lang="ts">
 	import Ariane from '$lib/Ariane.svelte';
 	import BackButton from '$lib/BackButton.svelte';
-	import ImageButton from '$lib/ImageButton.svelte';
 	import ImgDel from '$lib/ImgDel.svelte';
-	import { selectedImages, validation, content, stored } from '../../stores';
+	import { selectedImages } from '../../stores';
 
 	const images = $selectedImages;
 	$: countImg = $selectedImages.length;
-	console.log(stored);
-	console.log(content);
 </script>
 
 <div class="mx-28">
