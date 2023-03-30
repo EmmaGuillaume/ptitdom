@@ -1131,17 +1131,17 @@ export const categories: TCategorie[] = [
     name: "boulangerie",
     images: [
       {
-        src: '/images/data/nourritures/confiture/pain1.jpg',
+        src: '/images/data/nourritures/boulangerie/pain1.jpg',
         alt: 'image de pain',
         categorie: 'boulangerie'
       },
       {
-        src: '/images/data/nourritures/confiture/pain2.jpg',
+        src: '/images/data/nourritures/boulangerie/pain2.jpg',
         alt: 'image de pain',
         categorie: 'boulangerie'
       },
       {
-        src: '/images/data/nourritures/confiture/pain3.jpg',
+        src: '/images/data/nourritures/boulangerie/pain3.jpg',
         alt: 'image de pain',
         categorie: 'boulangerie'
       }
@@ -1396,17 +1396,17 @@ export const categories: TCategorie[] = [
         categorie: 'legumes-verts'
       },
       {
-        src: '/images/data/nourritures/legumes-verts/petits-poids1.jpg',
+        src: '/images/data/nourritures/legumes-verts/petits-pois1.jpg',
         alt: 'image de petits-poids',
         categorie: 'legumes-verts'
       },
       {
-        src: '/images/data/nourritures/legumes-verts/petits-poids2.jpg',
+        src: '/images/data/nourritures/legumes-verts/petits-pois2.jpg',
         alt: 'image de petits-poids',
         categorie: 'legumes-verts'
       },
       {
-        src: '/images/data/nourritures/legumes-verts/petits-poids3.jpg',
+        src: '/images/data/nourritures/legumes-verts/petits-pois3.jpg',
         alt: 'image de petits-poids',
         categorie: 'legumes-verts'
       },
