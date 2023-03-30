@@ -4,6 +4,7 @@
 
 <a
 	{href}
-	class="mb-9 flex items-center justify-center h-12 w-72 p-4 text-center rounded-2xl border-solid border-2 font-mono font-bold text-xl block mx-auto"
-	>Revenir en arrière
+	class="flex items-center justify-center gap-8 h-12 w-56 p-4 text-center rounded-2xl font-mono font-bold text-xl bg-blue"
+>
+	<img src="/images/icons/back-arrow.png" alt="" class="w-7" /> Retour
 </a>

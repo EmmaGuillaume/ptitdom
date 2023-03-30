@@ -8,6 +8,7 @@ module.exports = {
       'tertiary': "BFBFBF",
       'white': '#FFFFFF',
       'yellow': '#FFF172',
+      'blue': '#74DAD5',
       'purple': '#9D69D6',
       'pink': '#FF7676',
       'orange': '#FFA44F',
