@@ -14,23 +14,30 @@
 	// 	console.log(matthieu);
 </script>
 
-<main class="flex flex-row items-center justify-around gap-2 w-[100vw] h-[100vh] px-28 relative">
+<main
+	class="flex flex-col items-center lmd:justify-around xl:gap-2 w-[100vw] h-[100vh] px-10 xs:px-28 relative lmd:flex-row"
+>
 	<img src="/images/stain/1.png" class="absolute -z-30 top-0 left-0" alt="tâche de couleur" />
 	<img src="/images/stain/2.png" class="absolute -z-30 top-0 right-0" alt="tâche de couleur" />
 	<img src="/images/stain/3.png" class="absolute -z-30 bottom-0 left-0" alt="tâche de couleur" />
 	<img src="/images/stain/4.png" class="absolute -z-30 bottom-0 right-0" alt="tâche de couleur" />
-	<div class="flex flex-col items-start justify-start gap relative">
-		<h1 class="decoration-black text-4xl font-patrick font-bold text-center mt-5 sm:mt-24 z-2">
+	<div class="flex flex-col lmd:items-start lmd:justify-start relative">
+		<h1
+			class=" mt-24 lmd:mt-5 decoration-black text-4xl font-mono font-bold text-center sm:mt-24 z-2"
+		>
 			Bienvenue sur Bild
 		</h1>
 
-		<div class="absolute -z-10 bg-yellow w-[6px] h-[152px] top-[15%] left-[-5%]" alt=" ligne" />
-		<p class="text-start text-xl w-[434px] mt-7 z-2">
+		<div
+			class="absolute -z-10 bg-yellow w-[6px] h-[152px] sm:top-[15%] lmd:top-[4%] top-[19%] left-[-5%]"
+			alt=" ligne"
+		/>
+		<p class="text-start text-xl xs:w-[434px] mt-7 z-2">
 			Basée sur l’approche ABA, le jeu des images sert à faciliter l’apprentissage du vocabulaire
 			des enfants atteint de TSA.
 		</p>
 		<div class="justify-center flex mt-16">
-			<img class="w-36 sm:w-auto" src="../../images/logo.png" alt="" />
+			<img class="w-52 sm:w-auto" src="../../images/logo.png" alt="" />
 		</div>
 	</div>
 	<div class="">
@@ -40,7 +47,7 @@
 			<Modale bind:isActive />-->
 			<a
 				href="/themes"
-				class="flex w-[345px] items-center bg-blue justify-center h-12 p-4 text-center rounded-2xl border-0 font-patrick font-bold text-xl"
+				class="flex w-72 xs:w-[345px] items-center bg-blue justify-center h-12 p-4 text-center rounded-2xl border-0 font-mono font-bold text-xl"
 				>Commencer le jeu
 			</a>
 
