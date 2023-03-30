@@ -125,22 +125,95 @@ export const themes: TThemes[] = [
     ]
   },
   {
-    name: 'Meubles',
+    name: 'accessoires-scolaires',
     categoriesName: [
       {
-        name: 'chaises',
-        cover: '/images/chaise1.jpg'
+        name: 'cartable-enfant',
+        cover: '/images/data/accessoires-scolaires/cartable-enfant/cartable1.png'
       },
       {
-        name: 'tables',
-        cover: '/images/table1.jpg'
+        name: 'regles',
+        cover: '/images/data/accessoires-scolaires/regles/regle1.jpg'
       }
     ]
+  },
+
+  {
+    name: 'accessoires-sport',
+    categoriesName: [
+      {
+        name: 'roller',
+        cover: '/images/data/accessoires-sport/roller/roller2.png'
+      }]
   }
+
 ]
 
 export const categories: TCategorie[] = [
   {
+    name: "roller",
+    images: [
+      {
+        src: '/images/data/accessoires-sport/roller/roller1.jpg',
+        alt: 'image de roller',
+        categorie: 'roller'
+      },
+      {
+        src: '/images/data/accessoires-sport/roller/roller2.png',
+        alt: 'image de roller',
+        categorie: 'roller'
+      },
+      {
+        src: '/images/data/accessoires-sport/roller/roller3.jpg',
+        alt: 'image de roller',
+        categorie: 'roller'
+      }
+    ]
+  },
+
+  {
+    name: "cartable-enfant",
+    images: [
+      {
+        src: '/images/data/accessoires-scolaires/cartable-enfant/cartable1.png',
+        alt: 'image de cartable',
+        categorie: 'cartable-enfant'
+      },
+      {
+        src: '/images/data/accessoires-scolaires/cartable-enfant/cartable2.svg',
+        alt: 'image de cartable',
+        categorie: 'cartable-enfant'
+      },
+      {
+        src: '/images/data/accessoires-scolaires/cartable-enfant/cartable3.webp',
+        alt: 'image de cartable',
+        categorie: 'cartable-enfant'
+      }
+    ]
+  },
+  {
+    name: "regles",
+    images: [
+      {
+        src: '/images/data/accessoires-scolaires/regles/regle1.jpg',
+        alt: 'image de regle',
+        categorie: 'regles'
+      },
+      {
+        src: '/images/data/accessoires-scolaires/regles/regle2.png',
+        alt: 'image de regle',
+        categorie: 'regles'
+      },
+      {
+        src: '/images/data/accessoires-scolaires/regles/regle3.jpg',
+        alt: 'image de regle',
+        categorie: 'regles'
+      }
+    ]
+  },
+    
+    
+    {
     name: "vaches",
     images: [
       {
@@ -779,46 +852,6 @@ export const categories: TCategorie[] = [
         src: '/images/data/vehicules/bus/bus3.jpg',
         alt: 'image de bus',
         categorie: 'bus'
-      }
-    ]
-  },
-  {
-    name: "chaises",
-    images: [
-      {
-        src: '/images/chaise1.jpg',
-        alt: 'image de chaise',
-        categorie: 'chaises'
-      },
-      {
-        src: '/images/chaise2.jpg',
-        alt: 'image de chaise',
-        categorie: 'chaises'
-      },
-      {
-        src: '/images/chaise3.jpg',
-        alt: 'image de chaise',
-        categorie: 'chaises'
-      }
-    ]
-  },
-  {
-    name: "tables",
-    images: [
-      {
-        src: '/images/table1.jpg',
-        alt: 'image de table',
-        categorie: 'tables'
-      },
-      {
-        src: '/images/table2.jpeg',
-        alt: 'image de table',
-        categorie: 'tables'
-      },
-      {
-        src: '/images/table3.jpg',
-        alt: 'image de table',
-        categorie: 'tables'
       }
     ]
   }
