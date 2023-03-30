@@ -1,5 +1,6 @@
 <script lang="ts">
 	import BackButton from '$lib/BackButton.svelte';
+	import Button from '$lib/Button.svelte';
 	import Modale from '$lib/Modale.svelte';
 	import { bind } from 'svelte/internal';
 	const showModalHelp = () => {
@@ -43,8 +44,8 @@
 				>Commencer le jeu
 			</a>
 
-			<BackButton href="/modeEmploi" name="Mode d'emploi" />
-			<BackButton href="/legacy" name="Mentions légales" />
+			<Button href="/modeEmploi" name="Mode d'emploi" />
+			<Button href="/legacy" name="Mentions légales" />
 		</div>
 	</div>
 </div>
