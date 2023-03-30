@@ -18,6 +18,11 @@ module.exports = {
       'grey': "#4A4A4A"
     },
     extend: {
+      fontFamily: {
+        'patrick': 'PatrickHand',
+        'noto-regular': 'NotoSansRegular',
+        'noto-bold': 'NotoSansBold'
+      },
       screens: {
         'xs': '500px'
       },
