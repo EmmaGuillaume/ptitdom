@@ -23,8 +23,6 @@
 
 
 
-
-
 body::-webkit-scrollbar {
     width: 7px;
 }
@@ -38,9 +36,9 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;
 }
 
-h2, h1, h3, p {
-  font-family: 'PatrickHand';
-  font-weight: normal;
+h2, h1, h3, p, li {
+    font-family: 'PatrickHand';
+    font-weight: normal;
 }
 
 
@@ -49,7 +47,6 @@ span {
 }
 
 h1 {
-
     font-size: 40px;
     font-weight: 700;
     line-height: 54px;
