@@ -24,7 +24,8 @@ module.exports = {
         'noto-bold': 'NotoSansBold'
       },
       screens: {
-        'xs': '500px'
+        'xs': '500px',
+        'lmd': '900px'
       },
       dropShadow: {
         'card': '8px 10px #D9D9D9'
