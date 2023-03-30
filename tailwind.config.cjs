@@ -10,11 +10,14 @@ module.exports = {
       'primary': '#4A4A4A',
       'gray': '#D9D9D9',
       'light-gray': '#BFBFBF',
-      'white': '#F1EAE0',
-      'green': "#A1D1A9"
+      'white': '#FFFFFF',
+      'green': "#A1D1A9",
+      'black-op': "rgba(0, 0, 0, 0.3)",
+      'red': "#A51810",
+      'grey': "#4A4A4A"
     },
     extend: {
-      screens:{
+      screens: {
         'xs': '500px'
       },
       dropShadow: {
