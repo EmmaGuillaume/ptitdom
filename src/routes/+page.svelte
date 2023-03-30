@@ -1,4 +1,5 @@
 <script lang="ts">
+<<<<<<< HEAD
 	import Modale from '$lib/Modale.svelte';
 	import { bind } from 'svelte/internal';
 	import modalText from '$lib/Modale.svelte';
@@ -16,6 +17,8 @@
 	// localStorage.setItem('matthieu', mat);
 	// let matthieu = localStorage.getItem('matthieu') || 'hello';
 	// 	console.log(matthieu);
+=======
+>>>>>>> 9a10800d3b181ea1990fb568a8eb92cec1951fd3
 </script>
 
 <h1 class="decoration-black text-3xl font-mono font-bold text-center mt-5 sm:mt-24">

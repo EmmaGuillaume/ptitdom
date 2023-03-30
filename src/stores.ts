@@ -7,7 +7,6 @@ export const content = writable(stored)
 content.subscribe((value) => localStorage.content = value)
 
 export const selectedImages = writable<TImage[] | []>([]);
-// localStorage.setItem('selectedImages', selectedImages);
 
 export const validation = writable<boolean>(false);
 localStorage.getItem(selectedImages);
