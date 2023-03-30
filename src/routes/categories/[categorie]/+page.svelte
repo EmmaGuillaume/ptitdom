@@ -38,7 +38,7 @@
 	<div class="mt-4">
 		<Ariane
 			links={[
-				{ name: 'Themes', src: '/themes' },
+				{ name: 'Bibliothèque', src: '/themes' },
 				{ name: categorieData.name, src: `/categories/${categorieData.name}` }
 			]}
 		/>
