@@ -5,7 +5,8 @@
 	import ImgDel from '$lib/ImgDel.svelte';
 	import { selectedImages, validation } from '../../stores';
 
-	const images = $selectedImages;
+	const images = localStorage.getItem('selectedImages') || '';
+	// const images = $selectedImages;
 	$: countImg = $selectedImages.length;
 </script>
 
