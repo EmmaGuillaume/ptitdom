@@ -14,12 +14,18 @@
 	// 	console.log(matthieu);
 </script>
 
-<div class="flex flex-row items-center justify-around gap-2 w-full px-28">
-	<div class="flex flex-col items-start justify-start gap">
-		<h1 class="decoration-black text-4xl font-mono font-bold text-center mt-5 sm:mt-24">
+<main class="flex flex-row items-center justify-around gap-2 w-[100vw] h-[100vh] px-28 relative">
+	<img src="/images/stain/1.png" class="absolute -z-30 top-0 left-0" alt="tâche de couleur" />
+	<img src="/images/stain/2.png" class="absolute -z-30 top-0 right-0" alt="tâche de couleur" />
+	<img src="/images/stain/3.png" class="absolute -z-30 bottom-0 left-0" alt="tâche de couleur" />
+	<img src="/images/stain/4.png" class="absolute -z-30 bottom-0 right-0" alt="tâche de couleur" />
+	<div class="flex flex-col items-start justify-start gap relative">
+		<h1 class="decoration-black text-4xl font-mono font-bold text-center mt-5 sm:mt-24 z-2">
 			Bienvenue sur Bild
 		</h1>
-		<p class="text-start text-xl w-[434px] mt-7">
+
+		<div class="absolute -z-10 bg-yellow w-[6px] h-[152px] top-[15%] left-[-5%]" alt=" ligne" />
+		<p class="text-start text-xl w-[434px] mt-7 z-2">
 			Basée sur l’approche ABA, le jeu des images sert à faciliter l’apprentissage du vocabulaire
 			des enfants atteint de TSA.
 		</p>
@@ -31,13 +37,7 @@
 		<div class="justify-center items-center flex-col flex gap-7 mt-7">
 			<!--<button on:click={() => showModalHelp()}>POP UP TEST</button>
 			 <Button disabled={false} url="/tableau/{data.id}/explore">Explorer l'oeuvre !</Button>
-			<Modale bind:isActive />
-		
-		
-		
-		<div class="">
-		<img src="/images/stain/line1.png" alt="" />
-	</div>-->
+			<Modale bind:isActive />-->
 			<a
 				href="/themes"
 				class="flex w-[345px] items-center bg-blue justify-center h-12 p-4 text-center rounded-2xl border-0 font-mono font-bold text-xl"
@@ -48,4 +48,4 @@
 			<Button href="/legacy" name="Mentions légales" />
 		</div>
 	</div>
-</div>
+</main>
