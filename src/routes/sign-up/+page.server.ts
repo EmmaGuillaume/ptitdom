@@ -17,6 +17,7 @@ export const actions = {
       return "missing values"
     }
 
+      
     const res = await nhost.auth
       .signUp({
         email,

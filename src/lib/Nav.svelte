@@ -1,10 +1,8 @@
 <script>
 	import { selectedImages } from '../stores';
-	import LogOut from './utils/LogOut.svelte';
 	$: images = $selectedImages.length;
 </script>
 
-<LogOut />
 <a href="/my-images" class="text-black fixed top-10 right-10 flex flex-row items-center gap-2"
 	><img class="relative" src="/images/img.svg" alt="" />
 	<h2 class="decoration-black text-3xl font-mono font-bold">Mes images</h2>

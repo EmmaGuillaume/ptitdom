@@ -4,6 +4,7 @@
 <h1 class="decoration-black text-3xl font-mono font-bold text-center mt-5 sm:mt-24">
 	Bienvenue sur le jeu des images
 </h1>
+
 <p class="text-center text-xl mt-3 p-8">
 	Basée sur l’approche ABA, le jeu des images sert pour faciliter l’apprentissage du vocabulaire.
 </p>
