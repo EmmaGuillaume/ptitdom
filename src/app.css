@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+}
 
 body::-webkit-scrollbar {
     width: 7px;
@@ -13,4 +17,24 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: #222;
     border-radius: 20px;
+}
+
+div * {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+}
+
+span {
+    font-weight: 700;
+}
+
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0em;
 }
