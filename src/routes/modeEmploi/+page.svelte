@@ -3,7 +3,7 @@
 </script>
 
 <section
-	class="w-screen h-screen relative flex flex-col justify-start items-start px-8 my-8 md:my-16"
+	class="w-screen h-screen relative flex flex-col justify-start items-start px-8 py-8 md:py-16"
 >
 	<img src="/images/stain/up-left-yellow-form.png" alt="" class="-z-10 absolute left-0 top-0" />
 	<img src="/images/stain/2.png" alt="" class="-z-10 absolute right-0 top-0" />
