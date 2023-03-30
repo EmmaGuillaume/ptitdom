@@ -1,10 +1,11 @@
 <script lang="ts">
-
-	import BackButton from "$lib/BackButton.svelte";
-
+	import BackButton from '$lib/BackButton.svelte';
 </script>
 
-<h1 class="decoration-black sm:text-3xl text-2xl font-mono font-bold sm:mt-28 mt-14 sm:mx-16 mx-14">Mode d’emploi :</h1>
+<BackButton href="../" />
+<h1 class="decoration-black sm:text-3xl text-2xl font-mono font-bold sm:mt-28 mt-14 sm:mx-16 mx-14">
+	Mode d’emploi :
+</h1>
 <p class="sm:text-xl text-base font-mono sm:mx-28 mx-14 sm:mt-12 mt-8 sm:mb-36 mb-4">
 	Voici le mode d’emploi du site. <br />
 
@@ -21,9 +22,7 @@
 	Une fois que vous avez vos images, cliquez sur commencer l’exercice pour démarrer le jeu. <br />
 	<br />
 
-	<strong class="">Avertissement</strong> : Nous vous conseillons de garder votre code
-	confidentiel en privé afin de pouvoir retrouver vos images sélectionnés quand vous vous
-	reconnecterez sur le site. <br /> <br />
+	<strong class="">Avertissement</strong> : Nous vous conseillons de garder votre code confidentiel
+	en privé afin de pouvoir retrouver vos images sélectionnés quand vous vous reconnecterez sur le
+	site. <br /> <br />
 </p>
-
-<BackButton href="../" />

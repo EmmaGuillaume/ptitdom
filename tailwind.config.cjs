@@ -3,15 +3,15 @@ module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     colors: {
-      'yellow': '#F5D14B',
-      'purple': '#864494',
-      'pink': '#D82E8A',
-      'orange': '#E5813B',
-      'primary': '#4A4A4A',
-      'gray': '#D9D9D9',
-      'light-gray': '#BFBFBF',
+      'primary': '#262626',
+      'secondary': "7F7F7F",
+      'tertiary': "BFBFBF",
       'white': '#FFFFFF',
-      'green': "#A1D1A9",
+      'yellow': '#FFF172',
+      'purple': '#9D69D6',
+      'pink': '#FF7676',
+      'orange': '#FFA44F',
+      'green': "#76C89C",
       'black-op': "rgba(0, 0, 0, 0.3)",
       'red': "#A51810",
       'grey': "#4A4A4A"
