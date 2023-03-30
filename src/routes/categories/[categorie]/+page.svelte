@@ -31,10 +31,11 @@
 	}
 </script>
 
-<Nav />
-<div class="mx-16">
+<div class="mx-16 mt-28">
+	<BackButton href="/themes" />
+	<Nav />
 	<!-- <div class=" h-[600px] overflow-y-scroll mr-[120px] ml-[120px] justify-between"> -->
-	<h1 class="decoration-black text-3xl font-patrick font-bold mt-28">Ajouter des images</h1>
+	<h1 class="decoration-black text-5xl font-patrick mt-16">Ajouter des images</h1>
 	<div class="mt-4">
 		<Ariane
 			links={[
@@ -53,5 +54,3 @@
 	</div>
 	<!-- </div> -->
 </div>
-
-<BackButton href="/themes" />
