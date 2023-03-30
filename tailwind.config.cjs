@@ -3,18 +3,22 @@ module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     colors: {
-      'yellow': '#F5D14B',
-      'purple': '#864494',
-      'pink': '#D82E8A',
-      'orange': '#E5813B',
-      'primary': '#4A4A4A',
-      'gray': '#D9D9D9',
-      'light-gray': '#BFBFBF',
-      'white': '#F1EAE0',
-      'green': "#A1D1A9"
+      'primary': '#262626',
+      'secondary': "7F7F7F",
+      'tertiary': "BFBFBF",
+      'white': '#FFFFFF',
+      'yellow': '#FFF172',
+      'blue': '#74DAD5',
+      'purple': '#9D69D6',
+      'pink': '#FF7676',
+      'orange': '#FFA44F',
+      'green': "#76C89C",
+      'black-op': "rgba(0, 0, 0, 0.3)",
+      'red': "#A51810",
+      'grey': "#4A4A4A"
     },
     extend: {
-      screens:{
+      screens: {
         'xs': '500px'
       },
       dropShadow: {
