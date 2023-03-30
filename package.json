@@ -32,6 +32,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@nhost/nhost-js": "^2.1.2",
 		"tailwind-scrollbar": "^3.0.0"
 	}
 }

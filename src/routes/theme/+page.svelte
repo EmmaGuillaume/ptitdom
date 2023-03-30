@@ -15,8 +15,8 @@
 	{#each themes as theme}
 		<h3 class="decoration-black text-xl font-mono font-bold my-[31px]">{theme.name}</h3>
 		<div class="flex flex-row gap-8">
-			{#each theme.categoriesName as categorie}
-				<a href={`/categories/${categorie.name}`} class="w-1/4 relative"
+			{#each theme.Categories as categorie}
+				<a href={`/categories/${categorie.id}`} class="w-1/4 relative"
 					><img
 						src={categorie.cover}
 						alt={categorie.name}

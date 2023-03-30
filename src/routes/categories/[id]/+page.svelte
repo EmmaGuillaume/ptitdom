@@ -6,14 +6,12 @@
 	import BackButton from '$lib/BackButton.svelte';
 
 	export let data;
-	console.log(data);
+
 	const { categorieData } = data as { categorieData: TCategorie };
 
 	function setSelectedImages(image: TImage) {
 		const index = $selectedImages.findIndex((img: TImage) => img.src === image.src);
-		console.log($selectedImages);
 
-		console.log($selectedImages, index);
 		if (index === -1) {
 			// Object not found, add it to the array
 			return ($selectedImages = [...$selectedImages, image]);
@@ -33,7 +31,7 @@
 	{categorieData.name}
 </h2>
 <div class="grid gap-5 grid-cols-3 mx-20 mb-10">
-	{#each categorieData.images as image}
+	{#each categorieData.Images as image}
 		<ImageButton {image} onClick={setSelectedImages} />
 	{/each}
 </div>
