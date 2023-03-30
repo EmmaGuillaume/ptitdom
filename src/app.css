@@ -3,9 +3,27 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Noto Sans';
-    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+    font-family: 'NotoSansRegular';
+    font-style: normal;
+    src: url('/fonts/NotoSans-Regular.ttf'); /* IE9 Compat Modes */
+    src: local(), url('/fonts/NotoSans-Regular.ttf') format('truetype')
 }
+@font-face {
+    font-family: 'NotoSansBold';
+    font-style: bold;
+    src: url('/fonts/NotoSans-Bold.ttf'); /* IE9 Compat Modes */
+    src: local(), url('/fonts/NotoSans-Bold.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'PatrickHand';
+    font-style: normal;
+    src: url('/fonts/PatrickHand-Regular.ttf'); /* IE9 Compat Modes */
+    src: local(), url('/fonts/PatrickHand-Regular.ttf') format('truetype')
+}
+
+
+
+
 
 body::-webkit-scrollbar {
     width: 7px;
@@ -13,26 +31,25 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-track {
     background: #ccc;
     border-radius: 20px;
+
 }
 body::-webkit-scrollbar-thumb {
     background-color: #222;
     border-radius: 20px;
 }
 
-div * {
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 27px;
-    letter-spacing: 0em;
+h2, h1, h3, p {
+  font-family: 'PatrickHand';
+  font-weight: normal;
 }
+
 
 span {
     font-weight: 700;
 }
 
 h1 {
-    font-family: 'Noto Sans', sans-serif;
+
     font-size: 40px;
     font-weight: 700;
     line-height: 54px;

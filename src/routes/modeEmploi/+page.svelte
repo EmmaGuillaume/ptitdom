@@ -6,12 +6,12 @@
 	<div class="ml-12">
 		<BackButton href="../" />
 	</div>
-	<h1 class="my-12 decoration-black sm:text-3xl text-2xl font-mono font-bold sm: sm:">
+	<h1 class="my-12 decoration-black sm:text-3xl text-2xl font-patrick font-bold sm: sm:">
 		Mode d’emploi :
 	</h1>
 	<div class="relative ml-12">
 		<div class="absolute bg-pink w-2 h-full rounded-2xl" />
-		<p class="ml-8 sm:text-xl text-base font-mono sm: sm: sm:">
+		<p class="ml-8 sm:text-xl text-base font-patrick sm: sm: sm:">
 			Voici le mode d’emploi du site. <br />
 
 			Premièrement, sélectionnez les images que vous voulez pour pouvoir faire le jeu des images.

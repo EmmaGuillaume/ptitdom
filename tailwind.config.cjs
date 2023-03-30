@@ -18,6 +18,9 @@ module.exports = {
       'grey': "#4A4A4A"
     },
     extend: {
+      fontFamily: {
+        'patrick': 'PatrickHand'
+      },
       screens: {
         'xs': '500px'
       },

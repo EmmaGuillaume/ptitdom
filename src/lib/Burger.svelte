@@ -15,7 +15,7 @@
 </button>
 
 <div
-	class={`burger fixed p-4 px-20 text-center bg-green top-0 bottom-0 right-0 z-50 overflow-hidden ${
+	class={`burger fixed p-4 px-20 text-center bg-blue top-0 bottom-0 right-0 z-50 overflow-hidden ${
 		hambOpen === true ? 'active' : 'false'
 	}`}
 >

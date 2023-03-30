@@ -10,10 +10,10 @@
 
 <main class="mx-8 mt-24 md:ml-24 md:mt-20">
 	<Nav />
-	<a href="../" class="decoration-black text-3xl font-mono font-bold">Accueil</a>
-	<h2 class="decoration-black text-2xl font-mono font-bold mt-4">Bibliothèque d'images</h2>
+	<a href="../" class="decoration-black text-3xl font-patrick font-bold">Accueil</a>
+	<h2 class="decoration-black text-2xl font-patrick font-bold mt-4">Bibliothèque d'images</h2>
 	{#each themes as theme}
-		<h3 class="decoration-black text-xl font-mono font-bold mt-12 mb-6">{theme.name}</h3>
+		<h3 class="decoration-black text-xl font-patrick font-bold mt-12 mb-6">{theme.name}</h3>
 		<div
 			class="z-0 grid gap-4 grid-cols-2 mx-2 mb-10 md:grid-cols-3 xl:grid-cols-8 xl:mx-0 xl:gap-4"
 		>
