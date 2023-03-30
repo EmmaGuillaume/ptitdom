@@ -11,7 +11,7 @@
 <main class="mx-8 mt-24 md:ml-24 md:mt-20">
 	<Nav />
 	<a href="../" class="decoration-black text-3xl font-mono font-bold">Accueil</a>
-	<h2 class="decoration-black text-2xl font-mono font-bold mt-4">Bibliothéque d'images</h2>
+	<h2 class="decoration-black text-2xl font-mono font-bold mt-4">Bibliothèque d'images</h2>
 	{#each themes as theme}
 		<h3 class="decoration-black text-xl font-mono font-bold mt-12 mb-6">{theme.name}</h3>
 		<div
