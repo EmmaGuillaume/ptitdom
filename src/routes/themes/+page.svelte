@@ -8,12 +8,30 @@
 	const { themes } = data;
 </script>
 
-<main class="mx-8 mt-24 md:ml-24 md:mt-20">
+<main class=" px-8 py-28 md:px-24 relative">
+	<img src="/images/stain/up-left-yellow-form-v2.png" alt="" class="absolute top-0 left-0 -z-10" />
+	<img
+		src="/images/stain/down-right-orange-form.png"
+		alt=""
+		class="absolute bottom-0 right-0 -z-10"
+	/>
 	<Nav />
-	<a href="../" class="decoration-black text-3xl font-patrick font-bold">Accueil</a>
-	<h2 class="decoration-black text-2xl font-patrick font-bold mt-4">Bibliothèque d'images</h2>
+	<h2 class="decoration-black text-4xl font-patrick font-bold">Les thématiques</h2>
+	<div class="flex flex-col xl:flex-row xl:items-center xl:justify-between xl:mt-0">
+		<div class="flex gap-4 items-center mt-4">
+			<img src="/images/icons/icon-light.png" class="w-5 h-8" alt="" />
+			<p class="decoration-black text-2xl font-patrick">
+				Cliquez sur un thème pour sélectionner une/des image(s) !
+			</p>
+		</div>
+		<div class="flex gap-4 items-center mt-4 xl:mt-0">
+			<p class="text-4xl">Défile !</p>
+			<img src="/images/icons/swipe-arrow.png" alt="" class="w-12 xl:w-20" />
+		</div>
+	</div>
+
 	{#each themes as theme}
-		<h3 class="decoration-black text-xl font-patrick font-bold mt-12 mb-6">{theme.name}</h3>
+		<h3 class="decoration-black text-2xl font-patrick font-bold mt-12 mb-6">{theme.name}</h3>
 		<div
 			class="z-0 grid gap-4 grid-cols-2 mx-2 mb-10 md:grid-cols-3 xl:grid-cols-8 xl:mx-0 xl:gap-4"
 		>
