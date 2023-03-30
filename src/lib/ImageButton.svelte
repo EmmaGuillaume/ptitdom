@@ -6,22 +6,11 @@
 	export let image: TImage;
 	export let onClick: (image: TImage) => void;
 
-	let active: boolean;
-	const index = $selectedImages.find((img: TImage) => img.src === image.src);
-	if (index) {
-		active = true;
-	} else {
-		active = false;
-	}
-
-	const handleClick = (img: TImage) => {
-		active = !active;
-		onClick(img);
-	};
+	$: active = $selectedImages.includes(image);
 </script>
 
 <button
-	on:click={() => handleClick(image)}
+	on:click={() => onClick(image)}
 	class={`w-full h-full border-8 border-gray relative rounded overflow-hidden ${
 		active === true ? 'border-blue' : ''
 	} `}

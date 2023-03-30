@@ -25,7 +25,7 @@
 	<p class="decoration-black text-xl font-patrick font-bold inline-block">
 		Cliquez sur une image pour la sélectionner !
 	</p>
-	<div class=" grid gap-5 grid-cols-1 xl:grid-cols-5 sm:grid-cols-3">
+	<div class=" grid gap-5 grid-cols-1 xs:grid-cols-2 xl:grid-cols-5 sm:grid-cols-3">
 		{#each images as image}
 			<ImageButton {image} onClick={setSelectedImages} />
 		{/each}
