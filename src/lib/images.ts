@@ -23,15 +23,11 @@ export const themes: TThemes[] = [
     categoriesName: [
       {
         name: 'chats',
-        cover: '/images/chat2.jpg'
+        cover: '/images/data/animaux/chats/chat4.jpeg'
       },
       {
         name: 'vaches',
         cover: '/images/vache3.jpg'
-      },
-      {
-        name: 'perruches',
-        cover: '/images/perruche1.jpeg'
       }
     ]
   },
@@ -39,8 +35,12 @@ export const themes: TThemes[] = [
     name: 'Véhicules',
     categoriesName: [
       {
-        name: 'voitures',
-        cover: '/images/voiture3.jpg'
+        name: 'ambulances',
+        cover: '/images/data/vehicules/ambulances/ambulance3.jpg'
+      },
+      {
+        name: 'bus',
+        cover: '/images/data/vehicules/bus/bus3.jpg'
       }
     ]
   },
@@ -84,74 +84,69 @@ export const categories: TCategorie[] = [
     name: 'chats',
     images: [
       {
-        src: '/images/chat1.jpg',
+        src: '/images/data/animaux/chats/chat1.png',
         alt: 'image de chat',
         categorie: 'chats'
       },
       {
-        src: '/images/chat2.jpg',
+        src: '/images/data/animaux/chats/chat2.png',
         alt: 'image de chat',
         categorie: 'chats'
       },
-    ]
+      {
+        src: '/images/data/animaux/chats/chat3.jpeg',
+        alt: 'image de chat',
+        categorie: 'chats'
+      },
+      {
+        src: '/images/data/animaux/chats/chat4.jpeg',
+        alt: 'image de chat',
+        categorie: 'chats'
+      },
+      {
+        src: '/images/data/animaux/chats/chat5.webp',
+        alt: 'image de chat',
+        categorie: 'chats'
+      },
+        ]
   },
   {
-    name: 'perruches',
+    name: "ambulances",
     images: [
       {
-        src: '/images/perruche1.jpeg',
-        alt: 'image de perruche',
-        categorie: 'perruches'
+        src: '/images/data/vehicules/ambulances/ambulance1.jpg',
+        alt: 'image de ambulance',
+        categorie: 'ambulances'
       },
       {
-        src: '/images/perruche2.jpg',
-        alt: 'image de perruche',
-        categorie: 'perruches'
+        src: '/images/data/vehicules/ambulances/ambulance2.jpg',
+        alt: 'image de ambulance',
+        categorie: 'ambulances'
       },
       {
-        src: '/images/perruche3.jpg',
-        alt: 'image de perruche',
-        categorie: 'perruches'
-      },
-      {
-        src: '/images/perruche4.jpg',
-        alt: 'image de perruche',
-        categorie: 'perruches'
-      },
-      {
-        src: '/images/perruche5.jpg',
-        alt: 'image de perruche',
-        categorie: 'perruches'
-      },
-      {
-        src: '/images/perruche6.jpg',
-        alt: 'image de perruche',
-        categorie: 'perruches'
-      },
-      {
-        src: '/images/perruche7.jpg',
-        alt: 'image de perruche',
-        categorie: 'perruches'
+        src: '/images/data/vehicules/ambulances/ambulance3.jpg',
+        alt: 'image de ambulance',
+        categorie: 'ambulances'
       }
     ]
   },
   {
-    name: "voitures",
+    name: "bus",
     images: [
       {
-        src: '/images/voiture1.jpg',
-        alt: 'image de voiture1',
-        categorie: 'voitures'
+        src: '/images/data/vehicules/bus/bus1.jpg',
+        alt: 'image de bus',
+        categorie: 'bus'
       },
       {
-        src: '/images/voiture2.jpg',
-        alt: 'image de voiture2',
-        categorie: 'voitures'
+        src: '/images/data/vehicules/bus/bus2.jpg',
+        alt: 'image de bus',
+        categorie: 'bus'
       },
       {
-        src: '/images/voiture3.jpg',
-        alt: 'image de voiture3',
-        categorie: 'voitures'
+        src: '/images/data/vehicules/bus/bus3.jpg',
+        alt: 'image de bus',
+        categorie: 'bus'
       }
     ]
   },

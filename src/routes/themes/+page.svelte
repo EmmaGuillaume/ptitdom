@@ -2,10 +2,55 @@
 	import Nav from '$lib/Nav.svelte';
 	import { categories, type TImage, type TThemes } from '$lib/images';
 	import type { TCategorie } from '$lib/images';
+	import { onMount } from 'svelte';
 
 	export let data: { themes: TThemes[] };
 
 	const { themes } = data;
+	/*onMount(() => {
+		let sliderContainer = document.querySelector('.slider-container');
+		let innerSlider = document.querySelector('.inner-slider');
+
+		let pressed = false;
+		let startX;
+		let x;
+
+		sliderContainer.addEventListener('mousedown', (e) => {
+			pressed = true;
+			startX = e.offsetX - innerSlider.offsetLeft;
+			sliderContainer.style.cursor = 'grabbing';
+		});
+
+		sliderContainer.addEventListener('mouseenter', () => {
+			sliderContainer.style.cursor = 'grab';
+		});
+		sliderContainer.addEventListener('mouseup', () => {
+			sliderContainer.style.cursor = 'grab';
+			pressed = false;
+		});
+		sliderContainer.addEventListener('mousemove', (e) => {
+			if (!pressed) return;
+			e.preventDefault();
+
+			x = e.offsetX;
+
+			innerSlider.style.left = `${x - startX}px`;
+			checkBoundary();
+		});
+
+		const checkBoundary = () => {
+			let outer = sliderContainer.getBoundingClientRect();
+			let inner = innerSlider.getBoundingClientRect();
+
+			if (parseInt(innerSlider.style.left) > 0) {
+				innerSlider.style.left = '0px';
+			}
+
+			if (inner.right < outer.right) {
+				innerSlider.style.left = `-${inner.width - outer.width}px`;
+			}
+		};
+	}); */
 </script>
 
 <main class=" px-8 py-28 md:px-24 relative">
@@ -32,23 +77,25 @@
 
 	{#each themes as theme}
 		<h3 class="decoration-black text-2xl font-patrick font-bold mt-12 mb-6">{theme.name}</h3>
-		<div
-			class="z-0 grid gap-4 grid-cols-2 mx-2 mb-10 md:grid-cols-3 xl:grid-cols-8 xl:mx-0 xl:gap-4"
-		>
-			{#each theme.categoriesName as categorie}
-				<a href={`/categories/${categorie.name}`} class="w-full relative md:w-10/12 xl:w-full"
-					><img
-						src={categorie.cover}
-						alt={categorie.name}
-						class="aspect-square object-cover rounded-3xl drop-shadow-card brightness-50 w-full"
-					/>
-					<p
-						class="text-3xl font-bold z-12 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white capitalize"
-					>
-						{categorie.name}
-					</p>
-				</a>
-			{/each}
+		<div class="slider-container overflow-hidden">
+			<div
+				class=" inner-slider z-0 grid gap-4 grid-cols-2 mx-2 mb-10 md:grid-cols-3 xl:grid-cols-8 xl:mx-0 xl:gap-4"
+			>
+				{#each theme.categoriesName as categorie}
+					<a href={`/categories/${categorie.name}`} class="w-full relative md:w-10/12 xl:w-full"
+						><img
+							src={categorie.cover}
+							alt={categorie.name}
+							class="aspect-square object-cover rounded-3xl drop-shadow-card brightness-50 w-full"
+						/>
+						<p
+							class="text-3xl font-bold z-12 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white capitalize"
+						>
+							{categorie.name}
+						</p>
+					</a>
+				{/each}
+			</div>
 		</div>
 	{/each}
 
