@@ -5,6 +5,11 @@
 		const res = await nhost.auth.signOut();
 		console.log(res);
 	}
+
+	const conected = nhost.auth.isAuthenticated();
 </script>
 
-<button on:click={signout}>sign out</button>
+{#if conected === true}
+	<p />
+	<button on:click={signout}>sign out</button>
+{/if}
