@@ -3,6 +3,7 @@
 	import { selectedImages } from '../../stores';
 
 	const images = $selectedImages;
+
 </script>
 
 <div class="grid gap-4 grid-cols-2 mx-6 mt-9 mb-10 md:grid-cols-3 xl:grid-cols-5">
@@ -14,3 +15,4 @@
 </div>
 
 <BackButton href="/my-images" />
+

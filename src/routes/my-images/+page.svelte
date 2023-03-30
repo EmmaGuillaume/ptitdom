@@ -3,13 +3,11 @@
 	import BackButton from '$lib/BackButton.svelte';
 	import ImageButton from '$lib/ImageButton.svelte';
 	import ImgDel from '$lib/ImgDel.svelte';
-	import { stored, selectedImages } from '../../stores';
-	console.log(stored);
-	let images = localStorage.getItem('selectedImages') || '';
-	// const images = $selectedImages;
-	$: countImg = $selectedImages.length;
+	import { selectedImages, validation } from '../../stores';
 
-	console.log(stored);
+	// let images = localStorage.getItem('selectedImages') || '';
+	const images = $selectedImages;
+	$: countImg = $selectedImages.length;
 </script>
 
 <h2 class="decoration-black text-3xl font-mono font-bold mt-20 mx-16 mb-16">Les cartes choisies</h2>

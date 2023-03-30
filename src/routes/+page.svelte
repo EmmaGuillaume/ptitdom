@@ -1,4 +1,9 @@
 <script lang="ts">
+
+let mat = 3;
+localStorage.setItem('matthieu', mat);
+let matthieu = localStorage.getItem('matthieu') || 'hello';
+	console.log(matthieu);
 </script>
 
 <h1 class="decoration-black text-3xl font-mono font-bold text-center mt-5 sm:mt-24">
