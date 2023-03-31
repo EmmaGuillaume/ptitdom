@@ -640,22 +640,22 @@ export const categories: TCategorie[] = [
       },
       {
         src: '/images/data/animaux/herissons/herisson2.png',
-        alt: 'de herisson',
+        alt: 'de hérisson',
         categorie: 'herissons'
       },
       {
         src: '/images/data/animaux/herissons/herisson3.jpeg',
-        alt: 'de herisson',
+        alt: 'de hérisson',
         categorie: 'herissons'
       },
       {
         src: '/images/data/animaux/herissons/herisson4.webp',
-        alt: 'de herisson',
+        alt: 'de hérisson',
         categorie: 'herissons'
       },
       {
         src: '/images/data/animaux/herissons/herisson5.jpeg',
-        alt: 'de herisson',
+        alt: 'de hérisson',
         categorie: 'herissons'
       }
     ]
