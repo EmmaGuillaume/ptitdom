@@ -64,14 +64,18 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#74DAD5" />
 	<meta name="theme-color" content="#74DAD5" />
 </svelte:head>
-
-<main class="p-16 h-[100vh]">
-	<BackButton href="/my-images" />
+<main class="p-16 relative h-full">
+	<img
+		src="/images/stain/bottom-right-yellow-form-v2.png"
+		alt=""
+		class="-z-10 absolute bottom-0 right-0"
+	/>
+	<img src="/images/stain/red-top-left.png" alt="" class="-z-10 absolute top-0 left-0" />
+	<h1 class="text-4xl mt-8">À toi de jouer !</h1>
 	<button class="bg-blue p-4 rounded font-patrick mt-4" on:click={() => handleClick(images)}
 		>Poser une question</button
 	>
 	<p class="text-xl w-full text-center">{question}</p>
-
 	<div class="grid gap-4 grid-cols-2 mt-9 mb-10 md:grid-cols-3 xl:grid-cols-5">
 		{#each images as image}
 			<div class="w-full aspect-square">
@@ -79,4 +83,5 @@
 			</div>
 		{/each}
 	</div>
+	<a href="/my-images" class="text-grey font-patrick underline">Fin de partie</a>
 </main>
