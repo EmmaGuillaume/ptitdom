@@ -74,7 +74,7 @@
 	</div>
 
 	{#each themes as theme}
-		<h2 class="decoration-black text-2xl font-patrick font-bold mt-12 mb-6">{theme.name}</h2>
+		<h2 class="decoration-black text-3xl font-patrick font-bold mt-12 mb-6">{theme.name}</h2>
 		<div class="slider-container overflow-hidden">
 			<div
 				class=" inner-slider z-0 grid gap-6 grid-cols-2 mx-2 mb-10 md:grid-cols-3 xl:grid-cols-8 xl:mx-0 xl:gap-8"
@@ -84,9 +84,9 @@
 						><img
 							src={categorie.cover}
 							alt={categorie.name}
-							class="aspect-square object-cover rounded-3xl drop-shadow-card brightness-50 w-full mb-2"
+							class="aspect-square object-cover rounded-3xl drop-shadow-card brightness-90 w-full mb-2"
 						/>
-						<p class="text-3xl font-bold z-12 capitalize">
+						<p class="text-2xl font-normal z-12 capitalize">
 							{categorie.name}
 						</p>
 					</a>
