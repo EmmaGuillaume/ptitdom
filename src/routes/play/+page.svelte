@@ -1,5 +1,6 @@
 <script lang="ts">
 	import BackButton from '$lib/BackButton.svelte';
+	import ImageButton from '$lib/ImageButton.svelte';
 	import type { TImage } from '$lib/images';
 	import { questions } from '$lib/utils/questions';
 	import { selectedImages } from '../../stores';
@@ -10,6 +11,8 @@
 	const handleClick = (images: TImage[]) => {
 		question = questions(images);
 	};
+
+	const handleCardClick = () => {};
 </script>
 
 <svelte:head>
@@ -61,6 +64,7 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#74DAD5" />
 	<meta name="theme-color" content="#74DAD5" />
 </svelte:head>
+
 <main class="p-16 h-[100vh]">
 	<BackButton href="/my-images" />
 	<button class="bg-blue p-4 rounded font-patrick mt-4" on:click={() => handleClick(images)}
