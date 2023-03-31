@@ -5,6 +5,7 @@
 	import { selectedImages, validation } from '../../../stores';
 	import BackButton from '$lib/BackButton.svelte';
 	import Ariane from '$lib/Ariane.svelte';
+	import ButtonPlay from '$lib/ButtonPlay.svelte';
 
 	export let data;
 	console.log(data);
@@ -100,5 +101,6 @@
 			<ImageButton {image} onClick={setSelectedImages} />
 		{/each}
 	</div>
+	<ButtonPlay />
 	<!-- </div> -->
 </div>
