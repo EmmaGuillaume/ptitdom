@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Nav from '$lib/Nav.svelte';
 	import type { TThemes } from '$lib/images';
+	import ButtonPlay from '$lib/ButtonPlay.svelte';
 
 	export let data: { themes: TThemes[] };
 
@@ -51,6 +52,56 @@
 	}); */
 </script>
 
+<svelte:head>
+	<title>Bild, votre jeu de cartes numérique - Bild</title>
+
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<meta name="robots" content="all" />
+	<meta name="target" content="all" />
+
+	<meta name="author" content="Bild" />
+	<meta name="owner" content="Bild" />
+	<meta name="language" content="fr" />
+	<meta http-equiv="content-language" content="fr" />
+
+	<meta name="url" content="https://ptitdom.vercel.app/" />
+	<meta name="identifier-URL" content="https://ptitdom.vercel.app/" />
+	<link rel="canonical" href="https://ptitdom.vercel.app/themes" />
+
+	<meta name="subject" content="Identification d'images" />
+	<meta
+		name="description"
+		content="Bild est un outil pédagogique permettant aux enfants ayant des troubles du spectre autistique d'identifier différents objets ou situations "
+	/>
+
+	<meta property="og:title" content="Bild, votre jeu de cartes numérique" />
+	<meta property="og:type" content="website" />
+	<meta
+		property="og:description"
+		content="Bild est un outil pédagogique permettant aux enfants ayant des troubles du spectre autistique d'identifier différents objets ou situations "
+	/>
+	<meta property="og:site_name" content="Bild" />
+	<meta property="og:url" content="https://ptitdom.vercel.app/" />
+	<meta property="og:locale" content="fr" />
+	<meta property="og:image" content="https://metatags.arthaud.dev/sprites/hero-min.jpg" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://ptitdom.vercel.app/" />
+	<meta name="twitter:title" content="Bild, votre jeu de cartes numérique - Bild" />
+	<meta
+		name="twitter:description"
+		content="Bild est un outil pédagogique permettant aux enfants ayant des troubles du spectre autistique d'identifier différents objets ou situations "
+	/>
+	<meta name="twitter:image" content="https://metatags.arthaud.dev/sprites/hero-min.jpg" />
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-title" content="Bild, votre jeu de cartes numérique" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#74DAD5" />
+	<meta name="theme-color" content="#74DAD5" />
+</svelte:head>
+
 <main class=" px-8 py-28 md:px-24 relative">
 	<img src="/images/stain/up-left-yellow-form-v2.png" alt="" class="absolute top-0 left-0 -z-10" />
 	<img
@@ -95,16 +146,5 @@
 		</div>
 	{/each}
 
-	<div
-		class="hidden fixed bottom-0 right-0 mb-12 mx-12 gap-16 drop-shadow bg-white px-20 py-5 border-solid border-b-orange rounded-3xl"
-	>
-		<div class="flex flex-col items-center">
-			<img src="/images/icons/folder.png" alt="" />
-			<p class="mt-2 text-2xl">Ajouter à un dossier</p>
-		</div>
-		<div class="flex flex-col items-center">
-			<img src="/images/icons/play.png" alt="" />
-			<p class="mt-2 text-2xl">Commencer le jeu !</p>
-		</div>
-	</div>
+	<ButtonPlay/>
 </main>
