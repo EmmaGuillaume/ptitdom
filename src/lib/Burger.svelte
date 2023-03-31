@@ -23,7 +23,7 @@
 		<h3 class="text-3xl mb-4">Menu</h3>
 		<ul class="text-2xl">
 			<li class="mb-4"><a href="/modeEmploi"> Mode d'emploi</a></li>
-			<li class="mb-4"><a href="/"> Mentions légales</a></li>
+			<li class="mb-4"><a href="/legacy"> Mentions légales</a></li>
 		</ul>
 	</nav>
 </div>
