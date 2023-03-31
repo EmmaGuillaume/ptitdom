@@ -1,8 +1,6 @@
 <script lang="ts">
 	import Nav from '$lib/Nav.svelte';
-	import { categories, type TImage, type TThemes } from '$lib/images';
-	import type { TCategorie } from '$lib/images';
-	import { onMount } from 'svelte';
+	import type { TThemes } from '$lib/images';
 
 	export let data: { themes: TThemes[] };
 
@@ -61,7 +59,7 @@
 		class="absolute bottom-0 right-0 -z-10"
 	/>
 	<Nav />
-	<h2 class="decoration-black text-4xl font-patrick font-bold">Les thématiques</h2>
+	<h1 class="decoration-black text-4xl font-patrick font-bold">Les thématiques</h1>
 	<div class="flex flex-col xl:flex-row xl:items-center xl:justify-between xl:mt-0">
 		<div class="flex gap-4 items-center mt-4">
 			<img src="/images/icons/icon-light.png" class="w-5 h-8" alt="" />
@@ -76,21 +74,19 @@
 	</div>
 
 	{#each themes as theme}
-		<h3 class="decoration-black text-2xl font-patrick font-bold mt-12 mb-6">{theme.name}</h3>
+		<h2 class="decoration-black text-2xl font-patrick font-bold mt-12 mb-6">{theme.name}</h2>
 		<div class="slider-container overflow-hidden">
 			<div
-				class=" inner-slider z-0 grid gap-4 grid-cols-2 mx-2 mb-10 md:grid-cols-3 xl:grid-cols-8 xl:mx-0 xl:gap-4"
+				class=" inner-slider z-0 grid gap-6 grid-cols-2 mx-2 mb-10 md:grid-cols-3 xl:grid-cols-8 xl:mx-0 xl:gap-8"
 			>
 				{#each theme.categoriesName as categorie}
 					<a href={`/categories/${categorie.name}`} class="w-full relative md:w-10/12 xl:w-full"
 						><img
 							src={categorie.cover}
 							alt={categorie.name}
-							class="aspect-square object-cover rounded-3xl drop-shadow-card brightness-50 w-full"
+							class="aspect-square object-cover rounded-3xl drop-shadow-card brightness-50 w-full mb-2"
 						/>
-						<p
-							class="text-3xl font-bold z-12 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white capitalize"
-						>
+						<p class="text-3xl font-bold z-12 capitalize">
 							{categorie.name}
 						</p>
 					</a>

@@ -24,5 +24,5 @@
 			<img class="w-4 h-4" src="/images/check.svg" alt="" />
 		{/if}
 	</div>
-	<img class="object-cover w-full h-full aspect-square" src={image.src} alt="alt" srcset="" />
+	<img class="object-contain w-full h-full aspect-square" src={image.src} alt="alt" srcset="" />
 </button>
