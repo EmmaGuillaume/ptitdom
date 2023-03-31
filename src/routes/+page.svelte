@@ -80,11 +80,10 @@
 
 		<div
 			class="absolute -z-10 bg-yellow w-[6px] h-[152px] sm:top-[15%] lmd:top-[4%] top-[19%] left-[-5%]"
-			alt=" ligne"
 		/>
 		<p class="text-start text-xl xs:w-[434px] mt-7 z-2">
 			Basée sur l’approche ABA, le jeu des images sert à faciliter l’apprentissage du vocabulaire
-			des enfants atteint de TSA.
+			des enfants atteints de TSA.
 		</p>
 		<div class="justify-center flex mt-16">
 			<img class="w-52 sm:w-auto" src="../../images/logo.png" alt="" />

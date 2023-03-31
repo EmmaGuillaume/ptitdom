@@ -1,8 +1,15 @@
 <script lang="ts">
 	import BackButton from '$lib/BackButton.svelte';
+	import type { TImage } from '$lib/images';
+	import { questions } from '$lib/utils/questions';
 	import { selectedImages } from '../../stores';
 
 	const images = $selectedImages;
+	$: question = '';
+
+	const handleClick = (images: TImage[]) => {
+		question = questions(images);
+	};
 </script>
 
 <svelte:head>
