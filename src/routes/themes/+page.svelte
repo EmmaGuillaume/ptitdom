@@ -111,5 +111,4 @@
 			<p class="mt-2 text-2xl">Commencer le jeu !</p>
 		</div>
 	</div>
-	 -->
 </main>
