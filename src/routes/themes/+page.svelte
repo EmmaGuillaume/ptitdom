@@ -53,7 +53,7 @@
 	{/each}
 
 	<div
-		class="fixed bottom-0 right-0 mb-12 mx-12 flex gap-16 drop-shadow bg-white px-20 py-5 border-solid border-b-orange rounded-3xl"
+		class="hidden fixed bottom-0 right-0 mb-12 mx-12 flex gap-16 drop-shadow bg-white px-20 py-5 border-solid border-b-orange rounded-3xl"
 	>
 		<div class="flex flex-col items-center">
 			<img src="/images/icons/folder.png" alt="" />
