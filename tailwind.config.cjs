@@ -9,6 +9,7 @@ module.exports = {
       'white': '#FFFFFF',
       'yellow': '#FFF172',
       'blue': '#74DAD5',
+      'lightblue': '#74DAD522',
       'purple': '#9D69D6',
       'pink': '#FF7676',
       'orange': '#FFA44F',
@@ -17,7 +18,7 @@ module.exports = {
       'red': "#A51810",
       'grey': "#4A4A4A",
       'light-grey': "#DDDDDD"
-      
+
     },
     extend: {
       fontFamily: {

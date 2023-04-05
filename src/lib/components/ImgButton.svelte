@@ -1,13 +1,25 @@
 <script lang="ts">
-	import type { TImage } from './images';
+	import type { TImage } from '$data/images';
+	import { setSelectedImages } from '$utils/selected';
+	import { selectedImages } from '$src/stores';
 
-	export let onClick: (image: TImage) => void;
-	export let active: boolean;
 	export let image: TImage;
+	let active: boolean;
+
+	const index = $selectedImages.find((img: TImage) => img.src === image.src);
+	if (index) {
+		active = true;
+	} else {
+		active = false;
+	}
+	function handleClick(image: TImage) {
+		active = !active;
+		setSelectedImages(image);
+	}
 </script>
 
 <button
-	on:click={() => onClick(image)}
+	on:click={() => handleClick(image)}
 	class={`w-full h-full border-8 border-gray relative rounded overflow-hidden ${
 		active === true ? 'border-blue' : ''
 	} `}

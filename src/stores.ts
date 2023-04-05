@@ -1,4 +1,4 @@
-import type { TImage } from '$lib/images';
+import type { TImage } from '$lib/data/images';
 import { writable } from 'svelte/store'
 export const boum = "lala";
 //export const stored = localStorage.getItem('cc');

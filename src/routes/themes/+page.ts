@@ -2,10 +2,9 @@ import { error } from '@sveltejs/kit';
 import type { PageLoad } from '../$types';
 
 
-import { themes } from '$lib/images.ts';
+import { themes } from '$data/themes';
 
 export const load = (() => {
-
 
   try {
 

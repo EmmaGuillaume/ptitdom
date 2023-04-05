@@ -21,6 +21,47 @@
     src: local(), url('/fonts/PatrickHand-Regular.ttf') format('truetype')
 }
 
+@layer utilities {
+  .container {
+    @apply w-full mx-auto;
+  }
+  @media (min-width: 500px) {
+    .container {
+      max-width: 580px;
+    }
+  }
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  @media (min-width: 900px) {
+    .container {
+      max-width: 900px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1636px;
+    }
+  }
+}
+
 
 
 html{
