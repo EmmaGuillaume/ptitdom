@@ -1,14 +1,14 @@
 
-import type {TImage } from '$lib/images';
+import type {TImage } from '$lib/data/images';
 import { get } from 'svelte/store';
-import { selectedImages, validation} from '../stores';
+import { selectedImages, validation} from '../../stores';
 
 
 export function setSelectedImages(image: TImage) {
     const selected = get(selectedImages)
     const validate = get(validation)
     validation.set(false)
-    
+
     const index = selected.findIndex((img: TImage) => img.src === image.src);
     //console.log($selectedImages);
 

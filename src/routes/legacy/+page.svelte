@@ -1,62 +1,12 @@
 <script lang="ts">
-	import BackButton from '$lib/BackButton.svelte';
+	import BackButton from '$lib/components/BackButton.svelte';
+	import LegacySection from '$lib/components/LegacySection.svelte';
 </script>
 
-<svelte:head>
-	<title>Bild, votre jeu de cartes numérique - Bild</title>
+<section class="container">
+	<BackButton href="../" myclass=" mt-10" />
 
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-	<meta name="robots" content="all" />
-	<meta name="target" content="all" />
-
-	<meta name="author" content="Bild" />
-	<meta name="owner" content="Bild" />
-	<meta name="language" content="fr" />
-	<meta http-equiv="content-language" content="fr" />
-
-	<meta name="url" content="https://ptitdom.vercel.app/" />
-	<meta name="identifier-URL" content="https://ptitdom.vercel.app/" />
-	<link rel="canonical" href="https://ptitdom.vercel.app/legacy" />
-
-	<meta name="subject" content="Identification d'images" />
-	<meta
-		name="description"
-		content="Bild est un outil pédagogique permettant aux enfants ayant des troubles du spectre autistique d'identifier différents objets ou situations "
-	/>
-
-	<meta property="og:title" content="Bild, votre jeu de cartes numérique" />
-	<meta property="og:type" content="website" />
-	<meta
-		property="og:description"
-		content="Bild est un outil pédagogique permettant aux enfants ayant des troubles du spectre autistique d'identifier différents objets ou situations "
-	/>
-	<meta property="og:site_name" content="Bild" />
-	<meta property="og:url" content="https://ptitdom.vercel.app/" />
-	<meta property="og:locale" content="fr" />
-	<meta property="og:image" content="https://metatags.arthaud.dev/sprites/hero-min.jpg" />
-
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://ptitdom.vercel.app/" />
-	<meta name="twitter:title" content="Bild, votre jeu de cartes numérique - Bild" />
-	<meta
-		name="twitter:description"
-		content="Bild est un outil pédagogique permettant aux enfants ayant des troubles du spectre autistique d'identifier différents objets ou situations "
-	/>
-	<meta name="twitter:image" content="https://metatags.arthaud.dev/sprites/hero-min.jpg" />
-
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-title" content="Bild, votre jeu de cartes numérique" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="#74DAD5" />
-	<meta name="theme-color" content="#74DAD5" />
-</svelte:head>
-<BackButton href="../" myclass="sm:ml-20 ml-10 mt-10" />
-
-<h1 class="sm:ml-20 ml-10 mt-10 sm:mb-10 mb-5">Mentions légales</h1>
-<div class="flex sm:mr-20 mr-10">
-	<div class="sm:ml-40 ml-10 h-auto w-[4px] min-w-[4px] bg-pink rounded-2xl" />
-	<div class="ml-5">
+	<LegacySection title="Mentions légales" order={1}>
 		<p>
 			<span>Éditeur de contenu :</span> Le groupe d’étudiants MMI (Métiers du multimédia et de
 			l’internet) comprenant :
@@ -96,40 +46,26 @@
 			<li>Covina, CA 91723</li>
 			<li>privacy@vercel.com</li>
 		</ul>
-	</div>
-</div>
-
-<h1 class="sm:ml-20 ml-10 mt-10 sm:mb-10 mb-5">Conception</h1>
-<div class="flex sm:mr-20 mr-10">
-	<div class="sm:ml-40 ml-10 h-auto w-[4px] min-w-[4px] bg-pink rounded-2xl" />
-	<div class="ml-5">
+	</LegacySection>
+	<LegacySection title="conception">
 		<p>
 			<span>Création :</span> Le groupe d'étudiant MMI, Bild
 			<br /><br />
 			<span>Crédits vidéographiques :</span> Bild, tous droits réservés aux étudiants.
 		</p>
-	</div>
-</div>
+	</LegacySection>
 
-<h1 class="sm:ml-20 ml-10 mt-10 sm:mb-10 mb-5">Conditions Générales d’Utilisation (CGU)</h1>
-<div class="flex sm:mr-20 mr-10">
-	<div class="sm:ml-40 ml-10 h-auto w-[4px] min-w-[4px] bg-pink rounded-2xl" />
-	<div class="ml-5">
+	<LegacySection title="Conditions Générales d’Utilisation (CGU)">
 		<p>
 			Constituant le <span>contrat</span> entre la société IUT Bordeaux Montaigne, l'Utilisateur,
-			l'accès au site doit être précédé de <span>l'acceptation de ces CGU.</span> L'accès à cette
-			plateforme signifie l'acceptation des présentes <span>CGU</span>.
+			l'accès au site doit être précédé de <span>l'acceptation de ces CGU.</span>
+			L'accès à cette plateforme signifie l'acceptation des présentes <span>CGU</span>.
 			<br />
 			En utilisant notre site, l'utilisateur s'engage à respecter les Conditions Générales d'Utilisation
 			du site suivantes.
 		</p>
-	</div>
-</div>
-
-<h1 class="sm:ml-20 ml-10 mt-10 sm:mb-10 mb-5">Propriété intellectuelle</h1>
-<div class="flex sm:mr-20 mr-10">
-	<div class="sm:ml-40 ml-10 h-auto w-[4px] min-w-[4px] bg-pink rounded-2xl" />
-	<div class="ml-5">
+	</LegacySection>
+	<LegacySection title="Propriété intellectuelle">
 		<p>
 			<span>Tous</span> les éléments présents sur le <span>site</span> (photographie, logo,
 			illustration) sont protégés par la loi en vigueur au titre de la
@@ -141,13 +77,8 @@
 			requièrent une <span>autorisation</span> préalable du site. Dans ce cas, toute utilisation à
 			des usages commerciaux ou à des fins publicitaires est <span>proscrite.</span>
 		</p>
-	</div>
-</div>
-
-<h1 class="sm:ml-20 ml-10 mt-10 sm:mb-10 mb-5">Champ d’application / contenu utilisateur</h1>
-<div class="flex sm:mr-20 mr-10">
-	<div class="sm:ml-40 ml-10 h-auto w-[4px] min-w-[4px] bg-pink rounded-2xl" />
-	<div class="ml-5">
+	</LegacySection>
+	<LegacySection title="Champ d’application / contenu utilisateur">
 		<p>
 			Description des services : Nous proposons des services <span>non-marchands,</span> car le site
 			internet est une <span>application web gratuite sans achats intégrés.</span>
@@ -161,13 +92,8 @@
 			<span>interrompu</span>
 			ou <span>suspendu</span> par l'éditeur <span>sans préavis ni justification.</span>
 		</p>
-	</div>
-</div>
-
-<h1 class="sm:ml-20 ml-10 mt-10 sm:mb-10 mb-5">Responsabilité</h1>
-<div class="flex sm:mr-20 mr-10">
-	<div class="sm:ml-40 ml-10 h-auto w-[4px] min-w-[4px] bg-pink rounded-2xl" />
-	<div class="ml-5">
+	</LegacySection>
+	<LegacySection title="Responsabilité">
 		<p>
 			Bien que les informations sur le site soient réputées fiables, le site se réserve la faculté
 			d'une non-garantie de la <span>fiabilité</span> des sources.
@@ -195,13 +121,8 @@
 			et sous sa responsabilité. Bild ne se tient pas responsable de la véracité des propos tenus sur
 			les ressources externes.
 		</p>
-	</div>
-</div>
-
-<h1 class="sm:ml-20 ml-10 mt-10 sm:mb-10 mb-5">RGPD :</h1>
-<div class="flex sm:mr-20 mr-10">
-	<div class="sm:ml-40 ml-10 h-auto w-[4px] min-w-[4px] bg-pink rounded-2xl" />
-	<div class="ml-5">
+	</LegacySection>
+	<LegacySection title="RGPD :">
 		<p>
 			Selon le Règlement général sur la protection des données du 25 mai 2018 et conformément à la
 			loi n°78-17 du 6 janvier relative à l’informatique, aux fichiers et aux libertés, la collecte
@@ -240,5 +161,5 @@
 			Si vous estimez, après nous avoir contactés, que vos droits « Informatique et Libertés » ne sont
 			pas respectés, vous pouvez adresser une réclamation à la CNIL.
 		</p>
-	</div>
-</div>
+	</LegacySection>
+</section>

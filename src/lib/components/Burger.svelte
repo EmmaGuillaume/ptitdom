@@ -1,4 +1,6 @@
 <script lang="ts">
+	import InitButton from './root/InitButton.svelte';
+
 	$: hambOpen = false;
 
 	const handleClick = () => {
@@ -6,13 +8,13 @@
 	};
 </script>
 
-<button on:click={handleClick} class="fixed top-10 right-10 z-[70]">
+<InitButton onClick={handleClick} classes="fixed top-10 right-10 z-[70]">
 	{#if hambOpen}
 		<img class="w-14 h-14" src="/images/close-burger.svg" alt="" />
 	{:else}
 		<img class="w-14 h-14" src="/images/open-burger.svg" alt="" />
 	{/if}
-</button>
+</InitButton>
 
 <div
 	class={`burger fixed p-4 px-20 text-center bg-blue top-0 bottom-0 right-0 z-50 overflow-hidden ${

@@ -1,12 +1,23 @@
-import type { TImage } from '$lib/images';
 import { writable } from 'svelte/store'
-export const boum = "lala";
-//export const stored = localStorage.getItem('cc');
-//export const content = writable(stored)
+import { browser } from "$app/environment";
+
+import type { TImage } from '$lib/data/images';
 
 ////content.subscribe((value) => localStorage.content = value)
 
-export const selectedImages = writable<TImage[] | []>([]);
+const defaultValue: string = JSON.stringify([]);
+console.log();
+
+const stored = browser ? window.localStorage.getItem('selectedImages') ?? defaultValue : defaultValue;
+
+export const selectedImages = writable<TImage[] | []>(JSON.parse(stored));
 
 export const validation = writable<boolean>(false);
-//localStorage.getItem(selectedImages);
+
+
+
+selectedImages.subscribe(value =>{
+    if(browser){
+        window.localStorage.setItem('selectedImages', JSON.stringify(value));
+    }
+});

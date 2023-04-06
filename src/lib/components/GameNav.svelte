@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { selectedImages } from '../stores';
+	import { selectedImages } from '$src/stores';
 
 	const handleDelete = () => {
 		$selectedImages = [];

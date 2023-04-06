@@ -1,12 +1,9 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import { selectedImages } from '../stores';
-	import type { TImage } from './images';
+	import type { TImage } from '$data/images';
 
-	export let image: TImage;
 	export let onClick: (image: TImage) => void;
-
-	$: active = $selectedImages.includes(image);
+	export let active: boolean;
+	export let image: TImage;
 </script>
 
 <button

@@ -1,5 +1,6 @@
 <script>
-	import { selectedImages, validation } from '../stores';
+	import { selectedImages, validation } from '$src/stores';
+
 	$: images = $selectedImages.length;
 	$: validated = $validation;
 </script>
