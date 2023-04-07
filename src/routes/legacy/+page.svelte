@@ -26,8 +26,9 @@
 		</ul>
 		<br />
 		<p>
-			<span>Directeur de publication :</span> Marlène Dulaurans, responsable des études Métiers du
-			Multimédia et de l’Internet à l’IUT Bordeaux Montaigne.
+			<!-- TODO: placer le nom u directeur de publication -->
+			<span>Directeur de publication :</span> , responsable des études Métiers du Multimédia et de
+			l’Internet à l’IUT Bordeaux Montaigne.
 			<br /><br />
 			<span>Mentions légales</span>, d'après la Loi pour la confiance dans l'économie du numérique
 			(LCEN) de 2004.
@@ -135,11 +136,12 @@
 			<li>Mot de passe</li>
 		</ul>
 		<br />
+		<!-- TODO: placer le nom du destinataire -->
 		<p>
 			Les informations recueillies sur ce formulaire sont enregistrées dans un fichier informatisé
 			par IUT Bordeaux Montaigne, 1 rue Jacques Ellul 33080 Bordeaux Cedex France, +33 5 57 12 20
 			44, webmaster-iut@u-bordeaux-montaigne.fr pour le bon fonctionnement de votre compte sur le
-			site et seront communiquées au seul destinataire suivant : Marlène Dulaurans.
+			site et seront communiquées au seul destinataire suivant :
 			<br /><br />
 			Vous pouvez accéder aux données vous concernant, les rectifier, demander leur effacement ou exercer
 			votre droit à la limitation du traitement de vos données.
