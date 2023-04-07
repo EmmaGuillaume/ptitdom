@@ -26,7 +26,7 @@
 			des enfants atteints de TSA.
 		</p>
 		<div class="justify-center flex mt-16">
-			<img class="w-52 sm:w-auto" src="/images/logo.png" alt="" />
+			<img class="w-52 sm:w-auto" src="/images/mainlogo.png" alt="" />
 		</div>
 	</div>
 	<div class="">
