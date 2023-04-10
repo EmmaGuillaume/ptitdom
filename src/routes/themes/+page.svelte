@@ -3,6 +3,7 @@
 
 	import type { TThemes } from '$data/themes';
 	import ActionsBar from '$lib/components/ActionsBar.svelte';
+	import Button from '$lib/components/Button.svelte';
 
 	export let data: { themes: TThemes[] };
 
@@ -97,5 +98,13 @@
 		</div>
 	{/each}
 
-	<ActionsBar />
+	<ActionsBar classes="right-0 flex">
+		<Button
+			icon={{ src: '/images/icons/play.png', alt: '', classes: 'w-4/12 mx-auto' }}
+			href="/play"
+			variant={'subtle'}
+		>
+			<p class="text-2xl">Commencer le jeu !</p>
+		</Button>
+	</ActionsBar>
 </section>

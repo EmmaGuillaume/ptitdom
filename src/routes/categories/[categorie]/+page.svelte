@@ -38,5 +38,13 @@
 			<ImgButton {image} />
 		{/each}
 	</CardsGrid>
-	<ActionsBar />
+	<ActionsBar classes="right-0 flex">
+		<Button
+			icon={{ src: '/images/icons/play.png', alt: '', classes: 'w-4/12 mx-auto' }}
+			href="/play"
+			variant={'subtle'}
+		>
+			<p class="text-2xl">Commencer le jeu !</p>
+		</Button>
+	</ActionsBar>
 </section>

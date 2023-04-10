@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { selectedImages } from '$src/stores';
-	import { setSelectedImages } from '$utils/selected';
 
 	import BackButton from '$components/BackButton.svelte';
 	import GameNav from '$components/GameNav.svelte';
@@ -29,14 +28,14 @@
 	</p>
 	<CardsGrid>
 		{#each images as image}
-			<ImageButton {image} onClick={setSelectedImages} />
+			<ImageButton {image} />
 		{/each}
 	</CardsGrid>
 	{#if countImg == 0}
 		<p class="text-xl font-patrick mt-12 mb-36">Vous n'avez pas encore selectionné d'images :(</p>
 	{/if}
 
-	<GameNav disabled={countImg === 0} />
+	<GameNav disabled={countImg == 0} />
 </section>
 <img class="absolute bottom-0 left-0 -z-10" src="/images/stain/yellow-bottom-left.png" alt="" />
 <img class="absolute bottom-0 right-0 -z-10" src="/images/stain/orange-bottom-right.png" alt="" />

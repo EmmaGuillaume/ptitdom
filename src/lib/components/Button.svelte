@@ -34,14 +34,13 @@
 	classes = `py-4 px-8 text-center rounded-2xl border-0 font-mono text-xl ${classes} ${buttonVariants[variant]} ${iconClasses}`;
 
 	let Type: typeof InitLink | typeof InitButton = InitLink;
+
 	let attributes = {
 		href: href,
 		classes: classes
 	};
 
 	if (onClick) {
-		console.log('hi');
-
 		Type = InitButton;
 		attributes = {
 			onClick: onClick,
