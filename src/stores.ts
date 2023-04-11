@@ -6,7 +6,7 @@ import type { TImage } from '$lib/data/images';
 ////content.subscribe((value) => localStorage.content = value)
 
 const defaultValue: string = JSON.stringify([]);
-console.log();
+//console.log();
 
 const stored = browser ? window.localStorage.getItem('selectedImages') ?? defaultValue : defaultValue;
 
@@ -16,8 +16,8 @@ export const validation = writable<boolean>(false);
 
 
 
-selectedImages.subscribe(value =>{
-    if(browser){
+selectedImages.subscribe(value => {
+    if (browser) {
         window.localStorage.setItem('selectedImages', JSON.stringify(value));
     }
 });

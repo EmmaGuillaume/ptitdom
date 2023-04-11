@@ -12,9 +12,9 @@
 	export let onClick: (e: any) => void | undefined = undefined;
 
 	const buttonVariants = {
-		filled: 'bg-blue',
+		filled: 'bg-darkerblue',
 		outline: 'border-2 border-blue',
-		subtle: 'hover:bg-lightblue '
+		subtle: 'hover:bg-darkerblue '
 	};
 	const iconPos = {
 		left: 'flex-row',
@@ -31,7 +31,7 @@
 		iconClasses = `flex gap-4 items-center ${iconPos[icon.position]}`;
 	}
 
-	classes = `py-4 px-8 text-center rounded-2xl border-0 font-mono text-xl ${classes} ${buttonVariants[variant]} ${iconClasses}`;
+	classes = `py-4 px-9 text-center rounded-2xl border-0 font-mono text-xl ${classes} ${buttonVariants[variant]} ${iconClasses}`;
 
 	let Type: typeof InitLink | typeof InitButton = InitLink;
 
