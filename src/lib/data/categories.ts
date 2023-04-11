@@ -867,26 +867,6 @@ export const categories: TCategorie[] = [
     ]
   },
   {
-    name: "chaises",
-    images: [
-      {
-        src: '/images/chaise1.jpg',
-        alt: 'de chaise',
-        categorie: 'chaises'
-      },
-      {
-        src: '/images/chaise2.jpg',
-        alt: 'de chaise',
-        categorie: 'chaises'
-      },
-      {
-        src: '/images/chaise3.jpg',
-        alt: 'de chaise',
-        categorie: 'chaises'
-      }
-    ]
-  },
-  {
     name: "boulangerie",
     images: [
       {
@@ -1313,26 +1293,6 @@ export const categories: TCategorie[] = [
         src: '/images/data/vehicules/camions/camion3.jpg',
         alt: 'de camion',
         categorie: 'camions'
-      }
-    ]
-  },
-  {
-    name: "tables",
-    images: [
-      {
-        src: '/images/table1.jpg',
-        alt: 'de table',
-        categorie: 'tables'
-      },
-      {
-        src: '/images/table2.jpeg',
-        alt: 'de table',
-        categorie: 'tables'
-      },
-      {
-        src: '/images/table3.jpg',
-        alt: 'de table',
-        categorie: 'tables'
       }
     ]
   }

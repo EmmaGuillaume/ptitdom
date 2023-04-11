@@ -3,10 +3,8 @@ import { browser } from "$app/environment";
 
 import type { TImage } from '$lib/data/images';
 
-////content.subscribe((value) => localStorage.content = value)
 
 const defaultValue: string = JSON.stringify([]);
-console.log();
 
 const stored = browser ? window.localStorage.getItem('selectedImages') ?? defaultValue : defaultValue;
 
