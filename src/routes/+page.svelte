@@ -3,14 +3,14 @@
 </script>
 
 <section
-	class="container flex flex-col items-center lmd:justify-around xl:gap-2 w-[100vw] h-[100vh] lmd:flex-row"
+	class="container flex flex-col px-8 items-center lmd:justify-around xl:gap-2 w-[100vw] h-[100vh] lmd:flex-row"
 >
 	<img
 		src="/images/stain/blue-form-bottom-full-width-home.png"
 		class="absolute -z-30 bottom-0 w-screen"
 		alt="tâche de couleur"
 	/>
-	<div class="flex flex-col lmd:items-start lmd:justify-start relative">
+	<div class="relative flex flex-col lmd:items-start lmd:justify-start">
 		<h1
 			class=" text-primary mt-24 lmd:mt-5 decoration-black text-4xl font-mono font-bold text-center sm:mt-24 z-2"
 		>
@@ -18,7 +18,7 @@
 		</h1>
 
 		<div
-			class="absolute -z-10 bg-primary w-1.5 h-36 rounded-md sm:top-[15%] lmd:top-[4%] top-[19%] left-[-5%]"
+			class="absolute -z-10 bg-primary w-full left-0 h-1.5 rounded-md sm:top-[15%] sm:w-1.5 sm:h-36 sm:left-[-5%] lmd:top-[4%] top-[31%] lmd:left-[-5%] lmd:w-1.5 lmd:h-36"
 		/>
 		<p class=" text-primary text-start text-xl xs:w-[434px] mt-7 z-2">
 			Basée sur l’approche ABA, le jeu des images sert à faciliter l’apprentissage du vocabulaire
