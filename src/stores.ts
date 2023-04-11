@@ -14,8 +14,8 @@ export const validation = writable<boolean>(false);
 
 
 
-selectedImages.subscribe(value =>{
-    if(browser){
+selectedImages.subscribe(value => {
+    if (browser) {
         window.localStorage.setItem('selectedImages', JSON.stringify(value));
     }
 });
