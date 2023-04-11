@@ -5,11 +5,11 @@
 <section
 	class="container flex flex-col px-8 items-center lmd:justify-around xl:gap-2 w-[100vw] h-[100vh] lmd:flex-row"
 >
-	<img
+	<!-- <img
 		src="/images/stain/blue-form-bottom-full-width-home.png"
 		class="absolute -z-30 bottom-0 w-screen"
 		alt="tâche de couleur"
-	/>
+	/> -->
 	<div class="relative flex flex-col lmd:items-start lmd:justify-start">
 		<h1
 			class=" text-primary mt-24 lmd:mt-5 decoration-black text-4xl font-mono font-bold text-center sm:mt-24 z-2"

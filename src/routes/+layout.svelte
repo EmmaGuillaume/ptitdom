@@ -1,6 +1,7 @@
 <script>
 	import Burger from '$lib/components/Burger.svelte';
 	import '../app.css';
+	const lala = 0;
 </script>
 
 <svelte:head>

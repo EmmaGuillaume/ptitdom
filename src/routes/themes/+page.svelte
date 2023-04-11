@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Nav from '$components/Nav.svelte';
-
+	import MenuNavBar from '$lib/components/MenuNavBar.svelte';
 	import type { TThemes } from '$data/themes';
 	import ActionsBar from '$lib/components/ActionsBar.svelte';
 	import Button from '$lib/components/Button.svelte';
@@ -54,7 +54,8 @@
 	}); */
 </script>
 
-<section class="container py-28">
+<!-- <MenuNavBar /> -->
+<section class="container py-28 px-8 md:pl-16 md:pr-[30%]">
 	<img src="/images/stain/up-left-yellow-form-v2.png" alt="" class="absolute top-0 left-0 -z-10" />
 	<img
 		src="/images/stain/down-right-orange-form.png"
@@ -98,7 +99,7 @@
 		</div>
 	{/each}
 
-	<ActionsBar classes="right-0 flex">
+	<!-- <ActionsBar classes="right-0 flex">
 		<Button
 			icon={{ src: '/images/icons/play.png', alt: '', classes: 'w-4/12 mx-auto' }}
 			href="/play"
@@ -106,5 +107,5 @@
 		>
 			<p class="text-2xl">Commencer le jeu !</p>
 		</Button>
-	</ActionsBar>
+	</ActionsBar> -->
 </section>

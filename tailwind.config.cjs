@@ -9,6 +9,7 @@ module.exports = {
       'white': '#FFFFFF',
       'lightblue': '#C2E5FF',
       'darkerblue': '#9CD5FF',
+      'blueopacity': '#D8EFFF',
       // 'yellow': '#FFF172',
       // 'blue': '#74DAD5',
       // 'lightblue': '#74DAD522',

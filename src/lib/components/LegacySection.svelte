@@ -6,7 +6,7 @@
 {#if order === 1}
 	<h1 class="mt-10 sm:mb-10 mb-5">{title}</h1>
 {:else}
-	<h2 class="mt-10 sm:mb-10 mb-5">{title}</h2>
+	<h2 class="mt-10 sm:mb-10 mb-5 text-lg font-bold">{title}</h2>
 {/if}
 
 <div class="flex">

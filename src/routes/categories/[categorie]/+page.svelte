@@ -16,7 +16,7 @@
 	const { categorieData } = data as { categorieData: TCategorie };
 </script>
 
-<section class="container mt-28">
+<section class="container mt-16 px-8 md:px-16">
 	<BackButton href="/themes" />
 
 	<Nav />

@@ -15,12 +15,12 @@
 <button
 	on:click={() => handleClick(image)}
 	class={`w-full h-full border-8 border-gray relative rounded overflow-hidden ${
-		index ? 'border-blue' : ''
+		index ? 'border-darkerblue' : ''
 	} `}
 >
 	<div
 		class={`check rounded-full w-7 aspect-square absolute grid place-items-center border-2 right-2 top-2 ${
-			index ? 'bg-blue border-blue ' : 'border-gray'
+			index ? 'bg-blue border-darkerblue ' : 'border-secondary'
 		} `}
 	>
 		{#if index}

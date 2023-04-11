@@ -3,7 +3,7 @@
 	import LegacySection from '$lib/components/LegacySection.svelte';
 </script>
 
-<section class="container">
+<section class="container my-16 px-8 md:px-16">
 	<BackButton href="../" myclass=" mt-10" />
 
 	<LegacySection title="Mentions légales" order={1}>
@@ -48,7 +48,7 @@
 			<li>privacy@vercel.com</li>
 		</ul>
 	</LegacySection>
-	<LegacySection title="conception">
+	<LegacySection title="Conception">
 		<p>
 			<span>Création :</span> Le groupe d'étudiant MMI, Bild
 			<br /><br />
