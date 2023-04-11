@@ -70,10 +70,10 @@
 				Cliquez sur un thème pour sélectionner une/des image(s) !
 			</p>
 		</div>
-		<div class="flex gap-4 items-center mt-4 xl:mt-0">
+		<!-- <div class="flex gap-4 items-center mt-4 xl:mt-0">
 			<p class="text-4xl">Défile !</p>
 			<img src="/images/icons/swipe-arrow.png" alt="" class="w-12 xl:w-20" />
-		</div>
+		</div> -->
 	</div>
 
 	{#each themes as theme}
