@@ -4,7 +4,7 @@
 </script>
 
 <section
-	class="z-50 absolute right-0 h-screen w-32 py-8 bg-lightblue flex flex-col items-center justify-between rounded-l-3xl"
+	class="z-50 fixed right-0 h-screen w-32 py-8 bg-lightblue flex flex-col items-center justify-between rounded-l-3xl"
 >
 	<!-- <a href="/play">Commencer le jeu</a> -->
 	<div class="flex flex-col items-center gap-0">
