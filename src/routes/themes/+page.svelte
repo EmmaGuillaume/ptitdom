@@ -54,7 +54,7 @@
 	}); */
 </script>
 
-<!-- <MenuNavBar /> -->
+<MenuNavBar />
 <section class="container py-28 px-8 md:pl-16 md:pr-[30%]">
 	<img src="/images/stain/up-left-yellow-form-v2.png" alt="" class="absolute top-0 left-0 -z-10" />
 	<img
