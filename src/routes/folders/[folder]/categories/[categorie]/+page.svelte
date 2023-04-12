@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Nav from '$components/Nav.svelte';
 	import Ariane from '$components/Ariane.svelte';
 	import BackButton from '$components/BackButton.svelte';
 	import ImgButton from '$lib/components/ImgButton.svelte';
@@ -10,10 +9,12 @@
 	import CardsGrid from '$lib/components/CardsGrid.svelte';
 	import { page } from '$app/stores';
 	let folders = $page.params.folder;
+	import { selectedImages } from '$src/stores.js';
+	import { goto } from '$app/navigation';
 
 	export let data;
 
-	const { categorieData } = data as { categorieData: TCategorie };
+	const { categorieData, folder } = data as { categorieData: TCategorie; folder: string };
 </script>
 
 <section class="container mt-16 px-8 md:px-16">
