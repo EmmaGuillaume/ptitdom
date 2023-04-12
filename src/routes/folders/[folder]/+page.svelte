@@ -4,7 +4,6 @@
 	import BackButton from '$components/BackButton.svelte';
 	import ImageButton from '$lib/components/ImgButton.svelte';
 	import CardsGrid from '$lib/components/CardsGrid.svelte';
-	import Button from '$lib/components/Button.svelte';
 	import GameNav from '$components/GameNav.svelte';
 	import Ariane from '$lib/components/Ariane.svelte';
 	import { page } from '$app/stores';
@@ -12,8 +11,6 @@
 
 	export let data;
 	const { folder } = data;
-	import { page } from '$app/stores';
-	let folders = $page.params.folder;
 
 	const folderItem = $selectedImages.find((item) => item.folder == folder) as TStoredImage;
 

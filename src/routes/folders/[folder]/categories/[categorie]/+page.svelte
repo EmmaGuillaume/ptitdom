@@ -10,8 +10,6 @@
 	import { page } from '$app/stores';
 	let folders = $page.params.folder;
 
-	const folder = $page.params.folder;
-
 	export let data;
 
 	const { categorieData, folder } = data as { categorieData: TCategorie; folder: string };

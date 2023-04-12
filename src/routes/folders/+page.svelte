@@ -1,6 +1,14 @@
-<script>
+<script lang="ts">
+	import ButtonModal from '$lib/components/ButtonModal.svelte';
 	import CardsGrid from '$lib/components/CardsGrid.svelte';
+	import Modale from '$lib/components/Modale.svelte';
 	import { selectedImages } from '$src/stores';
+
+	let isActive: boolean = false;
+	const showModalHelp = () => {
+		isActive = true;
+		return isActive;
+	};
 </script>
 
 <section class="ml-[10%] mt-20">
@@ -20,9 +28,12 @@
 				</p>
 			</a>
 		{/each}
-		<a href=""
-			><img src="/images/addfolder.svg" alt="" />
-			<p class="decoration-black text-2xl font-patrick inline-block mt-9">Ajouter un dossier</p></a
-		>
+
+		<ButtonModal classes="w-fit" onClick={() => showModalHelp()}>
+			<img src="/images/addfolder.svg" alt="" />
+			<p class="decoration-black text-2xl font-patrick inline-block mt-9">Ajouter un dossier</p>
+		</ButtonModal>
 	</CardsGrid>
+
+	<Modale bind:isActive />
 </section>
