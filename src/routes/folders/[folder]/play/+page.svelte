@@ -1,11 +1,25 @@
 <script lang="ts">
-	import { selectedImages } from '$src/stores';
 	import { questions } from '$utils/questions';
 
 	import type { TImage } from '$lib/data/images';
 	import CardsGrid from '$lib/components/CardsGrid.svelte';
+	import { page } from '$app/stores';
+	import { selectedImages } from '$src/stores';
+	// export let data;
+	// const { folder } = data;
 
-	const images = $selectedImages;
+	const folder = $page.params.folder;
+
+	const folderItemIndex = $selectedImages.findIndex((item) => item.folder === folder);
+
+	const folderItem = $selectedImages[folderItemIndex];
+
+	let images;
+	if (folderItemIndex == -1) {
+		images = [];
+	} else {
+		images = folderItem.images;
+	}
 	$: question = '';
 
 	const handleClick = (images: TImage[]) => {

@@ -2,10 +2,10 @@
 	import { selectedImages, type TStoredImage } from '$src/stores';
 
 	import BackButton from '$components/BackButton.svelte';
-	import GameNav from '$components/GameNav.svelte';
 	import ImageButton from '$lib/components/ImgButton.svelte';
 	import CardsGrid from '$lib/components/CardsGrid.svelte';
 	import Button from '$lib/components/Button.svelte';
+	import GameNav from '$components/GameNav.svelte';
 
 	export let data;
 	const { folder } = data;
