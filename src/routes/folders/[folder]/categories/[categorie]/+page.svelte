@@ -9,8 +9,6 @@
 	import CardsGrid from '$lib/components/CardsGrid.svelte';
 	import { page } from '$app/stores';
 	let folders = $page.params.folder;
-	import { selectedImages } from '$src/stores.js';
-	import { goto } from '$app/navigation';
 
 	export let data;
 
