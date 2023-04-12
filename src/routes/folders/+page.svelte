@@ -3,6 +3,8 @@
 	import CardsGrid from '$lib/components/CardsGrid.svelte';
 	import Modale from '$lib/components/Modale.svelte';
 	import { selectedImages } from '$src/stores';
+	import H1 from '$lib/components/H1.svelte';
+	import H2 from '$lib/components/H2.svelte';
 
 	let isActive: boolean = false;
 	const showModalHelp = () => {
@@ -12,7 +14,7 @@
 </script>
 
 <section class="ml-[10%] mt-20">
-	<h2 class="decoration-black text-5xl font-patrick font-bold mt-6 mb-8">Mes dossiers</h2>
+	<H2>Mes dossiers</H2>
 	<div class="flex flex-row gap-4">
 		<img src="/images/icons/light.svg" alt="" />
 		<p class="decoration-black text-xl font-patrick inline-block">

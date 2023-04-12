@@ -8,6 +8,7 @@
 	import { page } from '$app/stores';
 	import BackButton from '$lib/components/BackButton.svelte';
 	import Ariane from '$lib/components/Ariane.svelte';
+	import Help from '$lib/components/Help.svelte';
 
 	const { themes } = data;
 
@@ -72,10 +73,7 @@
 	/>
 	<div class="flex flex-col xl:flex-row xl:items-center xl:justify-between xl:mt-0">
 		<div class="flex gap-4 items-center mt-4">
-			<img src="/images/icons/icon-light.png" class="w-5 h-8" alt="" />
-			<p class="decoration-black text-2xl font-patrick">
-				Cliquez sur un thème pour sélectionner une/des image(s) !
-			</p>
+			<Help>Cliquez sur un thème pour sélectionner une/des image(s) !</Help>
 		</div>
 		<!-- <div class="flex gap-4 items-center mt-4 xl:mt-0">
 			<p class="text-4xl">Défile !</p>
