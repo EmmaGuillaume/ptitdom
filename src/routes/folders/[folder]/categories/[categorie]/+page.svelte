@@ -16,7 +16,7 @@
 </script>
 
 <section class="container mt-16 px-8 md:px-16">
-	<BackButton href={`/folders/${$page.params.folder}/themes`} />
+	<BackButton href={`/folders/${$page.params.folder}/themes`}>Thématiques</BackButton>
 
 	<!-- <Nav /> -->
 

@@ -27,15 +27,20 @@
 				{ name: 'Mes images', src: '/my-images' }
 			]}
 		/> -->
-		<BackButton href="/themes" />
+		<BackButton href="/folders">Dossiers</BackButton>
 	</div>
 
 	<h2 class="decoration-black text-3xl font-patrick font-bold mt-6 mb-8">Les images choisies</h2>
 	<img src="/images/icons/light.svg" alt="" class="inline-block mr-4 mb-10" />
 	<p class="decoration-black text-xl font-patrick font-bold inline-block">
-		Cliquez sur une image pour la sélectionner !
+		Cliquez sur le bouton ‘+’ pour ajouter une/des image(s) !
 	</p>
 	<CardsGrid>
+		<a href={`/folders/${folder}/themes`}
+			><div
+				class="cross border-black border-8 border-inset rounded-xl w-full h-full aspect-square relative"
+			/></a
+		>
 		{#each images as image}
 			<ImageButton {image} />
 		{/each}
@@ -45,7 +50,22 @@
 	{/if}
 
 	<GameNav disabled={countImg == 0} />
-	<Button href={`/folders/${folder}/themes`} classes="mt-4 block w-fit">add images</Button>
 </section>
-<img class="absolute bottom-0 left-0 -z-10" src="/images/stain/yellow-bottom-left.png" alt="" />
-<img class="absolute bottom-0 right-0 -z-10" src="/images/stain/orange-bottom-right.png" alt="" />
+
+<style>
+	.cross::before,
+	.cross::after {
+		content: '';
+		width: 30%;
+		height: 4%;
+		border-radius: 30px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		background-color: black;
+		transform: translate(-50%, -50%);
+	}
+	.cross::after {
+		transform: translate(-50%, -50%) rotate(90deg);
+	}
+</style>

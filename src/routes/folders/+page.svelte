@@ -2,7 +2,7 @@
 	import CardsGrid from '$lib/components/CardsGrid.svelte';
 </script>
 
-<section class="m-[10%] mt-20">
+<section class="ml-[10%] mt-20">
 	<h2 class="decoration-black text-5xl font-patrick font-bold mt-6 mb-8">Mes dossiers</h2>
 	<div class="flex flex-row gap-4">
 		<img src="/images/icons/light.svg" alt="" />
