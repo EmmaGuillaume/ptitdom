@@ -8,6 +8,7 @@
 	import GameNav from '$components/GameNav.svelte';
 	import Ariane from '$lib/components/Ariane.svelte';
 	import { page } from '$app/stores';
+	import Help from '$lib/components/Help.svelte';
 	let folders = $page.params.folder;
 
 	export let data;
@@ -36,10 +37,7 @@
 	</div>
 	<div class="mt-5" />
 	<h2 class="decoration-black text-3xl font-patrick font-bold mt-6 mb-8">Les images choisies</h2>
-	<img src="/images/icons/light.svg" alt="" class="inline-block mr-4 mb-10" />
-	<p class="decoration-black text-xl font-patrick font-bold inline-block">
-		Cliquez sur le bouton ‘+’ pour ajouter une/des image(s) !
-	</p>
+	<Help>Cliquez sur le bouton ‘+’ pour ajouter une/des image(s) !</Help>
 	<CardsGrid>
 		<a href={`/folders/${folder}/themes`}
 			><div

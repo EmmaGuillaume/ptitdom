@@ -5,7 +5,7 @@
 </script>
 
 <section class="ml-[10%] mt-20">
-	<H2 title="Mes dossiers" />
+	<H2>Mes dossiers</H2>
 	<div class="flex flex-row gap-4">
 		<img src="/images/icons/light.svg" alt="" />
 		<p class="decoration-black text-xl font-patrick inline-block">
