@@ -7,6 +7,7 @@
 
 	export let data: { themes: TThemes[] };
 	import { page } from '$app/stores';
+	import BackButton from '$lib/components/BackButton.svelte';
 
 	const { themes } = data;
 	/*onMount(() => {
@@ -57,14 +58,10 @@
 
 <MenuNavBar />
 <section class="container py-28 px-8 md:pl-16 md:pr-24 xl:pr-48">
-	<img src="/images/stain/up-left-yellow-form-v2.png" alt="" class="absolute top-0 left-0 -z-10" />
-	<img
-		src="/images/stain/down-right-orange-form.png"
-		alt=""
-		class="absolute bottom-0 right-0 -z-10"
-	/>
+	<BackButton href="/folders/folder1">Mes Images</BackButton>
+
 	<!-- <Nav /> -->
-	<h1 class="decoration-black text-4xl font-patrick font-bold">Les thématiques</h1>
+	<h1 class="decoration-black text-4xl font-patrick font-bold mt-16">Les thématiques</h1>
 	<div class="flex flex-col xl:flex-row xl:items-center xl:justify-between xl:mt-0">
 		<div class="flex gap-4 items-center mt-4">
 			<img src="/images/icons/icon-light.png" class="w-5 h-8" alt="" />
