@@ -10,14 +10,20 @@
 	import { page } from '$app/stores';
 	let folders = $page.params.folder;
 
+	const folder = $page.params.folder;
+
 	export let data;
 
 	const { categorieData, folder } = data as { categorieData: TCategorie; folder: string };
 </script>
 
-<section class="container mt-16 px-8 md:px-16">
+<section class="container mt-16 mr-0 md:mr-36 px-8 md:px-16">
 	<BackButton href={`/folders/${$page.params.folder}/themes`}>Thématiques</BackButton>
-	<div class="mt-5">
+
+	<!-- <Nav /> -->
+
+	<h1 class="decoration-black text-5xl font-patrick mt-16">Ajouter des images</h1>
+	<div class="mt-4">
 		<Ariane
 			links={[
 				{ name: 'Mes dossiers', src: '/folders' },
@@ -42,7 +48,7 @@
 	<ActionsBar classes="right-0 flex">
 		<Button
 			icon={{ src: '/images/icons/play.svg', alt: '', classes: 'w-4/12 mx-auto' }}
-			href="/play"
+			href="/folders/{folder}/play"
 			variant={'subtle'}
 		>
 			<p class="text-2xl">Commencer le jeu !</p>

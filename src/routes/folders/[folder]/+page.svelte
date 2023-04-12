@@ -12,6 +12,8 @@
 
 	export let data;
 	const { folder } = data;
+	import { page } from '$app/stores';
+	let folders = $page.params.folder;
 
 	const folderItem = $selectedImages.find((item) => item.folder == folder) as TStoredImage;
 
@@ -24,7 +26,13 @@
 
 <section class="container min-h-screen">
 	<div class="mt-11">
-		<BackButton href="/folders">Dossiers</BackButton>
+		<!-- <Ariane
+			links={[
+				{ name: 'Bibliothèque', src: '/themes' },
+				{ name: 'Mes images', src: '/my-images' }
+			]}
+		/> -->
+		<BackButton href="${folders}/themes" />
 	</div>
 	<div class="mt-11">
 		<Ariane
@@ -40,12 +48,12 @@
 	<p class="decoration-black text-xl font-patrick font-bold inline-block">
 		Cliquez sur le bouton ‘+’ pour ajouter une/des image(s) !
 	</p>
-	<CardsGrid>
-		<a href={`/folders/${folder}/themes`}
-			><div
+	<CardsGrid classes="mr-0 md:mr-36">
+		<a href={`/folders/${folder}/themes`}>
+			<div
 				class="cross border-black border-8 border-inset rounded-xl w-full h-full aspect-square relative"
-			/></a
-		>
+			/>
+		</a>
 		{#each images as image}
 			<ImageButton {image} />
 		{/each}

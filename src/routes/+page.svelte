@@ -1,15 +1,26 @@
 <script lang="ts">
 	import Button from '$lib/components/Button.svelte';
+	import ButtonModal from '$lib/components/ButtonModal.svelte';
+	import Modale from '$lib/components/Modale.svelte';
+
+	export let isButtonHelp: boolean = false;
+	let isActive: boolean = false;
+	const showModalHelp = () => {
+		isActive = true;
+		return isActive;
+	};
 </script>
 
 <section
-	class="  container flex flex-col px-8 items-center lmd:justify-around xl:gap-2 w-[100vw] h-[100vh] lmd:flex-row"
+	class="  mr-0 md:mr-36 container flex flex-col px-8 items-center lmd:justify-around xl:gap-2 w-[100vw] h-[100vh] lmd:flex-row"
 >
 	<!-- <img
 		src="/images/stain/blue-form-bottom-full-width-home.png"
 		class="absolute -z-30 bottom-0 w-screen"
 		alt="tâche de couleur"
 	/> -->
+	<ButtonModal isButtonHelp={true} onClick={() => showModalHelp()}>Comment jouer ?</ButtonModal>
+	<Modale bind:isActive text={'aaaa'} title={'s'} />
 	<div class=" relative flex flex-col lmd:items-start lmd:justify-start">
 		<h1
 			class=" text-primary mt-24 lmd:mt-5 decoration-black text-4xl font-mono font-bold text-center sm:mt-24 z-2"

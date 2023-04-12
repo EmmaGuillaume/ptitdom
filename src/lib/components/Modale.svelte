@@ -1,7 +1,5 @@
 <script lang="ts">
 	export let isActive: boolean = false;
-	export let text =
-		'Êtes vous sûr.e de vouloir supprimer les images ?Cette action est irréversible.';
 
 	let src = '/icons/close.png';
 </script>
@@ -12,22 +10,24 @@
 
 {#if isActive}
 	<section on:click={() => (isActive = false)} on:keydown />
-	<div class={' bg-white relative pt-6 pb-16 px-6 gap-2 flex flex-col rounded-xl	w-[400px]'}>
-		<button on:click={() => (isActive = false)} class="absolute h-14 w-14 -right-7 -top-5">
-			<img src="/images/close-pop-up.png" alt="" class="w-8/12" />
-		</button>
-		{#if text}
-			<p class="font-button">{@html text}</p>
-			<div class="mt-9 flex gap-24">
-				<!-- TODO : pour oui : Action del IMG dans my-image -->
-				<button on:click={() => (isActive = false)} class="bg-red text-white py-1 px-6 rounded-xl"
-					>Oui</button
-				>
-				<button on:click={() => (isActive = false)} class="bg-grey text-white py-1 px-6 rounded-xl"
-					>Non</button
-				>
-			</div>
-		{/if}
+	<div class={' bg-white relative pt-6 pb-16 px-6 flex flex-col rounded-xl	w-[500px]'}>
+		<p class="m-0 text-lg">Êtes vous sûr.e de vouloir supprimer cette image du dossier 2 ?</p>
+		<p class="m-0 text-lg">Cette action est irréversible !</p>
+
+		<div class="mt-9 flex gap-24">
+			<button
+				on:click={() => (isActive = false)}
+				class="text-lg bg-red text-white py-1 px-4 rounded-lg"
+			>
+				<p>Oui</p>
+			</button>
+			<button
+				on:click={() => (isActive = false)}
+				class="text-lg bg-primary text-white py-1 px-4 rounded-lg"
+			>
+				<p>Non</p>
+			</button>
+		</div>
 	</div>
 {/if}
 

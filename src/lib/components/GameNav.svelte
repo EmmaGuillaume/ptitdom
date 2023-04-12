@@ -2,7 +2,8 @@
 	import { selectedImages } from '$src/stores';
 	import ActionsBar from './ActionsBar.svelte';
 	import Button from './Button.svelte';
-
+	import { page } from '$app/stores';
+	let folder = $page.params.folder;
 	const handleDelete = () => {
 		$selectedImages = [];
 	};

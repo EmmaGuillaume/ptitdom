@@ -1,6 +1,8 @@
 <script lang="ts">
 	import ActionsBar from '$lib/components/ActionsBar.svelte';
 	import Button from '$lib/components/Button.svelte';
+	import { page } from '$app/stores';
+	const folder = $page.params.folder;
 </script>
 
 <section
@@ -56,7 +58,7 @@
 			<Button
 				classes="!py-0 !px-0 !m-0"
 				icon={{ src: '/images/icons/play.svg', alt: '', classes: 'w-7 md:w-10' }}
-				href="/play"
+				href="/folders/{folder}/play"
 				variant={'hovernone'}
 			>
 				<p class="text-sm md:text-xl">Jouer!</p>
