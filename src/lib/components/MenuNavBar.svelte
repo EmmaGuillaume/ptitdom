@@ -33,11 +33,11 @@
 		<ActionsBar classes="flex w-fit !mb-0 !mx-0 !static !px-0 !py-2 !bg-lightblue !filter-none">
 			<Button
 				classes="!py-0 !px-0 !m-0"
-				icon={{ src: '/images/icons/folder.svg', alt: '', classes: 'w-7 md:w-10' }}
-				href="/themes"
+				icon={{ src: '/images/icons/picture.svg', alt: '', classes: 'w-7 md:w-10' }}
+				href="/my-images"
 				variant={'hovernone'}
 			>
-				<p class="text-sm md:text-xl">Mes dossiers</p>
+				<p class="text-sm md:text-xl">Mes images</p>
 			</Button>
 		</ActionsBar>
 		<ActionsBar classes="flex w-fit !mb-0 !mx-0 !static !px-0 !py-2 !bg-lightblue !filter-none">
