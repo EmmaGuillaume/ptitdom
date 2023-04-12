@@ -10,6 +10,8 @@
 	import CardsGrid from '$lib/components/CardsGrid.svelte';
 	import { page } from '$app/stores';
 
+	const folder = $page.params.folder;
+
 	export let data;
 
 	const { categorieData } = data as { categorieData: TCategorie };
@@ -40,7 +42,7 @@
 	<ActionsBar classes="right-0 flex">
 		<Button
 			icon={{ src: '/images/icons/play.svg', alt: '', classes: 'w-4/12 mx-auto' }}
-			href="/play"
+			href="/folders/{folder}/play"
 			variant={'subtle'}
 		>
 			<p class="text-2xl">Commencer le jeu !</p>

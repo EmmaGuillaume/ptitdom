@@ -9,6 +9,8 @@
 
 	export let data;
 	const { folder } = data;
+	import { page } from '$app/stores';
+	let folders = $page.params.folder;
 
 	const folderItem = $selectedImages.find((item) => item.folder == folder) as TStoredImage;
 
@@ -27,7 +29,7 @@
 				{ name: 'Mes images', src: '/my-images' }
 			]}
 		/> -->
-		<BackButton href="/themes" />
+		<BackButton href="${folders}/themes" />
 	</div>
 
 	<h2 class="decoration-black text-3xl font-patrick font-bold mt-6 mb-8">Les images choisies</h2>
