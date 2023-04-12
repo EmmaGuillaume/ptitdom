@@ -25,6 +25,8 @@
 	const handleClick = (images: TImage[]) => {
 		question = questions(images);
 	};
+
+	console.log();
 </script>
 
 <section class="py-16 relative h-full">
@@ -47,5 +49,12 @@
 		{/each}
 	</CardsGrid>
 
-	<a href="/my-images" class="text-grey font-patrick underline">Fin de partie</a>
+	{#if $selectedImages.length === folderItemIndex + 1}
+		<a href="/folders" class="text-grey font-patrick underline">Fin de partie</a>
+	{:else}
+		<a
+			href={`/folders/${$selectedImages[folderItemIndex + 1]}/play`}
+			class="text-grey font-patrick underline">Suivant</a
+		>
+	{/if}
 </section>
