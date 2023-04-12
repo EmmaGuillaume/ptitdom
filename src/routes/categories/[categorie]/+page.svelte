@@ -19,7 +19,7 @@
 <section class="container mt-16 px-8 md:px-16">
 	<BackButton href="/themes" />
 
-	<Nav />
+	<!-- <Nav /> -->
 
 	<h1 class="decoration-black text-5xl font-patrick mt-16">Ajouter des images</h1>
 	<div class="mt-4">

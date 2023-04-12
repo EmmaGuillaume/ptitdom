@@ -55,6 +55,6 @@
 </svelte:head>
 
 <main class="relative">
-	<Burger />
+	<!-- <Burger /> -->
 	<slot />
 </main>

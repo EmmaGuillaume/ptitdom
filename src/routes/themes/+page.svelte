@@ -62,7 +62,7 @@
 		alt=""
 		class="absolute bottom-0 right-0 -z-10"
 	/>
-	<Nav />
+	<!-- <Nav /> -->
 	<h1 class="decoration-black text-4xl font-patrick font-bold">Les thématiques</h1>
 	<div class="flex flex-col xl:flex-row xl:items-center xl:justify-between xl:mt-0">
 		<div class="flex gap-4 items-center mt-4">
