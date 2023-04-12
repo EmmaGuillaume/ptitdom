@@ -37,7 +37,7 @@
 	<p class="decoration-black text-xl font-patrick font-bold inline-block">
 		Cliquez sur une image pour la sélectionner !
 	</p>
-	<CardsGrid>
+	<CardsGrid classes="mr-0 md:mr-36">
 		{#each images as image}
 			<ImageButton {image} />
 		{/each}

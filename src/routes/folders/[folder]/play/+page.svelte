@@ -27,7 +27,7 @@
 	};
 </script>
 
-<section class="py-16 relative h-full">
+<section class="py-16 relative mr-0 md:mr-36 h-full">
 	<img
 		src="/images/stain/bottom-right-yellow-form-v2.png"
 		alt=""

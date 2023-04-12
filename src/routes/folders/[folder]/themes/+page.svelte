@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Nav from '$components/Nav.svelte';
-	import MenuNavBar from '$lib/components/MenuNavBar.svelte';
 	import type { TThemes } from '$data/themes';
 	import ActionsBar from '$lib/components/ActionsBar.svelte';
 	import Button from '$lib/components/Button.svelte';
@@ -55,7 +54,6 @@
 	}); */
 </script>
 
-<MenuNavBar />
 <section class="container py-28 px-8 md:pl-16 md:pr-24 xl:pr-48">
 	<img src="/images/stain/up-left-yellow-form-v2.png" alt="" class="absolute top-0 left-0 -z-10" />
 	<img

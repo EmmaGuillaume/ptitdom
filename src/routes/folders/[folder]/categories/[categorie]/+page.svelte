@@ -17,7 +17,7 @@
 	const { categorieData } = data as { categorieData: TCategorie };
 </script>
 
-<section class="container mt-16 px-8 md:px-16">
+<section class="container mt-16 mr-0 md:mr-36 px-8 md:px-16">
 	<BackButton href={`/folders/${$page.params.folder}/themes`} />
 
 	<!-- <Nav /> -->

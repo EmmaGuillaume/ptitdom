@@ -3,7 +3,7 @@
 </script>
 
 <section
-	class="  container flex flex-col px-8 items-center lmd:justify-around xl:gap-2 w-[100vw] h-[100vh] lmd:flex-row"
+	class="  mr-0 md:mr-36 container flex flex-col px-8 items-center lmd:justify-around xl:gap-2 w-[100vw] h-[100vh] lmd:flex-row"
 >
 	<!-- <img
 		src="/images/stain/blue-form-bottom-full-width-home.png"

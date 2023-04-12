@@ -1,6 +1,7 @@
 <script>
 	import Burger from '$lib/components/Burger.svelte';
 	import Button from '$lib/components/Button.svelte';
+	import MenuNavBar from '$lib/components/MenuNavBar.svelte';
 	import '../app.css';
 	const lala = 0;
 </script>
@@ -56,6 +57,7 @@
 </svelte:head>
 
 <main class="relative">
+	<MenuNavBar />
 	<!-- <Burger /> -->
 	<slot />
 </main>
