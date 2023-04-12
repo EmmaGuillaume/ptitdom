@@ -13,13 +13,13 @@
 </script>
 
 <!-- <ActionsBar classes="right-0">
-  <Button
-    icon={{ src: '/images/icons/play.png', alt: '', classes: 'w-4/12 mx-auto' }}
-    href="/play"
-    variant={'subtle'}
-  >
-    <p class="text-2xl">Commencer le jeu !</p>
-  </Button>
+	<Button
+		icon={{ src: '/images/icons/play.png', alt: '', classes: 'w-4/12 mx-auto' }}
+		href="/play"
+		variant={'subtle'}
+	>
+		<p class="text-2xl">Commencer le jeu !</p>
+	</Button>
 </ActionsBar> -->
 
 <ActionsBar classes="gamenav left-1/2 -translate-x-1/2">

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Nav from '$components/Nav.svelte';
-
+	import MenuNavBar from '$lib/components/MenuNavBar.svelte';
 	import type { TThemes } from '$data/themes';
 	import ActionsBar from '$lib/components/ActionsBar.svelte';
 	import Button from '$lib/components/Button.svelte';
@@ -55,14 +55,15 @@
 	}); */
 </script>
 
-<section class="container py-28">
+<MenuNavBar />
+<section class="container py-28 px-8 md:pl-16 md:pr-24 xl:pr-48">
 	<img src="/images/stain/up-left-yellow-form-v2.png" alt="" class="absolute top-0 left-0 -z-10" />
 	<img
 		src="/images/stain/down-right-orange-form.png"
 		alt=""
 		class="absolute bottom-0 right-0 -z-10"
 	/>
-	<Nav />
+	<!-- <Nav /> -->
 	<h1 class="decoration-black text-4xl font-patrick font-bold">Les thématiques</h1>
 	<div class="flex flex-col xl:flex-row xl:items-center xl:justify-between xl:mt-0">
 		<div class="flex gap-4 items-center mt-4">
@@ -78,7 +79,9 @@
 	</div>
 
 	{#each themes as theme}
-		<h2 class="decoration-black text-3xl font-patrick font-bold mt-12 mb-6">{theme.name}</h2>
+		<h2 class="decoration-black text-3xl font-patrick font-bold mt-12 mb-6">
+			{theme.name}
+		</h2>
 		<div class="slider-container overflow-hidden">
 			<div
 				class=" inner-slider z-0 grid gap-6 grid-cols-2 mx-2 mb-10 md:grid-cols-3 xl:grid-cols-8 xl:mx-0 xl:gap-8"
@@ -101,7 +104,7 @@
 		</div>
 	{/each}
 
-	<ActionsBar classes="right-0 flex">
+	<!-- <ActionsBar classes="right-0 flex">
 		<Button
 			icon={{
 				src: '/images/icons/play.png',
@@ -113,5 +116,5 @@
 		>
 			<p class="text-2xl">Commencer le jeu !</p>
 		</Button>
-	</ActionsBar>
+	</ActionsBar> -->
 </section>

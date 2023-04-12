@@ -9,24 +9,30 @@ module.exports = {
       'white': '#FFFFFF',
       'lightblue': '#C2E5FF',
       'darkerblue': '#9CD5FF',
-      // 'yellow': '#FFF172',
-      // 'blue': '#74DAD5',
+      'blueopacity': '#D8EFFF',
+      'yellow': '#FFF172',
+      'blue': '#74DAD5',
       // 'lightblue': '#74DAD522',
-      // 'purple': '#9D69D6',
-      // 'pink': '#FF7676',
-      // 'orange': '#FFA44F',
-      // 'green': "#76C89C",
-      // 'black-op': "rgba(0, 0, 0, 0.3)",
-      // 'red': "#A51810",
-      // 'grey': "#4A4A4A",
-      // 'light-grey': "#DDDDDD"
+      'purple': '#9D69D6',
+      'pink': '#FF7676',
+      'orange': '#FFA44F',
+      'green': "#76C89C",
+      'black-op': "rgba(0, 0, 0, 0.3)",
+      'red': "#A51810",
+      'grey': "#4A4A4A",
+      'light-grey': "#DDDDDD"
 
     },
     extend: {
       fontFamily: {
         'patrick': 'PatrickHand',
         'noto-regular': 'NotoSansRegular',
-        'noto-bold': 'NotoSansBold'
+        'noto-bold': 'NotoSansBold',
+        'comfortaa-regular': 'ComfortaaRegular',
+        'comfortaa-bold': 'ComfortaaBold',
+        'comfortaa-light': 'ComfortaaLight',
+        'comfortaa-medium': 'ComfortaaMedium',
+        'comfortaa-semibold': 'ComfortaaSemiBold',
       },
       screens: {
         'xs': '500px',

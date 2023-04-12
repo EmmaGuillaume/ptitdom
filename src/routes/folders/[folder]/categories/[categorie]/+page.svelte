@@ -15,10 +15,10 @@
 	const { categorieData } = data as { categorieData: TCategorie };
 </script>
 
-<section class="container mt-28">
+<section class="container mt-16 px-8 md:px-16">
 	<BackButton href={`/folders/${$page.params.folder}/themes`} />
 
-	<Nav />
+	<!-- <Nav /> -->
 
 	<h1 class="decoration-black text-5xl font-patrick mt-16">Ajouter des images</h1>
 	<div class="mt-4">
@@ -39,7 +39,7 @@
 	</CardsGrid>
 	<ActionsBar classes="right-0 flex">
 		<Button
-			icon={{ src: '/images/icons/play.png', alt: '', classes: 'w-4/12 mx-auto' }}
+			icon={{ src: '/images/icons/play.svg', alt: '', classes: 'w-4/12 mx-auto' }}
 			href="/play"
 			variant={'subtle'}
 		>

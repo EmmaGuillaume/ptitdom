@@ -13,8 +13,9 @@
 
 	const buttonVariants = {
 		filled: 'bg-darkerblue',
-		outline: 'border-2 border-blue',
-		subtle: 'hover:bg-darkerblue '
+		outline: 'border-2 border-darkerblue',
+		subtle: 'hover:bg-blueopacity ',
+		hovernone: 'bg-lightblue'
 	};
 	const iconPos = {
 		left: 'flex-row',
