@@ -6,6 +6,9 @@
 	import CardsGrid from '$lib/components/CardsGrid.svelte';
 	import Button from '$lib/components/Button.svelte';
 	import GameNav from '$components/GameNav.svelte';
+	import Ariane from '$lib/components/Ariane.svelte';
+	import { page } from '$app/stores';
+	let folders = $page.params.folder;
 
 	export let data;
 	const { folder } = data;
@@ -21,15 +24,17 @@
 
 <section class="container min-h-screen">
 	<div class="mt-11">
-		<!-- <Ariane
-			links={[
-				{ name: 'Bibliothèque', src: '/themes' },
-				{ name: 'Mes images', src: '/my-images' }
-			]}
-		/> -->
 		<BackButton href="/folders">Dossiers</BackButton>
 	</div>
-
+	<div class="mt-11">
+		<Ariane
+			links={[
+				{ name: 'Mes dossiers', src: '/folders' },
+				{ name: folders, src: '/folders/folder1' }
+			]}
+		/>
+	</div>
+	<div class="mt-5" />
 	<h2 class="decoration-black text-3xl font-patrick font-bold mt-6 mb-8">Les images choisies</h2>
 	<img src="/images/icons/light.svg" alt="" class="inline-block mr-4 mb-10" />
 	<p class="decoration-black text-xl font-patrick font-bold inline-block">
