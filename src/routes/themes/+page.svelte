@@ -78,7 +78,9 @@
 	</div>
 
 	{#each themes as theme}
-		<h2 class="decoration-black text-3xl font-patrick font-bold mt-12 mb-6">{theme.name}</h2>
+		<h2 class="decoration-black text-3xl font-patrick font-bold mt-12 mb-6">
+			{theme.name}
+		</h2>
 		<div class="slider-container overflow-hidden">
 			<div
 				class=" inner-slider z-0 grid gap-6 grid-cols-2 mx-2 mb-10 md:grid-cols-3 xl:grid-cols-8 xl:mx-0 xl:gap-8"

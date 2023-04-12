@@ -14,7 +14,7 @@
 			<Button
 				classes="!py-0 !px-0 !m-0"
 				icon={{ src: '/images/icons/home.svg', alt: '', classes: 'w-7 md:w-7 md:w-10' }}
-				href="/categorie"
+				href="/"
 				variant={'hovernone'}
 			>
 				<p class="text-sm md:text-xl">Accueil</p>
@@ -24,7 +24,7 @@
 			<Button
 				classes="!py-0 !px-0 !m-0"
 				icon={{ src: '/images/icons/search.svg', alt: '', classes: 'w-7 md:w-10' }}
-				href="/categorie"
+				href="/themes"
 				variant={'hovernone'}
 			>
 				<p class="text-sm md:text-xl">Rechercher</p>
@@ -34,7 +34,7 @@
 			<Button
 				classes="!py-0 !px-0 !m-0"
 				icon={{ src: '/images/icons/folder.svg', alt: '', classes: 'w-7 md:w-10' }}
-				href="/categorie"
+				href="/themes"
 				variant={'hovernone'}
 			>
 				<p class="text-sm md:text-xl">Mes dossiers</p>
@@ -44,7 +44,7 @@
 			<Button
 				classes="!py-0 !px-0 !m-0"
 				icon={{ src: '/images/icons/tuto.svg', alt: '', classes: 'w-7 md:w-10' }}
-				href="/categorie"
+				href="/modeEmploi"
 				variant={'hovernone'}
 			>
 				<p class="text-sm md:text-xl">Manuel</p>
@@ -56,7 +56,7 @@
 			<Button
 				classes="!py-0 !px-0 !m-0"
 				icon={{ src: '/images/icons/play.svg', alt: '', classes: 'w-7 md:w-10' }}
-				href="/categorie"
+				href="/play"
 				variant={'hovernone'}
 			>
 				<p class="text-sm md:text-xl">Jouer!</p>

@@ -27,7 +27,12 @@ module.exports = {
       fontFamily: {
         'patrick': 'PatrickHand',
         'noto-regular': 'NotoSansRegular',
-        'noto-bold': 'NotoSansBold'
+        'noto-bold': 'NotoSansBold',
+        'comfortaa-regular': 'ComfortaaRegular',
+        'comfortaa-bold': 'ComfortaaBold',
+        'comfortaa-light': 'ComfortaaLight',
+        'comfortaa-medium': 'ComfortaaMedium',
+        'comfortaa-semibold': 'ComfortaaSemiBold',
       },
       screens: {
         'xs': '500px',
