@@ -51,7 +51,7 @@
 			</Button>
 		{:else}
 			<Button
-				href={`/play`}
+				href={`/folders/${$selectedImages[0].folder}/play`}
 				classes="startgame text-blue p-4 text-center rounded-2xl font-patrick font-bold text-xl block mx-auto"
 				variant="subtle"
 			>
