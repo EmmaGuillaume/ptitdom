@@ -3,19 +3,21 @@ import { browser } from "$app/environment";
 
 import type { TImage } from '$lib/data/images';
 
+export type TStoredImage = {
+ folder: string
+ images: TImage[]
+}
 
 const defaultValue: string = JSON.stringify([]);
 
-const stored = browser ? window.localStorage.getItem('selectedImages') ?? defaultValue : defaultValue;
+const stored = browser ? window.localStorage.getItem('storedImages') ?? defaultValue : defaultValue;
 
-export const selectedImages = writable<TImage[] | []>(JSON.parse(stored));
+export const selectedImages = writable<TStoredImage[] | []>(JSON.parse(stored));
 
 export const validation = writable<boolean>(false);
 
-
-
 selectedImages.subscribe(value => {
     if (browser) {
-        window.localStorage.setItem('selectedImages', JSON.stringify(value));
+        window.localStorage.setItem('storedImages', JSON.stringify(value));
     }
 });

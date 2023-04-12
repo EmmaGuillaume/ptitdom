@@ -6,6 +6,7 @@
 	import Button from '$lib/components/Button.svelte';
 
 	export let data: { themes: TThemes[] };
+	import { page } from '$app/stores';
 
 	const { themes } = data;
 	/*onMount(() => {
@@ -83,7 +84,9 @@
 				class=" inner-slider z-0 grid gap-6 grid-cols-2 mx-2 mb-10 md:grid-cols-3 xl:grid-cols-8 xl:mx-0 xl:gap-8"
 			>
 				{#each theme.categoriesName as categorie}
-					<a href={`/categories/${categorie.name}`} class="w-full relative md:w-10/12 xl:w-full"
+					<a
+						href={`/folders/${$page.params.folder}/categories/${categorie.name}`}
+						class="w-full relative md:w-10/12 xl:w-full"
 						><img
 							src={categorie.cover}
 							alt={categorie.name}

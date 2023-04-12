@@ -1,7 +1,12 @@
 <script>
 	import { selectedImages, validation } from '$src/stores';
+	import { page } from '$app/stores';
 
-	$: images = $selectedImages.length;
+	const index = $selectedImages.findIndex((item) => item.folder === $page.params.folder);
+	console.log({ index }, $selectedImages[0]);
+
+	$: images = $selectedImages[index]?.images.length;
+
 	$: validated = $validation;
 </script>
 

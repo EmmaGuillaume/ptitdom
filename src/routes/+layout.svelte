@@ -1,5 +1,6 @@
 <script>
 	import Burger from '$lib/components/Burger.svelte';
+	import Button from '$lib/components/Button.svelte';
 	import '../app.css';
 </script>
 

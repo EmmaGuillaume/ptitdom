@@ -4,12 +4,11 @@
 	import BackButton from '$components/BackButton.svelte';
 	import ImgButton from '$lib/components/ImgButton.svelte';
 
-	import { setSelectedImages } from '$utils/selected';
-
 	import type { TCategorie } from '$data/categories';
 	import ActionsBar from '$lib/components/ActionsBar.svelte';
 	import Button from '$lib/components/Button.svelte';
 	import CardsGrid from '$lib/components/CardsGrid.svelte';
+	import { page } from '$app/stores';
 
 	export let data;
 
@@ -17,7 +16,7 @@
 </script>
 
 <section class="container mt-28">
-	<BackButton href="/themes" />
+	<BackButton href={`/folders/${$page.params.folder}/themes`} />
 
 	<Nav />
 
