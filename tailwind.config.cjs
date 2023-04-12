@@ -12,7 +12,7 @@ module.exports = {
       'blueopacity': '#D8EFFF',
       'yellow': '#FFF172',
       'blue': '#74DAD5',
-      'lightblue': '#74DAD522',
+      // 'lightblue': '#74DAD522',
       'purple': '#9D69D6',
       'pink': '#FF7676',
       'orange': '#FFA44F',
