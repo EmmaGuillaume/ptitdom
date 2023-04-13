@@ -17,7 +17,7 @@
 	}
 </script>
 
-<div class="bg-lightblue w-6/12 h-screen px-md">
+<div class="bg-lightblue w-full h-screen px-md">
 	<H2 classes="!m-0 pt-lg pb-md ">{folder}</H2>
 	<CardsGrid classes="sm:!grid-cols-2 xl:!grid-cols-2 gap-2">
 		{#each activeImages.images as image}

@@ -1,10 +1,6 @@
 <script>
-	import Burger from '$lib/components/Burger.svelte';
-	import Button from '$lib/components/Button.svelte';
-	import MenuNavBar from '$lib/components/MenuNavBar.svelte';
 	import SectionGrid from '$lib/components/SectionGrid.svelte';
 	import '../app.css';
-	const lala = 0;
 </script>
 
 <svelte:head>
