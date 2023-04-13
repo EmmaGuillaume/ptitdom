@@ -11,6 +11,13 @@ module.exports = {
       'blue': '#3A78A3',
     },
     extend: {
+      spacing: {
+        'xs': "0.5rem",
+        'sm': "0.75rem",
+        'md': "1.5rem",
+        'lg': "2.5rem",
+        'xl': "3rem"
+      },
       fontFamily: {
         'comfortaa-regular': 'ComfortaaRegular',
         'comfortaa-bold': 'ComfortaaBold',
