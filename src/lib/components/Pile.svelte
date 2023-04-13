@@ -17,17 +17,20 @@
 	}
 </script>
 
-<div class="bg-lightblue w-full h-screen px-md">
-	<H2 classes="!m-0 pt-lg pb-md ">{folder}</H2>
-	<CardsGrid classes="sm:!grid-cols-2 xl:!grid-cols-2 gap-2">
-		{#each activeImages.images as image}
-			<button on:click={() => handleClick(image)}>
-				<img
-					src={image.src}
-					alt=""
-					class="border-2 border-stroke aspect-square object-cover rounded-lg"
-				/>
-			</button>
-		{/each}
-	</CardsGrid>
+<div class="bg-lightblue w-full h-screen p-md flex flex-col justify-between">
+	<div class="">
+		<H2 classes="!m-0 pb-md ">{folder}</H2>
+		<CardsGrid classes="sm:!grid-cols-2 xl:!grid-cols-2 gap-2">
+			{#each activeImages.images as image}
+				<button on:click={() => handleClick(image)}>
+					<img
+						src={image.src}
+						alt=""
+						class="border-2 border-stroke aspect-square object-cover rounded-lg"
+					/>
+				</button>
+			{/each}
+		</CardsGrid>
+	</div>
+	<button>supprimer le paquet</button>
 </div>

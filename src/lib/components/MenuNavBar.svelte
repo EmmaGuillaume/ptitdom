@@ -3,9 +3,17 @@
 	import NavBarPile from './NavBarPile.svelte';
 
 	import ButtonModal from './ButtonModal.svelte';
+	import Modale from './Modale.svelte';
 
 	const handleClick = (folder: TStoredImage) => {
 		$activeSelectedImages = folder;
+	};
+
+	let isActive = false;
+	const handleModalClick = () => {
+		console.log('click');
+
+		isActive = true;
 	};
 </script>
 
@@ -26,7 +34,9 @@
 				<NavBarPile onClick={handleClick} {folder} />
 			{/each}
 		</div>
-		<ButtonModal classes="!text-start w-full px-0 my-1 px-md py-md text-p md:text-md"
+		<ButtonModal
+			onClick={handleModalClick}
+			classes="!text-start w-full px-0 my-1 px-md py-md text-p md:text-md"
 			>Nouveau paquet</ButtonModal
 		>
 	</div>
@@ -35,6 +45,7 @@
 			<img class="w-xl mx-auto" src="/images/icons/play.svg" alt="" srcset="" />
 		</a>
 	</div>
+	<Modale bind:isActive />
 </section>
 
 <style>

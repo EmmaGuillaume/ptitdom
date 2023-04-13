@@ -20,9 +20,15 @@ export function createFolder(name:string) {
   }
   const folders = get(selectedImages)
 
-  selectedImages.set([...folders, {folder: slugify(name), displayName: name, images: []}])
+  const slugified = slugify(name)
 
-  console.log();
+  const index = folders.findIndex((folder) => folder.folder === slugified )
+  if (index === -1) {
+
+    selectedImages.set([...folders, {folder: slugified, displayName: name, images: []}])
+  }
+
+
 
 
 
