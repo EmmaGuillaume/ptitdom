@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Nav from '$components/Nav.svelte';
+	import MenuNavBar from '$lib/components/MenuNavBar.svelte';
 	import type { TThemes } from '$data/themes';
 	import ActionsBar from '$lib/components/ActionsBar.svelte';
 	import Button from '$lib/components/Button.svelte';
@@ -59,13 +60,12 @@
 	}); */
 </script>
 
+<MenuNavBar />
 <section class="container py-28 px-8 md:pl-16 md:pr-24 xl:pr-48">
 	<BackButton href="/folders/folder1">Mes Images</BackButton>
 
 	<!-- <Nav /> -->
-	<h1 class="decoration-black text-4xl font-comforta-regular font-bold mt-16 mb-5">
-		Les thématiques
-	</h1>
+	<h1 class="decoration-black text-4xl font-patrick font-bold mt-16 mb-5">Les thématiques</h1>
 	<Ariane
 		links={[
 			{ name: 'Mes dossiers', src: '/folders' },
@@ -74,17 +74,15 @@
 		]}
 	/>
 	<div class="flex flex-col xl:flex-row xl:items-center xl:justify-between xl:mt-0">
-		<div class="flex gap-4 items-center mt-4">
-			<Help>Cliquez sur un thème pour sélectionner une/des image(s) !</Help>
-		</div>
-		<!-- <div class="flex gap-4 items-center mt-4 xl:mt-0">
+		<Help>Cliquez sur un thème pour sélectionner une/des image(s) !</Help>
+	</div>
+	<!-- <div class="flex gap-4 items-center mt-4 xl:mt-0">
 			<p class="text-4xl">Défile !</p>
 			<img src="/images/icons/swipe-arrow.png" alt="" class="w-12 xl:w-20" />
 		</div> -->
-	</div>
 
 	{#each themes as theme}
-		<h2 class="decoration-black text-3xl font-comforta-regular font-bold mt-12 mb-6">
+		<h2 class="decoration-black text-3xl font-patrick font-bold mt-12 mb-6">
 			{theme.name}
 		</h2>
 		<div class="slider-container overflow-hidden">
