@@ -1,10 +1,9 @@
 <script lang="ts">
 	import BackButton from '$lib/components/BackButton.svelte';
+	import Section from '$lib/components/Section.svelte';
 </script>
 
-<section
-	class="container mb-16 w-screen h-screen relative flex flex-col justify-start items-start py-8 md:py-16"
->
+<Section>
 	<img src="/images/stain/up-left-yellow-form.png" alt="" class="-z-10 absolute left-0 top-0" />
 	<img src="/images/stain/2.png" alt="" class="-z-10 absolute right-0 top-0" />
 	<img
@@ -67,4 +66,4 @@
 			reconnecterez sur le site. <br /> <br />
 		</p>
 	</div> -->
-</section>
+</Section>
