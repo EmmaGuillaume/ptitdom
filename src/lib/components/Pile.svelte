@@ -1,8 +1,9 @@
 <script lang="ts">
 	import type { TStoredImage } from '$src/stores';
-	import CardsGrid from './CardsGrid.svelte';
+
 	import H3 from './H3.svelte';
 	import Section from './Section.svelte';
+	import CardsGrid from './CardsGrid.svelte';
 
 	export let activeImages: TStoredImage;
 </script>
