@@ -25,6 +25,10 @@ module.exports = {
         'comfortaa-medium': 'ComfortaaMedium',
         'comfortaa-semibold': 'ComfortaaSemiBold',
       },
+      fontSize: {
+        'h1': "1.25rem",
+        'l-p': "0.9rem"
+      },
       screens: {
         'xs': '500px',
         'lmd': '900px'

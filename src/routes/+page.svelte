@@ -4,37 +4,34 @@
 </script>
 
 <section
-	class="  mr-0 md:mr-36 container flex flex-col px-8 items-center lmd:justify-around xl:gap-2 w-[100vw] h-[100vh] lmd:flex-row"
+	class="flex flex-col mx-xl md:flex-row justify-start gap-8 md:gap-16 mt-20 md:my-32 align-top"
 >
-	<!-- <img
-		src="/images/stain/blue-form-bottom-full-width-home.png"
-		class="absolute -z-30 bottom-0 w-screen"
-		alt="tâche de couleur"
-	/> -->
-
-	<div class=" relative flex flex-col lmd:items-start lmd:justify-start">
-		<H1>Bienvenue sur Bild</H1>
-
-		<div
-			class="absolute -z-10 bg-primary w-full left-0 h-1.5 rounded-md sm:top-[15%] sm:w-1.5 sm:h-36 sm:left-[-5%] lmd:top-[4%] top-[31%] lmd:left-[-5%] lmd:w-1.5 lmd:h-36"
-		/>
-		<p class=" text-primary text-start text-xl xs:w-[434px] mt-7 z-2">
-			Basée sur l’approche ABA, le jeu des images sert à faciliter l’apprentissage du vocabulaire
-			des enfants atteints de TSA.
-		</p>
-		<div class="justify-center flex mt-16">
-			<img class="w-52 sm:w-60" src="/images/mainlogo.png" alt="" />
-		</div>
+	<div class="object-cover h-fit flex justify-start md:justify-end w-fit md:w-4/12">
+		<img class="w-3/12" src="/images/mainlogo.png" alt="" />
 	</div>
-	<div class="">
-		<div class="justify-center items-center flex-col flex gap-7 mt-7">
-			<!--<button on:click={() => showModalHelp()}>POP UP TEST</button>
-			 <Button disabled={false} url="/tableau/{data.id}/explore">Explorer l'oeuvre !</Button>
-			<Modale bind:isActive />-->
 
-			<Button href="/dashboard" classes="w-full">Commencer le jeu</Button>
-			<!-- <Button href="/modeEmploi" classes="w-full">Mode d'emploi</Button> -->
-			<Button href="/legacy" classes="w-full">Mentions légales</Button>
+	<div class="flex flex-col gap-8 md:gap-16 w-full md:w-6/12">
+		<img src="/images/icons/bild-logo.svg" alt="" class="w-4/12" />
+		<p class=" text-primary text-start text-md z-2">
+			Bild est une application interactive destinée aux enfants ayant un Trouble du Spectre
+			Autistique (TSA). Elle propose de simplifier et numériser les jeux d’images utilisés dans
+			l’approche A.B.A. (Analyse Comportementale Appliquée) et ainsi permettre de faciliter
+			l’apprentissage du vocabulaire et de la communication aux enfants.
+		</p>
+		<Button href="/dashboard" classes="w-fit text-white font-comfortaa-regular"
+			>Commencer la sélection</Button
+		>
+		<div class="flex gap-8">
+			<Button
+				href="/legacy"
+				classes="!px-0 underline w-fit bg-white text-primary font-comfortaa-regular"
+				>Mode d'emploi</Button
+			>
+			<Button
+				href="/legacy"
+				classes="!px-0 underline w-fit text-primary bg-white font-comfortaa-regular"
+				>Mentions légales</Button
+			>
 		</div>
 	</div>
 </section>

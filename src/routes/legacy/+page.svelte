@@ -3,13 +3,13 @@
 	import LegacySection from '$lib/components/LegacySection.svelte';
 </script>
 
-<section class="container my-16 px-8 md:px-16">
-	<BackButton href="../" myclass=" mt-10" />
+<section class="text-l-p container my-md px-md md:px-xl">
+	<BackButton href="../" classes=" text-white text-l-p mt-md" />
 
 	<LegacySection title="Mentions légales" order={1}>
 		<p>
-			<span>Éditeur de contenu :</span> Le groupe d’étudiants MMI (Métiers du multimédia et de
-			l’internet) comprenant :
+			Éditeur de contenu : Le groupe d’étudiants MMI (Métiers du multimédia et de l’internet)
+			comprenant :
 			<br /><br />
 		</p>
 		<ul class="list-disc ml-10">
@@ -27,19 +27,18 @@
 		<br />
 		<p>
 			<!-- TODO: placer le nom u directeur de publication -->
-			<span>Directeur de publication :</span> , responsable des études Métiers du Multimédia et de
-			l’Internet à l’IUT Bordeaux Montaigne.
+			Directeur de publication : , responsable des études Métiers du Multimédia et de l’Internet à l’IUT
+			Bordeaux Montaigne.
 			<br /><br />
-			<span>Mentions légales</span>, d'après la Loi pour la confiance dans l'économie du numérique
-			(LCEN) de 2004.
+			Mentions légales, d'après la Loi pour la confiance dans l'économie du numérique (LCEN) de 2004.
 			<br /><br />
-			<span>Adresse :</span> 1 Rue Jacques Ellul, 33800 Bordeaux
+			Adresse : 1 Rue Jacques Ellul, 33800 Bordeaux
 			<br /><br />
-			<span>Adresse e-mail :</span> webmaster-iut@u-bordeaux-montaigne.fr
+			Adresse e-mail : webmaster-iut@u-bordeaux-montaigne.fr
 			<br /><br />
-			<span>Numéro de téléphone :</span> +33 5 57 12 20 44
+			Numéro de téléphone : +33 5 57 12 20 44
 			<br /><br />
-			<span>Hébergement :</span>
+			Hébergement :
 		</p>
 		<ul class="ml-10">
 			<li>Vercel Inc.</li>
@@ -50,17 +49,17 @@
 	</LegacySection>
 	<LegacySection title="Conception">
 		<p>
-			<span>Création :</span> Le groupe d'étudiant MMI, Bild
+			Création : Le groupe d'étudiant MMI, Bild
 			<br /><br />
-			<span>Crédits vidéographiques :</span> Bild, tous droits réservés aux étudiants.
+			Crédits vidéographiques : Bild, tous droits réservés aux étudiants.
 		</p>
 	</LegacySection>
 
 	<LegacySection title="Conditions Générales d’Utilisation (CGU)">
 		<p>
-			Constituant le <span>contrat</span> entre la société IUT Bordeaux Montaigne, l'Utilisateur,
-			l'accès au site doit être précédé de <span>l'acceptation de ces CGU.</span>
-			L'accès à cette plateforme signifie l'acceptation des présentes <span>CGU</span>.
+			Constituant le contrat entre la société IUT Bordeaux Montaigne, l'Utilisateur, l'accès au site
+			doit être précédé de l'acceptation de ces CGU. L'accès à cette plateforme signifie
+			l'acceptation des présentes CGU.
 			<br />
 			En utilisant notre site, l'utilisateur s'engage à respecter les Conditions Générales d'Utilisation
 			du site suivantes.
@@ -68,51 +67,44 @@
 	</LegacySection>
 	<LegacySection title="Propriété intellectuelle">
 		<p>
-			<span>Tous</span> les éléments présents sur le <span>site</span> (photographie, logo,
-			illustration) sont protégés par la loi en vigueur au titre de la
-			<span>propriété intellectuelle.</span>
-			En effet toute reproduction ou utilisation est strictement interdite sans accord au préalable de
-			l'éditeur.
+			Tous les éléments présents sur le site (photographie, logo, illustration) sont protégés par la
+			loi en vigueur au titre de la propriété intellectuelle. En effet toute reproduction ou
+			utilisation est strictement interdite sans accord au préalable de l'éditeur.
 			<br /><br />
-			La <span>reproduction</span> et la <span>copie</span> des contenus par l'Utilisateur
-			requièrent une <span>autorisation</span> préalable du site. Dans ce cas, toute utilisation à
-			des usages commerciaux ou à des fins publicitaires est <span>proscrite.</span>
+			La reproduction et la copie des contenus par l'Utilisateur requièrent une autorisation préalable
+			du site. Dans ce cas, toute utilisation à des usages commerciaux ou à des fins publicitaires est
+			proscrite.
 		</p>
 	</LegacySection>
 	<LegacySection title="Champ d’application / contenu utilisateur">
 		<p>
-			Description des services : Nous proposons des services <span>non-marchands,</span> car le site
-			internet est une <span>application web gratuite sans achats intégrés.</span>
+			Description des services : Nous proposons des services non-marchands, car le site internet est
+			une application web gratuite sans achats intégrés.
 			<br /><br />
-			L’application est <span>accessible gratuitement</span> depuis n'importe où par tout
-			utilisateur disposant d'un accès à Internet. <span>Tous</span> les frais nécessaires pour
-			l'accès aux services (matériel informatique, connexion Internet...) sont à la
-			<span>charge de l'utilisateur.</span>
+			L’application est accessible gratuitement depuis n'importe où par tout utilisateur disposant d'un
+			accès à Internet. Tous les frais nécessaires pour l'accès aux services (matériel informatique,
+			connexion Internet...) sont à la charge de l'utilisateur.
 			<br /><br />
-			Pour des raisons de maintenance ou autres, <span>l'accès au site</span> peut être
-			<span>interrompu</span>
-			ou <span>suspendu</span> par l'éditeur <span>sans préavis ni justification.</span>
+			Pour des raisons de maintenance ou autres, l'accès au site peut être interrompu ou suspendu par
+			l'éditeur sans préavis ni justification.
 		</p>
 	</LegacySection>
 	<LegacySection title="Responsabilité">
 		<p>
 			Bien que les informations sur le site soient réputées fiables, le site se réserve la faculté
-			d'une non-garantie de la <span>fiabilité</span> des sources.
+			d'une non-garantie de la fiabilité des sources.
 			<br /><br />
-			Les informations diffusées sur le site Bild sont présentées à titre purement
-			<span>informatif</span>
-			et <span>sont sans valeur contractuelle.</span> En dépit des mises à jour régulières, la
-			<span>responsabilité du site</span>
-			ne peut être engagée en cas de <span>modification</span> des dispositions
-			<span>administratives</span>
-			et <span>juridiques</span> apparaissant <span>après</span> la publication. Il en est de même
-			pour l'utilisation et l'interprétation des informations communiquées sur la plateforme.
+			Les informations diffusées sur le site Bild sont présentées à titre purement informatif et sont
+			sans valeur contractuelle. En dépit des mises à jour régulières, la responsabilité du site ne peut
+			être engagée en cas de modification des dispositions administratives et juridiques apparaissant
+			après la publication. Il en est de même pour l'utilisation et l'interprétation des informations
+			communiquées sur la plateforme.
 			<br /><br />
-			Le site décline toute <span>responsabilité</span> concernant les éventuels virus pouvant
-			infecter le matériel informatique de l'Utilisateur après l'utilisation ou l'accès à ce site.
+			Le site décline toute responsabilité concernant les éventuels virus pouvant infecter le matériel
+			informatique de l'Utilisateur après l'utilisation ou l'accès à ce site.
 			<br /><br />
-			Le site ne peut être tenu pour <span>responsable</span> en cas de force majeure ou du fait
-			imprévisible et insurmontable d'un tiers.
+			Le site ne peut être tenu pour responsable en cas de force majeure ou du fait imprévisible et insurmontable
+			d'un tiers.
 			<br /><br />
 			La garantie totale de la sécurité et la confidentialité des données n'est pas assurée par le site.
 			Cependant, le site s'engage à mettre en œuvre toutes les méthodes requises pour le faire au mieux.
@@ -165,3 +157,9 @@
 		</p>
 	</LegacySection>
 </section>
+
+<style>
+	span {
+		font-weight: 400;
+	}
+</style>

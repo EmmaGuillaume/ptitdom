@@ -1,10 +1,11 @@
 <script lang="ts">
 	import { removeSelectedImage } from '$utils/selected';
-	import { type TStoredImage, type TImage, activeSelectedImages } from '$src/stores';
+	import { type TStoredImage, activeSelectedImages } from '$src/stores';
 
 	import H3 from './H3.svelte';
-	import Section from './Section.svelte';
 	import CardsGrid from './CardsGrid.svelte';
+
+	import type { TImage } from '$lib/data/images';
 
 	export let activeImages: TStoredImage;
 
@@ -13,7 +14,7 @@
 	}
 </script>
 
-<Section classes="w-full">
+<div>
 	<H3>pile</H3>
 	<CardsGrid classes="xl:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 gap-2">
 		{#each activeImages.images as image}
@@ -22,4 +23,4 @@
 			</button>
 		{/each}
 	</CardsGrid>
-</Section>
+</div>
