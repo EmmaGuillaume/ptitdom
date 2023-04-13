@@ -26,8 +26,8 @@ module.exports = {
         'comfortaa-semibold': 'ComfortaaSemiBold',
       },
       fontSize: {
-        'h1': "2rem",
-        'l-p': "1rem"
+        'h1': "1.25rem",
+        'l-p': "0.9rem"
       },
       screens: {
         'xs': '500px',
