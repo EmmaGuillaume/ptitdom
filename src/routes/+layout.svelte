@@ -2,6 +2,7 @@
 	import Burger from '$lib/components/Burger.svelte';
 	import Button from '$lib/components/Button.svelte';
 	import MenuNavBar from '$lib/components/MenuNavBar.svelte';
+	import SectionGrid from '$lib/components/SectionGrid.svelte';
 	import '../app.css';
 	const lala = 0;
 </script>
@@ -55,7 +56,6 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#74DAD5" />
 	<meta name="theme-color" content="#74DAD5" />
 </svelte:head>
-
 <div class="relative flex">
 	<MenuNavBar />
 	<!-- <Burger /> -->

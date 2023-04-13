@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Section from './Section.svelte';
 	import { themes } from '$lib/data/themes';
 	import H1 from './H1.svelte';
 	import H2 from './H2.svelte';
@@ -12,7 +11,7 @@
 	}
 </script>
 
-<Section>
+<div class="">
 	<H1>Bibliothèque d’images</H1>
 
 	{#each themes as theme}
@@ -29,10 +28,10 @@
 			</div>
 		{/if}
 	{/each}
-</Section>
+</div>
 
 <style>
-button {
-	margin: 10px;
-}
+	button {
+		margin: 10px;
+	}
 </style>
