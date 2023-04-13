@@ -19,6 +19,7 @@ if (stored == '[]') {
 export const selectedImages = writable<TStoredImage[] | []>(JSON.parse(stored));
 
 export const validation = writable<boolean>(false);
+export const activeSelectedImages = writable<TStoredImage>({folder: 'folder1', displayName: "dossier n°1", images: []});
 
 selectedImages.subscribe(value => {
     if (browser) {

@@ -1,11 +1,12 @@
 
 import type {TImage } from '$lib/data/images';
 import { get } from 'svelte/store';
-import { selectedImages, validation, type TStoredImage} from '../../stores';
+import { selectedImages,activeSelectedImages, validation, type TStoredImage} from '../../stores';
 
 
 export function setSelectedImages(image: TImage, folder: string) {
     const selected = get(selectedImages)
+    const activeSelected = get(activeSelectedImages)
     const validate = get(validation)
     validation.set(false)
 
@@ -16,6 +17,7 @@ export function setSelectedImages(image: TImage, folder: string) {
       console.log('folder not existing', image, folder );
 
       validation.set(true)
+      activeSelectedImages.set({folder: folder, images: [image]})
       return (selectedImages.set([...selected, {folder: folder, images: [image]}]));
     }
 
@@ -29,6 +31,7 @@ export function setSelectedImages(image: TImage, folder: string) {
         const test = selected
         test[folderIndex].images = [...imagesInFolder, image]
 
+        activeSelectedImages.set(test[folderIndex])
 
         // Object not found, add it to the array
         validation.set(true)
@@ -44,6 +47,7 @@ export function setSelectedImages(image: TImage, folder: string) {
         ]
 
         console.log({test});
+        activeSelectedImages.set(test[folderIndex])
 
         return (selectedImages.set(test));
     }

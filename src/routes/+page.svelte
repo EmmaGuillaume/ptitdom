@@ -32,7 +32,7 @@
 			 <Button disabled={false} url="/tableau/{data.id}/explore">Explorer l'oeuvre !</Button>
 			<Modale bind:isActive />-->
 
-			<Button href="/folders" classes="w-full">Commencer le jeu</Button>
+			<Button href="/dashboard" classes="w-full">Commencer le jeu</Button>
 			<!-- <Button href="/modeEmploi" classes="w-full">Mode d'emploi</Button> -->
 			<Button href="/legacy" classes="w-full">Mentions légales</Button>
 		</div>
