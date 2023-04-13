@@ -11,5 +11,5 @@
 	class:border-red={folder === $activeSelectedImages}
 	on:click={() => onClick(folder)}
 >
-	<a href={`/dashboard?pile=${folder.folder}`} class="text-sm md:text-xl">{folder.displayName}</a>
+	<p class="text-sm md:text-xl">{folder.displayName}</p>
 </button>

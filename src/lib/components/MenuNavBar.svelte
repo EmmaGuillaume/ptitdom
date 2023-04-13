@@ -6,7 +6,6 @@
 
 	const handleClick = (folder: TStoredImage) => {
 		$activeSelectedImages = folder;
-		console.log('hello');
 	};
 </script>
 

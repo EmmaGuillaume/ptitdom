@@ -6,7 +6,6 @@ import { selectedImages,activeSelectedImages, validation, type TStoredImage} fro
 
 export function setSelectedImages(image: TImage, folder: string) {
     const selected = get(selectedImages)
-    const activeSelected = get(activeSelectedImages)
     const validate = get(validation)
     validation.set(false)
 

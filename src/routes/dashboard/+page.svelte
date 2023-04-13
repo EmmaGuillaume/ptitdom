@@ -7,14 +7,14 @@
 </script>
 
 <div class="flex">
-	<div class="sticky top-0 h-full">
+	<div class="sticky top-0 h-full w-2/5 pile">
 		<Pile bind:activeImages />
 	</div>
 	<Library />
 </div>
 
 <style>
-	.dashboardGrid {
-		grid-template-columns: 45% auto;
+	.pile {
+		min-width: 40%;
 	}
 </style>

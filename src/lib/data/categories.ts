@@ -10,11 +10,6 @@ export const categories: TCategorie[] = [
     name: "roller",
     images: [
       {
-        src: '/images/data/accessoires-sport/roller/roller1.jpg',
-        alt: 'de roller',
-        categorie: 'roller'
-      },
-      {
         src: '/images/data/accessoires-sport/roller/roller2.png',
         alt: 'de roller',
         categorie: 'roller'
@@ -128,17 +123,17 @@ export const categories: TCategorie[] = [
     name: "araignees",
     images: [
       {
-        src: '/images/data/animaux/araignees/araignée1.jpeg',
+        src: '/images/data/animaux/araignees/araignees1.jpeg',
         alt: "d'araignée",
         categorie: 'araignees'
       },
       {
-        src: '/images/data/animaux/araignees/araignée2.jpeg',
+        src: '/images/data/animaux/araignees/araignees2.jpeg',
         alt: "d'araignée",
         categorie: 'araignees'
       },
       {
-        src: '/images/data/animaux/araignees/araignée3.png',
+        src: '/images/data/animaux/araignees/araignees3.png',
         alt: "d'araignée",
         categorie: 'araignees'
       }
