@@ -3,21 +3,12 @@ module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     colors: {
-      'primary': '#262626',
-      'secondary': "#7F7F7F",
-      'tertiary': "#BFBFBF",
       'white': '#FFFFFF',
-      'lightblue': '#C2E5FF',
-      'darkerblue': '#3A78A3',
-      'blueopacity': '#D8EFFF',
-      'blue': '#74DAD5',
-
-
-
-
-      'grey': "#4A4A4A",
-      'light-grey': "#DDDDDD"
-
+      'black': '#000000',
+      "gray": '#3C3C3C',
+      "stroke": '#CCCCCC',
+      'lightblue': '#E4F3FF',
+      'blue': '#3A78A3',
     },
     extend: {
       fontFamily: {
