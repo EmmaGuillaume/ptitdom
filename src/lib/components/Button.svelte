@@ -33,7 +33,7 @@
 		iconClasses = `flex gap-4 items-center ${iconPos[icon.position]}`;
 	}
 
-	classes = `py-4 px-9 text-center rounded-2xl border-0 text-xl ${classes} ${buttonVariants[variant]} ${iconClasses}`;
+	classes = `py-4 px-9 text-center rounded-lg border-0 text-md ${classes} ${buttonVariants[variant]} ${iconClasses}`;
 
 	let Type: typeof InitLink | typeof InitButton = InitLink;
 
