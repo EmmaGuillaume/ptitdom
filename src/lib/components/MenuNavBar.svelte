@@ -1,6 +1,4 @@
 <script lang="ts">
-	import ActionsBar from '$lib/components/ActionsBar.svelte';
-	import Button from '$lib/components/Button.svelte';
 	import { activeSelectedImages, selectedImages, type TStoredImage } from '$src/stores';
 	import NavBarPile from './NavBarPile.svelte';
 

@@ -9,7 +9,7 @@
 
 <div class="flex">
 	<MenuNavBar />
-	<div class="sticky top-0 h-full w-2/5 pile">
+	<div class="sticky top-0 h-full pile">
 		<Pile bind:activeImages />
 	</div>
 	<Library />
@@ -17,6 +17,6 @@
 
 <style>
 	.pile {
-		min-width: 40%;
+		min-width: 24%;
 	}
 </style>

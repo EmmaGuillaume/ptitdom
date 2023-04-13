@@ -3,6 +3,6 @@
 	export let classes: string = '';
 </script>
 
-<section class={`grid gap-md grid-cols-${columns} xs:grid-cols-12 w-full h-screen ${classes}`}>
+<section class={`grid gap-md grid-cols-2 xs:grid-cols-${columns} w-full h-screen ${classes}`}>
 	<slot />
 </section>
