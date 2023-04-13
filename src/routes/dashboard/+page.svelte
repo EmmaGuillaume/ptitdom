@@ -8,7 +8,7 @@
 </script>
 
 <div class="flex flex-col md:flex-row">
-	<!-- <MenuNavBar /> -->
+	<MenuNavBar />
 	<div class="sticky z-50 top-0 h-fit pile md:h-full">
 		<Pile bind:activeImages />
 	</div>
