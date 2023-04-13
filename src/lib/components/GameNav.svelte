@@ -28,7 +28,7 @@
 		<Button
 			onClick={handleDelete}
 			disabled={countImg == 0}
-			classes="startgame text-red p-4 text-center rounded-2xl font-patrick font-bold text-xl block mx-auto"
+			classes="startgame text-red p-4 text-center rounded-2xl font-comforta-regular font-bold text-xl block mx-auto"
 			variant="subtle"
 		>
 			<div class="w-12 aspect-square bg-red rounded-full mx-auto grid place-items-center">
@@ -41,7 +41,7 @@
 		{#if countImg == 0}
 			<Button
 				href={``}
-				classes="startgame text-blue p-4 text-center rounded-2xl font-patrick font-bold text-xl block mx-auto"
+				classes="startgame text-blue p-4 text-center rounded-2xl font-comforta-regular font-bold text-xl block mx-auto"
 				variant="subtle"
 			>
 				<div class="w-12 aspect-square bg-blue rounded-full mx-auto grid place-items-center">
@@ -53,7 +53,7 @@
 		{:else}
 			<Button
 				href={`/folders/${$selectedImages[0].folder}/play`}
-				classes="startgame text-blue p-4 text-center rounded-2xl font-patrick font-bold text-xl block mx-auto"
+				classes="startgame text-blue p-4 text-center rounded-2xl font-comforta-regular font-bold text-xl block mx-auto"
 				variant="subtle"
 			>
 				<div class="w-12 aspect-square bg-blue rounded-full mx-auto grid place-items-center">

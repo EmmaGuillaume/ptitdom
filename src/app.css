@@ -2,28 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'NotoSansRegular';
-  font-style: normal;
-  src: url('/fonts/NotoSans-Regular.ttf');
-  /* IE9 Compat Modes */
-  src: local(), url('/fonts/NotoSans-Regular.ttf') format('truetype')
-}
-
-@font-face {
-  font-family: 'NotoSansBold';
-  font-style: bold;
-  src: url('/fonts/NotoSans-Bold.ttf');
-  /* IE9 Compat Modes */
-  src: local(), url('/fonts/NotoSans-Bold.ttf') format('truetype')
-}
 
 @font-face {
   font-family: 'ComfortaaRegular';
   font-style: normal;
-  src: url('/fonts/comfortaa-regular.ttf');
+  src: url('/fonts/Comfortaa-Regular.ttf');
   /* IE9 Compat Modes */
-  src: local(), url('/fonts/comfortaa-regular.ttf') format('truetype')
+  src: local(), url('/fonts/Comfortaa-Regular.ttf') format('truetype')
 }
 
 @font-face {
@@ -58,13 +43,6 @@
   src: local(), url('/fonts/Comfortaa-SemiBold.ttf') format('truetype')
 }
 
-@font-face {
-  font-family: 'PatrickHand';
-  font-style: normal;
-  src: url('/fonts/PatrickHand-Regular.ttf');
-  /* IE9 Compat Modes */
-  src: local(), url('/fonts/atrickHand-Regular.ttf') format('truetype')
-}
 
 @layer utilities {
   .container {
@@ -140,7 +118,7 @@ h1,
 h3,
 p,
 li {
-  font-family: 'PatrickHand';
+  font-family: 'ComfortaaRegular';
   font-weight: normal;
 }
 

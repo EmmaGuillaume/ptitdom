@@ -20,7 +20,7 @@
 
 	<!-- <Nav /> -->
 
-	<h1 class="decoration-black text-5xl font-patrick mt-16">Ajouter des images</h1>
+	<h1 class="decoration-black text-5xl font-comforta-regular mt-16">Ajouter des images</h1>
 	<div class="mt-4">
 		<Ariane
 			links={[
@@ -33,9 +33,9 @@
 	</div>
 	<!-- <Nav /> -->
 
-	<h1 class="decoration-black text-5xl font-patrick mt-16">Ajouter des images</h1>
+	<h1 class="decoration-black text-5xl font-comforta-regular mt-16">Ajouter des images</h1>
 	<div class="mt-4" />
-	<h2 class="decoration-black text-3xl font-patrick font-bold mt-14 capitalize mb-7">
+	<h2 class="decoration-black text-3xl font-comforta-regular font-bold mt-14 capitalize mb-7">
 		{categorieData.name}
 	</h2>
 	<CardsGrid classes="mb-10">

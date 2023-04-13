@@ -2,6 +2,6 @@
 	export let classes: string = '';
 </script>
 
-<p class={`decoration-black text-xl font-patrick inline-block ${classes}`}>
+<p class={`decoration-black text-xl font-comforta-regular inline-block ${classes}`}>
 	<slot />
 </p>

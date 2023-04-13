@@ -63,7 +63,9 @@
 	<BackButton href="/folders/folder1">Mes Images</BackButton>
 
 	<!-- <Nav /> -->
-	<h1 class="decoration-black text-4xl font-patrick font-bold mt-16 mb-5">Les thématiques</h1>
+	<h1 class="decoration-black text-4xl font-comforta-regular font-bold mt-16 mb-5">
+		Les thématiques
+	</h1>
 	<Ariane
 		links={[
 			{ name: 'Mes dossiers', src: '/folders' },
@@ -82,7 +84,7 @@
 	</div>
 
 	{#each themes as theme}
-		<h2 class="decoration-black text-3xl font-patrick font-bold mt-12 mb-6">
+		<h2 class="decoration-black text-3xl font-comforta-regular font-bold mt-12 mb-6">
 			{theme.name}
 		</h2>
 		<div class="slider-container overflow-hidden">

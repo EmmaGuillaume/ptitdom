@@ -26,8 +26,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'patrick': 'PatrickHand',
-        'noto-regular': 'NotoSansRegular',
-        'noto-bold': 'NotoSansBold',
+
+
         'comfortaa-regular': 'ComfortaaRegular',
         'comfortaa-bold': 'ComfortaaBold',
         'comfortaa-light': 'ComfortaaLight',

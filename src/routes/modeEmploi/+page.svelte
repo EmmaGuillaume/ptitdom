@@ -15,7 +15,7 @@
 	<div class="md:ml-12">
 		<BackButton href="../" />
 	</div>
-	<h1 class="mt-8 md:mt-12 decoration-black sm:text-3xl text-2xl font-patrick font-bold">
+	<h1 class="mt-8 md:mt-12 decoration-black sm:text-3xl text-2xl font-comforta-regular font-bold">
 		Mode d’emploi :
 	</h1>
 	<p class="my-8 text-xl">
@@ -44,7 +44,7 @@
 
 	<!-- <div class="relative md:ml-12">
 		<div class="w-full mb-4 h-2 md:absolute bg-pink md:w-2 md:h-full rounded-2xl" />
-		<p class="md:ml-8 text-base font-patrick sm: sm: sm:">
+		<p class="md:ml-8 text-base font-comforta-regular sm: sm: sm:">
 			Voici le mode d’emploi du site. <br />
 
 			Premièrement, sélectionnez les images que vous voulez pour pouvoir faire le jeu des images.

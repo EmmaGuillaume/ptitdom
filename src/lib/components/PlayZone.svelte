@@ -34,7 +34,7 @@
 	<img src="/images/stain/red-top-left.png" alt="" class="-z-10 absolute top-0 left-0" />
 	<h1 class="text-6xl mt-8">À toi de jouer !</h1>
 	<button
-		class="bg-blue p-4 rounded font-patrick mt-4"
+		class="bg-blue p-4 rounded font-comforta-regular mt-4"
 		on:click={() => handleClick(activeImages.images)}>Poser une question</button
 	>
 	<p class="text-xl w-full text-center">{question}</p>
@@ -47,11 +47,11 @@
 	</CardsGrid>
 
 	<!-- {#if $selectedImages.length === folderItemIndex + 1}
-		<a href="/folders" class="text-grey font-patrick underline">Fin de partie</a>
+		<a href="/folders" class="text-grey font-comforta-regular underline">Fin de partie</a>
 	{:else}
 		<a
 			href={`/folders/${$selectedImages[folderItemIndex + 1]}/play`}
-			class="text-grey font-patrick underline">Suivant</a
+			class="text-grey font-comforta-regular underline">Suivant</a
 		>
 	{/if} -->
 </section>

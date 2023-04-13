@@ -17,7 +17,7 @@
 	<H2>Mes dossiers</H2>
 	<div class="flex flex-row gap-4">
 		<img src="/images/icons/light.svg" alt="" />
-		<p class="decoration-black text-xl font-patrick inline-block">
+		<p class="decoration-black text-xl font-comforta-regular inline-block">
 			Cliquez sur un dossier pour l’ouvrir et y ajouter des images !
 		</p>
 	</div>
@@ -25,7 +25,7 @@
 		{#each $selectedImages as folder}
 			<a href={`/folders/${folder.folder}`}>
 				<img src="/images/folder.svg" alt="" />
-				<p class="decoration-black text-2xl font-patrick inline-block text-center mt-9">
+				<p class="decoration-black text-2xl font-comforta-regular inline-block text-center mt-9">
 					Mon {folder.displayName}
 				</p>
 			</a>
@@ -33,7 +33,9 @@
 
 		<ButtonModal classes="w-fit" onClick={() => showModalHelp()}>
 			<img src="/images/addfolder.svg" alt="" />
-			<p class="decoration-black text-2xl font-patrick inline-block mt-9">Ajouter un dossier</p>
+			<p class="decoration-black text-2xl font-comforta-regular inline-block mt-9">
+				Ajouter un dossier
+			</p>
 		</ButtonModal>
 	</CardsGrid>
 

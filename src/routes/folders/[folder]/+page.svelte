@@ -41,7 +41,9 @@
 		/>
 	</div>
 	<div class="mt-5" />
-	<h2 class="decoration-black text-3xl font-patrick font-bold mt-6 mb-8">Les images choisies</h2>
+	<h2 class="decoration-black text-3xl font-comforta-regular font-bold mt-6 mb-8">
+		Les images choisies
+	</h2>
 	<Help>Cliquez sur le bouton ‘+’ pour ajouter une/des image(s) !</Help>
 	<CardsGrid>
 		<a href={`/folders/${folder}/themes`}
@@ -54,7 +56,9 @@
 		{/each}
 	</CardsGrid>
 	{#if countImg == 0}
-		<p class="text-xl font-patrick mt-12 mb-36">Vous n'avez pas encore selectionné d'images :(</p>
+		<p class="text-xl font-comforta-regular mt-12 mb-36">
+			Vous n'avez pas encore selectionné d'images :(
+		</p>
 	{/if}
 
 	<GameNav disabled={countImg == 0} />

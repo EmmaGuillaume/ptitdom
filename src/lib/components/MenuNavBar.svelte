@@ -4,7 +4,6 @@
 	import { activeSelectedImages, selectedImages, type TStoredImage } from '$src/stores';
 	import NavBarPile from './NavBarPile.svelte';
 	import { page } from '$app/stores';
-	import { fix_position } from 'svelte/internal';
 	import ButtonModal from './ButtonModal.svelte';
 	const folder = $page.params.folder;
 
@@ -15,7 +14,7 @@
 
 <!--  -->
 <section
-	class="z-50 fixed top-0 left-0 h-screen w-52 bg-white flex flex-col items-start justify-between"
+	class="z-50 sticky top-0 left-0 h-screen w-52 bg-white flex flex-col items-start justify-between"
 >
 	<div class="w-full">
 		<div class="px-8 mt-8 md:items-start w-full">
@@ -26,14 +25,12 @@
 		<div class="mt-4 flex flex-row justify-bottom gap-4 md:flex-col md:items-start md:gap-0">
 			<h2 class="text-2xl mb-2 text-left px-8">Paquets</h2>
 			{#each $selectedImages as folder}
-				{console.log(folder === $activeSelectedImages)}
-
 				<NavBarPile onClick={handleClick} {folder} />
-				<ButtonModal classes="!text-start w-full px-0 my-1 px-8 py-4 bg-white text-sm md:text-md"
-					>+ Ajouter un paquet</ButtonModal
-				>
 			{/each}
 		</div>
+		<ButtonModal classes="!text-start w-full px-0 my-1 px-8 py-4 bg-white text-sm md:text-md"
+			>+ Ajouter un paquet</ButtonModal
+		>
 	</div>
 	<div class="px-8 mb-8">
 		<ActionsBar classes="flex w-fit !mb-0 !mx-0 !static !px-0 !py-2 !bg-white !filter-none">
