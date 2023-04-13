@@ -3,15 +3,17 @@
 
 	export let onClick: (folder: TStoredImage) => void;
 	export let folder: TStoredImage;
-	export let active: boolean = false;
+	//export let active: boolean = false;
+
+	$: active = $activeSelectedImages.folder === folder.folder;
 </script>
 
 <button
-	class={` text-start w-full px-8 my-1 py-4 bg-darkerblue rounded-none border-2 !m-0 ${
-		active ? 'bg-lightblue' : 'border-lightblue'
+	class={`text-start w-full px-md my-sm py-sm rounded-none !m-0 ${
+		active ? 'bg-lightblue text-black' : 'bg-transparent'
 	}`}
 	class:border-red={folder === $activeSelectedImages}
 	on:click={() => onClick(folder)}
 >
-	<p class="text-sm md:text-xl">{folder.displayName}</p>
+	<p class="text-sm md:text-p">{folder.displayName}</p>
 </button>

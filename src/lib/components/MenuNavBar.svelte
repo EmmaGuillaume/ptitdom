@@ -3,9 +3,8 @@
 	import Button from '$lib/components/Button.svelte';
 	import { activeSelectedImages, selectedImages, type TStoredImage } from '$src/stores';
 	import NavBarPile from './NavBarPile.svelte';
-	import { page } from '$app/stores';
+
 	import ButtonModal from './ButtonModal.svelte';
-	const folder = $page.params.folder;
 
 	const handleClick = (folder: TStoredImage) => {
 		$activeSelectedImages = folder;
@@ -14,91 +13,31 @@
 
 <!--  -->
 <section
-	class="z-50 sticky top-0 left-0 h-screen w-52 bg-white flex flex-col items-start justify-between"
+	class="z-50 sticky top-0 left-0 h-screen w-60 min-w-[15rem] text-white bg-blue flex flex-col items-start justify-between"
 >
 	<div class="w-full">
-		<div class="px-8 mt-8 md:items-start w-full">
-			<a href="/">
-				<img src="images/mainlogo.png" alt="" class="w-6/12" />
-				<p class="text-2xl mb-2 text-left">build</p>
-			</a>
-		</div>
+		<a href="/">
+			<div class="px-md mt-md w-full flex items-center gap-sm">
+				<img src="images/mainlogo.png" alt="" class="w-xl" />
+				<p class="text-4xl text-left">build</p>
+			</div>
+		</a>
 		<!-- <a href="/play">Commencer le jeu</a> -->
-		<div class="mt-4 flex flex-row justify-bottom gap-4 md:flex-col md:items-start md:gap-0">
-			<h2 class="text-2xl mb-2 text-left px-8">Paquets</h2>
+		<div class="mt-28 flex flex-row justify-bottom gap-4 md:flex-col md:items-start md:gap-0">
 			{#each $selectedImages as folder}
 				<NavBarPile onClick={handleClick} {folder} />
 			{/each}
 		</div>
-		<ButtonModal classes="!text-start w-full px-0 my-1 px-8 py-4 bg-white text-sm md:text-md"
-			>+ Ajouter un paquet</ButtonModal
+		<ButtonModal classes="!text-start w-full px-0 my-1 px-md py-md text-p md:text-md"
+			>Nouveau paquet</ButtonModal
 		>
 	</div>
-	<div class="px-8 mb-8">
-		<ActionsBar classes="flex w-fit !mb-0 !mx-0 !static !px-0 !py-2 !bg-white !filter-none">
-			<Button
-				classes="!w-fit !py-0 px-0 bg-white"
-				icon={{
-					src: '/images/icons/play.svg',
-					alt: '',
-					classes: 'w-6/12 mx-auto',
-					position: 'bottom'
-				}}
-				href="/folders/{folder}/play"
-			>
-				Jouer</Button
-			></ActionsBar
-		>
+	<div class="p-md w-full">
+		<a class="rounded-full mx-auto grid place-items-center" href="/play">
+			<img class="w-xl mx-auto" src="/images/icons/play.svg" alt="" srcset="" />
+		</a>
 	</div>
-
-	<!-- <div class="flex flex-row justify-bottom">
-        <ActionsBar classes="flex w-fit !mb-0 !mx-0 !static !px-0 !py-2 !bg-lightblue !filter-none">
-            <Button
-                classes="!py-0 !px-0 !m-0"
-                icon={{ src: '/images/icons/play.svg', alt: '', classes: 'w-7 md:w-10' }}
-                href="/play"
-                variant={'hovernone'}
-            >
-                <p class="text-sm md:text-xl">Jouer!</p>
-            </Button>
-        </ActionsBar>
-    </div> -->
 </section>
 
-<!--  -->
-
-<!-- <section
-    class="z-50 fixed top-0 left-0 h-screen w-48 bg-lightblue flex flex-col items-start justify-between"
->
-     <a href="/play">Commencer le jeu</a>
-    <div class="w-full">
-        <div class="px-8 mt-8">
-            <img src="images/mainlogo.png" alt="" class="px-9" />
-        </div>
-        <div>
-            <div>
-                <Button
-                    classes="!w-full !rounded-none border-2 border-darkerblue text-start active:border-r-blueopacity "
-                    href=""
-                    icon={{
-                        src: '/images/icons/plus.svg',
-                        alt: '',
-                        classes: 'w-2/12 mx-auto',
-                        position: 'left'
-                    }}
-                    variant={'subtle'}
-                >
-                    <p class="m-0 p-0 text-sm">Ajouter un paquet</p>
-                </Button>
-            </div>
-        </div>
-    </div>
-</section> -->
-
 <style>
-	@media screen and (max-width: 900px) {
-		section {
-			display: none;
-		}
-	}
 </style>
