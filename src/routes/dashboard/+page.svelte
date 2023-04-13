@@ -7,9 +7,9 @@
 	$: activeImages = $activeSelectedImages;
 </script>
 
-<div class="flex">
-	<MenuNavBar />
-	<div class="sticky top-0 h-full pile">
+<div class="flex flex-col md:flex-row">
+	<!-- <MenuNavBar /> -->
+	<div class="sticky z-50 top-0 h-fit pile md:h-full">
 		<Pile bind:activeImages />
 	</div>
 	<Library />
@@ -18,5 +18,11 @@
 <style>
 	.pile {
 		min-width: 24%;
+	}
+	@media screen and (max-width: 500px) {
+		.pile {
+			min-width: 100%;
+			max-width: 100%;
+		}
 	}
 </style>

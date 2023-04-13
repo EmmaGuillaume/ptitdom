@@ -17,9 +17,20 @@
 	}
 </script>
 
-<div class="bg-lightblue w-full h-screen px-md">
-	<H2 classes="!m-0 pt-lg pb-md ">{folder}</H2>
-	<CardsGrid classes="sm:!grid-cols-2 xl:!grid-cols-2 gap-2">
+<div class="relative md:static w-full bg-lightblue h-fit md:h-screen p-md">
+	<div class="absolute left-0 top-0 p-md md:hidden">
+		<a class="rounded-full mx-auto grid place-items-center" href="/play">
+			<img class="w-xl mx-auto" src="/images/icons/burger.svg" alt="" srcset="" />
+		</a>
+	</div>
+	<div class="absolute right-0 top-0 p-md md:hidden">
+		<a class="rounded-full mx-auto grid place-items-center" href="/play">
+			<img class="w-xl mx-auto" src="/images/icons/play-blue.svg" alt="" srcset="" />
+		</a>
+	</div>
+	<H2 classes="!m-0 pt-sm px-2xl md:pt-lg pb-md md:pl-0">{folder}</H2>
+	<p class="text-l-p mb-md">Cliquez pour enlever une image du paquet</p>
+	<CardsGrid classes="gap-2 !grid-cols-5 md:!grid-cols-2">
 		{#each activeImages.images as image}
 			<button on:click={() => handleClick(image)}>
 				<img
