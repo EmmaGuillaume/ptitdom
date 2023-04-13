@@ -1,8 +1,11 @@
 <script lang="ts">
-	import { removeSelectedImage } from '$utils/selected';
-	import { type TStoredImage, activeSelectedImages } from '$src/stores';
+	import { activeSelectedImages, type TStoredImage } from '$src/stores';
 
-	import H3 from './H3.svelte';
+	export let onClick: (folder: TStoredImage) => void;
+	export let folder: TStoredImage;
+	import { removeSelectedImage } from '$utils/selected';
+
+	import H2 from './H2.svelte';
 	import CardsGrid from './CardsGrid.svelte';
 
 	import type { TImage } from '$lib/data/images';
@@ -14,12 +17,16 @@
 	}
 </script>
 
-<div>
-	<H3>pile</H3>
-	<CardsGrid classes="xl:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 gap-2">
+<div class="bg-lightblue w-6/12 h-screen px-md">
+	<H2 classes="!m-0 pt-lg pb-md ">{folder}</H2>
+	<CardsGrid classes="sm:!grid-cols-2 xl:!grid-cols-2 gap-2">
 		{#each activeImages.images as image}
 			<button on:click={() => handleClick(image)}>
-				<img src={image.src} alt="" class="aspect-square object-cover rounded-sm" />
+				<img
+					src={image.src}
+					alt=""
+					class="border-2 border-stroke aspect-square object-cover rounded-lg"
+				/>
 			</button>
 		{/each}
 	</CardsGrid>
