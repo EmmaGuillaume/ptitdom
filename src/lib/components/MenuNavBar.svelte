@@ -18,8 +18,10 @@
 >
 	<div class="w-full">
 		<div class="px-8 mt-8 md:items-start w-full">
-			<h2 class="text-2xl mb-2 text-left">Accueil</h2>
-			<img src="images/mainlogo.png" alt="" class="w-6/12" />
+			<a href="/">
+				<img src="images/mainlogo.png" alt="" class="w-6/12" />
+				<p class="text-2xl mb-2 text-left">build</p>
+			</a>
 		</div>
 		<!-- <a href="/play">Commencer le jeu</a> -->
 		<div class="mt-4 flex flex-row justify-bottom gap-4 md:flex-col md:items-start md:gap-0">
