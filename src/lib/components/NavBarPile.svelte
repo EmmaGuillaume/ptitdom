@@ -7,7 +7,9 @@
 </script>
 
 <button
-	class={`w-full px-0 rounded-md border-2 !m-0 ${active ? 'border-red' : 'border-primary'}`}
+	class={` text-start w-full px-8 my-1 py-4 bg-darkerblue rounded-none border-2 !m-0 ${
+		active ? 'bg-lightblue' : 'border-lightblue'
+	}`}
 	class:border-red={folder === $activeSelectedImages}
 	on:click={() => onClick(folder)}
 >

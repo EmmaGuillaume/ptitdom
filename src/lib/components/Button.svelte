@@ -20,7 +20,8 @@
 	const iconPos = {
 		left: 'flex-row',
 		top: 'flex-col',
-		right: 'flex-row-reverse'
+		right: 'flex-row-reverse',
+		bottom: 'flex-col-reverse'
 	};
 
 	let iconClasses = ``;
