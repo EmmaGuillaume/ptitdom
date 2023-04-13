@@ -57,7 +57,6 @@
 	<meta name="theme-color" content="#74DAD5" />
 </svelte:head>
 <div class="relative flex">
-	<MenuNavBar />
 	<!-- <Burger /> -->
 	<main class="w-full">
 		<slot />

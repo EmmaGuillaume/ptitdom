@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Library from '$lib/components/Library.svelte';
+	import MenuNavBar from '$lib/components/MenuNavBar.svelte';
 	import Pile from '$lib/components/Pile.svelte';
 	import { activeSelectedImages } from '$src/stores';
 
@@ -7,6 +8,7 @@
 </script>
 
 <div class="flex">
+	<MenuNavBar />
 	<div class="sticky top-0 h-full w-2/5 pile">
 		<Pile bind:activeImages />
 	</div>
