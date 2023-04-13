@@ -12,7 +12,7 @@
 	export let onClick: (e: any) => void | undefined = undefined;
 
 	const buttonVariants = {
-		filled: 'bg-darkerblue',
+		filled: 'bg-blue',
 		outline: 'border-2 border-darkerblue',
 		subtle: 'hover:bg-blueopacity ',
 		hovernone: 'bg-lightblue'
