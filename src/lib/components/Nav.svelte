@@ -3,7 +3,6 @@
 	import { page } from '$app/stores';
 
 	const index = $selectedImages.findIndex((item) => item.folder === $page.params.folder);
-	console.log({ index }, $selectedImages[0]);
 
 	$: images = $selectedImages[index]?.images.length;
 

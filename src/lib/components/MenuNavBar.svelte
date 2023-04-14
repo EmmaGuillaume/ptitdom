@@ -11,8 +11,6 @@
 
 	let isActive = false;
 	const handleModalClick = () => {
-		console.log('click');
-
 		isActive = true;
 	};
 </script>
@@ -41,9 +39,9 @@
 		>
 	</div>
 	<div class="p-md w-full">
-		<a class="rounded-full mx-auto grid place-items-center" href="/play">
+		<button class="rounded-full mx-auto grid place-items-center" on:click={play}>
 			<img class="w-xl mx-auto" src="/images/icons/play.svg" alt="" srcset="" />
-		</a>
+		</button>
 	</div>
 	<Modale bind:isActive />
 </section>
