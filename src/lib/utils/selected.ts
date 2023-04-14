@@ -25,14 +25,17 @@ export function setSelectedImages(image: TImage, folder: string) {
     if (indexImage === -1) {
         console.log('in folder but image not found', image, folder);
 
-        const test = selected
-        test[folderIndex].images = [...imagesInFolder, image]
+        if (selected[folderIndex].images.length < 10) {
 
-        activeSelectedImages.set(test[folderIndex])
+          const test = selected
+          test[folderIndex].images = [...imagesInFolder, image]
 
-        // Object not found, add it to the array
-        validation.set(true)
-        return (selectedImages.set(test));
+          activeSelectedImages.set(test[folderIndex])
+
+          // Object not found, add it to the array
+          validation.set(true)
+          return (selectedImages.set(test));
+        }
     } else {
         // Object found, remove it from the array
         console.log('in folder need to remove image', image, folder);
