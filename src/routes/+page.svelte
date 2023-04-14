@@ -23,7 +23,7 @@
 		>
 		<div class="flex gap-8">
 			<Button
-				href="/legacy"
+				href="/modeEmploi"
 				classes="!px-0 underline w-fit bg-white text-primary font-comfortaa-regular"
 				>Mode d'emploi</Button
 			>

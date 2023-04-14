@@ -25,7 +25,7 @@
 		<a href="/">
 			<div class="px-md mt-md w-full flex items-center gap-sm">
 				<img src="images/mainlogo.png" alt="" class="w-xl" />
-				<p class="text-4xl text-left">build</p>
+				<p class="text-4xl text-left">bild</p>
 			</div>
 		</a>
 		<!-- <a href="/play">Commencer le jeu</a> -->
