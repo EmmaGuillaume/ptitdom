@@ -12,8 +12,8 @@
 	}
 </script>
 
-<div class="pl-[7%] mt-lg">
-	<div class="sticky top-0 bg-white pb-lg">
+<div class="pl-[7%]">
+	<div class="sticky top-0 bg-white pb-lg pt-lg">
 		<H1 classes="col-start-2 col-end-9 w-fit">Bibliothèque d’images</H1>
 
 		<P>Cliquez pour ajouter une image au paquet</P><br />
