@@ -18,7 +18,8 @@ module.exports = {
         'lmd': "2rem",
         'lg': "2.5rem",
         'xl': "3rem",
-        '2xl': "3.5rem"
+        '2xl': "3.5rem",
+        '6xl': "16rem"
       },
       fontFamily: {
         'comfortaa-regular': 'ComfortaaRegular',

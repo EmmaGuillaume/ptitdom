@@ -6,10 +6,12 @@
 	import { selectedImages, type TStoredImage } from '$src/stores';
 	import H1 from './H1.svelte';
 	import Button from './Button.svelte';
+	import ImgButton from './ImgButton.svelte';
+	import InGameImage from './InGameImage.svelte';
 	// export let data;
 	// const { folder } = data;
 	export let activeImages: TStoredImage;
-
+	export let image: TImage;
 	// $: folderItemIndex = $selectedImages.findIndex((item) => item.folder === activeImages);
 
 	// const folderItem = $selectedImages[folderItemIndex];
@@ -20,6 +22,10 @@
 	// } else {
 	// 	images = folderItem.images;
 	// }
+
+	export let onClick: (image: TImage) => void;
+	$: active = '';
+
 	$: question = '';
 
 	const handleClick = (images: TImage[]) => {
@@ -32,20 +38,13 @@
 	<CardsGrid classes="sm:!grid-cols-5 my-4">
 		{#each activeImages.images as image}
 			<div class="w-full aspect-square">
-				<img
-					class="w-full h-full object-cover rounded-lg border border-stroke"
-					src={image.src}
-					alt=""
-					srcset=""
-				/>
+				<InGameImage />
 			</div>
 		{/each}
 	</CardsGrid>
 	<div>
 		<!-- TODO : Btn doit ouvrir nav bar -->
-		<Button href="/legacy" classes="!p-0 underline text-primary text-l-p bg-white"
-			>Changer de paquet</Button
-		>
+
 		<!-- <button
 			class="bg-blue p-4 rounded font-comforta-regular mt-4"
 			on:click={() => handleClick(activeImages.images)}>Poser une question</button

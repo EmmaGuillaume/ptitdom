@@ -36,21 +36,8 @@ export function setSelectedImages(image: TImage, folder: string) {
           validation.set(true)
           return (selectedImages.set(test));
         }
-    } else {
-        // Object found, remove it from the array
-        console.log('in folder need to remove image', image, folder);
+      }
 
-        const test = selected
-        test[folderIndex].images = [
-          ...imagesInFolder.slice(0, indexImage),
-          ...imagesInFolder.slice(indexImage + 1)
-        ]
-
-        console.log({test});
-        activeSelectedImages.set(test[folderIndex])
-
-        return (selectedImages.set(test));
-    }
 }
 
 export function removeSelectedImage(image: TImage, folder: string) {

@@ -10,7 +10,7 @@
 
 <button
 	class={`text-start w-full px-md my-sm py-sm rounded-none !m-0 ${
-		active ? 'bg-lightblue text-black' : 'bg-transparent'
+		active ? 'bg-lightblue border-r-lightblue text-black' : 'bg-transparent'
 	}`}
 	class:border-red={folder === $activeSelectedImages}
 	on:click={() => onClick(folder)}

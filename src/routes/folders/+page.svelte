@@ -5,6 +5,7 @@
 	import { selectedImages } from '$src/stores';
 	import H1 from '$lib/components/H1.svelte';
 	import H2 from '$lib/components/H2.svelte';
+	import P from '$lib/components/P.svelte';
 
 	let isActive: boolean = false;
 	const showModalHelp = () => {
@@ -25,9 +26,9 @@
 		{#each $selectedImages as folder}
 			<a href={`/folders/${folder.folder}`}>
 				<img src="/images/folder.svg" alt="" />
-				<p class="decoration-black text-2xl font-comforta-regular inline-block text-center mt-9">
+				<P classes="font-bold">
 					Mon {folder.displayName}
-				</p>
+				</P>
 			</a>
 		{/each}
 
