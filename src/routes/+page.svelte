@@ -6,11 +6,11 @@
 <section
 	class="flex flex-col mx-xl md:flex-row justify-start gap-8 md:gap-16 mt-20 md:my-32 align-top"
 >
-	<div class="object-cover h-fit flex justify-start md:justify-end w-fit md:w-4/12">
+	<div id="imgLogo" class="object-cover h-fit flex justify-start md:justify-end w-fit md:w-4/12">
 		<img class="w-3/12" src="/images/mainlogo.png" alt="" />
 	</div>
 
-	<div class="flex flex-col gap-8 md:gap-16 w-full md:w-6/12">
+	<div id="textLogo" class="flex flex-col gap-8 md:gap-16 w-full md:w-6/12">
 		<img src="/images/icons/bild-logo.svg" alt="" class="w-4/12" />
 		<p class=" text-primary text-start text-md z-2">
 			Bild est une application interactive destinée aux enfants ayant un Trouble du Spectre
@@ -35,3 +35,37 @@
 		</div>
 	</div>
 </section>
+
+<style>
+#imgLogo {
+	animation: imglogo 1s ease-out;
+}
+#textLogo {
+	animation: textlogo 1s ease-out;
+}
+
+@keyframes imglogo {
+	from {
+		transform: translateX(-50px);
+		opacity: 0;
+	}
+	80% {
+		opacity: 1;
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+@keyframes textlogo {
+	from {
+		transform: translateX(50px);
+		opacity: 0;
+	}
+	80% {
+		opacity: 1;
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+</style>

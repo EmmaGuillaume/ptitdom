@@ -34,10 +34,10 @@ export function createFolder(name:string) {
 
 }
 export function deleteFolder(name:string) {
-  if (name === "") {
+  const folders = get(selectedImages)
+  if (name === "" || folders.length <= 1) {
     return
   }
-  const folders = get(selectedImages)
 
 
 

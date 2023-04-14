@@ -23,13 +23,13 @@
 >
 	<div class="w-full">
 		<a href="/">
-			<div class="px-md mt-md w-full flex items-center gap-sm">
+			<div class="px-md mt-[5%] w-full flex items-center gap-sm pt-lg">
 				<img src="images/mainlogo.png" alt="" class="w-xl" />
 				<p class="text-4xl text-left">bild</p>
 			</div>
 		</a>
 		<!-- <a href="/play">Commencer le jeu</a> -->
-		<div class="mt-28 flex flex-row justify-bottom gap-4 md:flex-col md:items-start md:gap-0">
+		<div class="mt-[103px] flex flex-row justify-bottom gap-4 md:flex-col md:items-start md:gap-0">
 			{#each $selectedImages as folder}
 				<NavBarPile onClick={handleClick} {folder} />
 			{/each}
