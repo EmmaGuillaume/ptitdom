@@ -3,7 +3,6 @@
 
 	export let isActive: boolean = false;
 
-	let src = '/icons/close.png';
 	let value = '';
 
 	let handleClick = () => {
@@ -11,10 +10,6 @@
 		isActive = false;
 	};
 </script>
-
-<svelte:head>
-	<link rel="preload" href={src} as="image" />
-</svelte:head>
 
 {#if isActive}
 	<section class="" on:click={() => (isActive = false)} on:keydown />
