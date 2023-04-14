@@ -4,7 +4,7 @@
 	import { activeSelectedImages, selectedImages, type TStoredImage } from '$src/stores';
 	import NavBarPile from './NavBarPile.svelte';
 	import { page } from '$app/stores';
-	import { fix_position } from 'svelte/internal';
+
 	import ButtonModal from './ButtonModal.svelte';
 	const folder = $page.params.folder;
 
