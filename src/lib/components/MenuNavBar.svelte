@@ -11,6 +11,8 @@
 
 	let isActive = false;
 	const handleModalClick = () => {
+		console.log('click');
+
 		isActive = true;
 	};
 </script>
