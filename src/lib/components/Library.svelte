@@ -7,9 +7,9 @@
 
 	let filter = '';
 
-	function handleClick(themeName: string) {
-		filter = filter === themeName ? '' : themeName;
-	}
+	// function handleClick(themeName: string) {
+	// 	filter = filter === themeName ? '' : themeName;
+	// }
 </script>
 
 <div class="pl-[7%]">
