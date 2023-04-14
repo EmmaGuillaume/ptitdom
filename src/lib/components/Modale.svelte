@@ -21,8 +21,12 @@
 	<div
 		class={'shadow-lg shadow-primary bg-white pt-6 pb-16 p-12 flex flex-col rounded-xl text-black'}
 	>
-		<p class="m-0 text-lg">Entrez le nom du nouveau dossier</p>
-		<input class="m-0 text-lg my-4" bind:value placeholder="Dossier..." />
+		<p class="m-0 text-lg">Entrez le nom du nouveau paquet</p>
+		<input
+			class="m-0 text-lg my-4 border-2 border-black rounded-md"
+			bind:value
+			placeholder="Paquet..."
+		/>
 
 		<div class="mt-9 flex gap-12">
 			<button
@@ -35,7 +39,7 @@
 				on:click={() => handleClick()}
 				class="text-lg bg-blue text-white py-1 px-4 whitespace-nowrap rounded-lg"
 			>
-				<p>Créer le dossier</p>
+				<p>Créer le paquet</p>
 			</button>
 		</div>
 	</div>

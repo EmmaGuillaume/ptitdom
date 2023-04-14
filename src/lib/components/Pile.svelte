@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { activeSelectedImages, type TStoredImage } from '$src/stores';
+	import { activeSelectedImages, selectedImages, type TStoredImage } from '$src/stores';
 
 	export let onClick: (folder: TStoredImage) => void;
 	export let folder: TStoredImage;
@@ -23,6 +23,8 @@
 
 		isActive = true;
 	};
+
+	$: index = $selectedImages.findIndex((item) => item.folder == $activeSelectedImages.folder);
 </script>
 
 <div
@@ -59,10 +61,13 @@
 			</CardsGrid>
 		</div>
 	</div>
-	<ButtonModal onClick={handleModalClick} classes="flex gap-xs p-0 pt-md">
-		<img src="/images/icons/deleteFolder.svg" alt="" />
-		<p class="text-left">supprimer le paquet</p>
-	</ButtonModal>
+
+	{#if index > 0}
+		<ButtonModal onClick={handleModalClick} classes="flex gap-xs p-0 pt-md">
+			<img src="/images/icons/deleteFolder.svg" alt="" />
+			<p class="text-left">supprimer le paquet</p>
+		</ButtonModal>
+	{/if}
 
 	<ModaleDelete bind:isActive />
 </div>
