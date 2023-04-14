@@ -19,8 +19,6 @@
 
 	let isActive = false;
 	const handleModalClick = () => {
-		console.log('click');
-
 		isActive = true;
 	};
 
@@ -40,15 +38,17 @@
 			<img class="w-xl mx-auto" src="/images/icons/play-blue.svg" alt="" srcset="" />
 		</a>
 	</div>
-	<div class="pt-lg mt-[15px]">
-		<H2 classes="px-2xl text-h1 h-fit  pb-md md:pl-0 font-bold">{activeImages.displayName}</H2>
-		{#if activeImages.images.length > 0}
-			<p class="text-l-p mb-md">Cliquez pour enlever une image du paquet</p>
-		{:else}
-			<p class="text-l-p mb-md">Le paquet est vide</p>
-		{/if}
-		<div class="overflow-y-scroll max-h-[70vh]">
-			<CardsGrid classes="gap-2 !grid-cols-5 md:!grid-cols-2">
+	<div class="pt-lg mt-[15px] flex flex-col">
+		<article>
+			<H2 classes="px-2xl text-h1 h-fit  pb-md md:pl-0 font-bold">{activeImages.displayName}</H2>
+			{#if activeImages.images.length > 0}
+				<p class="text-l-p mb-md">Cliquez pour enlever une image du paquet</p>
+			{:else}
+				<p class="text-l-p mb-md">Le paquet est vide</p>
+			{/if}
+		</article>
+		<div class="overflow-y-scroll max-h-[100%]">
+			<CardsGrid classes="gap-2 !grid-cols-5 md:!grid-cols-2  ">
 				{#each activeImages.images as image}
 					<button on:click={() => handleClick(image)}>
 						<img
