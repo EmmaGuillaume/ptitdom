@@ -17,7 +17,7 @@
 
 <style>
 	.pile {
-		min-width: 18%;
+		min-width: 22%;
 	}
 	@media screen and (max-width: 500px) {
 		.pile {

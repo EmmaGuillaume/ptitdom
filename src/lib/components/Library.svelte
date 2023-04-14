@@ -19,7 +19,7 @@
 		<P>Cliquez pour ajouter une image au paquet</P><br />
 		<div class="mt-lg mr-20">
 			{#each themes as theme}
-				<a href="/dashboard#{theme.name}"><P classes="underline  mr-lmd">{theme.name}</P></a>
+				<a href="/dashboard#{theme.name}"><P classes=" underline  mr-lmd">{theme.name}</P></a>
 				<!-- <button on:click={() => handleClick(theme.name)}
 					>{theme.name}</button
 				> -->
@@ -30,7 +30,7 @@
 	{#each themes as theme}
 		{#if !filter || filter === theme.name}
 			<div class="divTheme" id={theme.name}>
-				<H2 classes="w-[99%] border-b-[1px] mb-md ">{theme.name}</H2>
+				<H2 classes="w-[99%] border-b-[1px] mb-md  mt-lg first:mt-0">{theme.name}</H2>
 				{#each theme.categoriesName as categorieName}
 					<LibraryTheme categorieName={categorieName.name} />
 				{/each}

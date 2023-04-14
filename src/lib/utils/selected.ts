@@ -7,11 +7,9 @@ export function setSelectedImages(image: TImage, folder: string) {
     const validate = get(validation)
     validation.set(false)
 
-    console.log({selected});
     const folderIndex = selected.findIndex((item: TStoredImage) => item.folder === folder);
 
     if (folderIndex === -1) {
-      console.log('folder not existing', image, folder );
 
       validation.set(true)
       activeSelectedImages.set({folder: folder, images: [image]})
@@ -20,10 +18,8 @@ export function setSelectedImages(image: TImage, folder: string) {
 
     const imagesInFolder = selected[folderIndex].images
     const indexImage = imagesInFolder.findIndex((img: TImage) => img.src === image.src);
-    //console.log($selectedImages);
 
     if (indexImage === -1) {
-        console.log('in folder but image not found', image, folder);
 
         if (selected[folderIndex].images.length < 10) {
 

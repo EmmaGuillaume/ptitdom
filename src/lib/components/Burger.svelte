@@ -4,13 +4,12 @@
 	import { activeSelectedImages, selectedImages, type TStoredImage } from '$src/stores';
 	import NavBarPile from './NavBarPile.svelte';
 	import { page } from '$app/stores';
-	import { fix_position } from 'svelte/internal';
+
 	import ButtonModal from './ButtonModal.svelte';
 	const folder = $page.params.folder;
 
 	const handleClick = (folder: TStoredImage) => {
 		$activeSelectedImages = folder;
-		console.log('hello');
 	};
 
 	import InitButton from './root/InitButton.svelte';
@@ -47,8 +46,6 @@
 					<div class="w-full mt-6">
 						<h2 class="text-2xl px-9 mb-2 text-left">Paquets</h2>
 						{#each $selectedImages as folder}
-							{console.log(folder === $activeSelectedImages)}
-
 							<NavBarPile onClick={handleClick} {folder} />
 							<ButtonModal
 								classes="!text-start w-full px-0 my-1 px-8 py-4 bg-white text-md md:text-md"
