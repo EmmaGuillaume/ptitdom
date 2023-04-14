@@ -4,7 +4,7 @@
 	import MenuNavBar from '$lib/components/MenuNavBar.svelte';
 </script>
 
-<section class="flex flex-row text-l-p container my-md px-md md:px-xl">
+<section class="flex flex-row !mx-0 w-screen text-l-p container my-0">
 	<MenuNavBar />
 	<div class="md:px-xl">
 		<LegacySection title="Mentions légales" order={1}>

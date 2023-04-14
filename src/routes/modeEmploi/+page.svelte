@@ -48,6 +48,7 @@
 		</LegacySection>
 
 		<LegacySection title="Comment jouer ?">
+			<img src="/images/icons/schema-tuto.svg" class="mb-md w-8/12" alt="" />
 			<p>
 				Avant de jouer, il faut remplir au préalable des paquets composés de 1 à 10 images à partir
 				de la bibliothèque d’images. Ces paquets peuvent contenir des images d’une seule ou
