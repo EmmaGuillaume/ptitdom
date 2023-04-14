@@ -24,13 +24,17 @@
 	// }
 
 	export let onClick: (image: TImage) => void;
-	$: active = '';
+	$: activeList = [];
 
 	$: question = '';
 
 	const handleClick = (images: TImage[]) => {
 		question = questions(images);
 	};
+	function clickImg(name: string) {
+		activeList.push(name);
+	}
+	function toggleActive(element) {}
 </script>
 
 <section class="mr-0 h-screen flex justify-between flex-col">
@@ -38,7 +42,7 @@
 	<CardsGrid classes="sm:!grid-cols-5 my-4">
 		{#each activeImages.images as image}
 			<div class="w-full aspect-square">
-				<InGameImage />
+				<InGameImage {clickImg} {image} bind:activeList />
 			</div>
 		{/each}
 	</CardsGrid>
@@ -60,3 +64,9 @@
 		>
 	{/if} -->
 </section>
+
+<style>
+	.is-active {
+		border: lightblue solid 4px;
+	}
+</style>

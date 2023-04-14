@@ -40,7 +40,9 @@
 	</div>
 	<div class="pt-lg mt-[15px] flex flex-col">
 		<article>
-			<H2 classes="px-2xl text-h1 h-fit  pb-md md:pl-0 font-bold">{activeImages.displayName}</H2>
+			<H2 classes="px-2xl text-h1 h-fit  pb-md md:pl-0 font-bold break-words"
+				>{activeImages.displayName}</H2
+			>
 			{#if activeImages.images.length > 0}
 				<p class="text-l-p mb-md">Cliquez pour enlever une image du paquet</p>
 			{:else}
