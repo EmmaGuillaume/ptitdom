@@ -26,20 +26,20 @@
 </script>
 
 <div
-	class="relative md:static w-full bg-lightblue h-fit md:h-screen p-md flex flex-col justify-between"
+	class="relative md:static w-full bg-lightblue h-fit md:h-screen px-md flex flex-col justify-between"
 >
-	<div class="absolute left-0 top-0 p-md md:hidden">
+	<div class="absolute left-0 top-0 px-md md:hidden">
 		<a class="rounded-full mx-auto grid place-items-center" href="/play">
 			<img class="w-xl mx-auto" src="/images/icons/burger.svg" alt="" srcset="" />
 		</a>
 	</div>
-	<div class="absolute right-0 top-0 p-md md:hidden">
-		<a class="rounded-full mx-auto grid place-items-center" href="/play">
+	<div class="absolute right-0 top-0 px-md md:hidden">
+		<a class="rounded-full mx-auto grid place-items-center pt-lgs" href="/play">
 			<img class="w-xl mx-auto" src="/images/icons/play-blue.svg" alt="" srcset="" />
 		</a>
 	</div>
-	<div class="">
-		<H2 classes="!m-0 px-2xl  pb-md md:pl-0">{activeImages.displayName}</H2>
+	<div class="pt-lg mt-[15px]">
+		<H2 classes="px-2xl text-h1 h-fit  pb-md md:pl-0 font-bold">{activeImages.displayName}</H2>
 		{#if activeImages.images.length > 0}
 			<p class="text-l-p mb-md">Cliquez pour enlever une image du paquet</p>
 		{:else}
@@ -68,7 +68,7 @@
 </div>
 
 <style>
-.overflow-y-scroll::-webkit-scrollbar {
-	display: none;
-}
+	.overflow-y-scroll::-webkit-scrollbar {
+		display: none;
+	}
 </style>
