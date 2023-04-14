@@ -47,7 +47,7 @@
 		{:else}
 			<p class="text-l-p mb-md">Le paquet est vide</p>
 		{/if}
-		<div class="overflow-y-scroll max-h-[550px]">
+		<div class="overflow-y-scroll max-h-[70vh]">
 			<CardsGrid classes="gap-2 !grid-cols-5 md:!grid-cols-2">
 				{#each activeImages.images as image}
 					<button on:click={() => handleClick(image)}>
