@@ -41,17 +41,19 @@
 	<div class="">
 		<H2 classes="!m-0 px-2xl  pb-md md:pl-0">{activeImages.displayName}</H2>
 		<p class="text-l-p mb-md">Cliquez pour enlever une image du paquet</p>
-		<CardsGrid classes="gap-2 !grid-cols-5 md:!grid-cols-2">
-			{#each activeImages.images as image}
-				<button on:click={() => handleClick(image)}>
-					<img
-						src={image.src}
-						alt=""
-						class="border-2 border-stroke aspect-square object-cover rounded-lg"
-					/>
-				</button>
-			{/each}
-		</CardsGrid>
+		<div class="overflow-y-scroll max-h-[550px]">
+			<CardsGrid classes="gap-2 !grid-cols-5 md:!grid-cols-2">
+				{#each activeImages.images as image}
+					<button on:click={() => handleClick(image)}>
+						<img
+							src={image.src}
+							alt=""
+							class="border-2 border-stroke aspect-square object-cover rounded-lg"
+						/>
+					</button>
+				{/each}
+			</CardsGrid>
+		</div>
 	</div>
 	<ButtonModal onClick={handleModalClick} classes="flex gap-xs p-0 pt-md">
 		<img src="/images/icons/deleteFolder.svg" alt="" />
@@ -60,3 +62,9 @@
 
 	<ModaleDelete bind:isActive />
 </div>
+
+<style>
+.overflow-y-scroll::-webkit-scrollbar {
+	display: none;
+}
+</style>
