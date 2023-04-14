@@ -22,7 +22,6 @@
 	@media screen and (max-width: 500px) {
 		.pile {
 			min-width: 100%;
-			max-width: 100%;
 		}
 	}
 </style>
