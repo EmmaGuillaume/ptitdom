@@ -5,6 +5,6 @@
 	$: activeImages = $activeSelectedImages;
 </script>
 
-<section class="py-16 relative mr-0 md:mr-36 h-full">
+<section class="px-2xl mr-0 h-screen">
 	<PlayZone bind:activeImages />
 </section>

@@ -18,18 +18,14 @@
 
 <button
 	on:click={() => handleClick(image)}
-	class={`w-full h-full border-8 border-gray relative rounded overflow-hidden ${
-		index ? 'border-darkerblue' : ''
-	} `}
+	class={`w-full h-full ${index ? 'border-darkerblue' : ''} `}
 >
-	<div
-		class={`check rounded-full w-7 aspect-square absolute grid place-items-center border-2 right-2 top-2 ${
-			index ? 'bg-blue border-darkerblue ' : 'border-secondary'
-		} `}
-	>
-		{#if index}
-			<img class="w-4 h-4" src="/images/check.svg" alt="" />
-		{/if}
-	</div>
-	<img class="object-contain w-full h-full aspect-square" src={image.src} alt="alt" srcset="" />
+	{#if !index}
+		<img
+			class="border-2 border-stroke aspect-square object-cover rounded-lg"
+			src={image.src}
+			alt="alt"
+			srcset=""
+		/>
+	{/if}
 </button>

@@ -3,8 +3,8 @@
 </script>
 
 <h1
-	class={`text-primary mt-24 lmd:mt-5 decoration-black text-4xl
-    font-bold text-center sm:mt-24 z-2 ${classes}`}
+	class={`text-primary   decoration-black text-h1
+     text-center z-2 ${classes}`}
 >
 	<slot />
 </h1>

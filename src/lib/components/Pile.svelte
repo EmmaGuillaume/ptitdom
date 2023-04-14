@@ -4,10 +4,8 @@
 	export let onClick: (folder: TStoredImage) => void;
 	export let folder: TStoredImage;
 	import { removeSelectedImage } from '$utils/selected';
-
-	import H2 from './H2.svelte';
 	import CardsGrid from './CardsGrid.svelte';
-
+	import H2 from './H2.svelte';
 	import type { TImage } from '$lib/data/images';
 
 	import ButtonModal from './ButtonModal.svelte';

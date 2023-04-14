@@ -2,6 +2,9 @@
 	export let classes: string = '';
 </script>
 
-<h2 class={`decoration-black text-h1 font-comforta-regular font-bold mt-6 mb-8 ${classes}`}>
+<h2
+	class={`text-primary   decoration-black h1
+      z-2 ${classes}`}
+>
 	<slot />
 </h2>
