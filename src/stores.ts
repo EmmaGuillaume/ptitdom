@@ -9,7 +9,7 @@ export type TStoredImage = {
  images: TImage[]
 }
 
-const defaultValue: string = JSON.stringify([{folder: 'folder1', displayName: "dossier n°1", images: []}]);
+const defaultValue: string = JSON.stringify([{folder: 'paquet1', displayName: "paquet n°1", images: []}]);
 
 let stored = browser ? window.localStorage.getItem('storedImages') ?? defaultValue : defaultValue;
 
@@ -19,7 +19,7 @@ if (stored == '[]') {
 export const selectedImages = writable<TStoredImage[] | []>(JSON.parse(stored));
 
 export const validation = writable<boolean>(false);
-export const activeSelectedImages = writable<TStoredImage>({folder: 'folder1', displayName: "dossier n°1", images: []});
+export const activeSelectedImages = writable<TStoredImage>({folder: 'paquet1', displayName: "paquet n°1", images: []});
 
 selectedImages.subscribe(value => {
     if (browser) {

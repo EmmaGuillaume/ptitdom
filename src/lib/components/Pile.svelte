@@ -40,7 +40,11 @@
 	</div>
 	<div class="">
 		<H2 classes="!m-0 px-2xl  pb-md md:pl-0">{activeImages.displayName}</H2>
-		<p class="text-l-p mb-md">Cliquez pour enlever une image du paquet</p>
+		{#if activeImages.images.length > 0}
+			<p class="text-l-p mb-md">Cliquez pour enlever une image du paquet</p>
+		{:else}
+			<p class="text-l-p mb-md">Le paquet est vide</p>
+		{/if}
 		<CardsGrid classes="gap-2 !grid-cols-5 md:!grid-cols-2">
 			{#each activeImages.images as image}
 				<button on:click={() => handleClick(image)}>
