@@ -9,7 +9,7 @@
 </script>
 
 <button
-	class={`text-start w-full px-md my-sm py-sm rounded-none !m-0 ${
+	class={`text-start w-full px-md my-sm py-sm rounded-none !m-0 break-words ${
 		active ? 'bg-lightblue border-r-lightblue text-black' : 'bg-transparent'
 	}`}
 	class:border-red={folder === $activeSelectedImages}
