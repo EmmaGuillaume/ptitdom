@@ -1,5 +1,5 @@
 import { get } from 'svelte/store';
-import { activeSelectedImages, selectedImages, type TStoredImage} from '../../stores';
+import { activeSelectedImages, selectedImages} from '../../stores';
 
 export const slugify = (...args: (string | number)[]): string => {
   const value = args.join(' ')
