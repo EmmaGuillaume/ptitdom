@@ -1,5 +1,5 @@
 import { get } from 'svelte/store';
-import { selectedImages, type TStoredImage} from '../../stores';
+import { activeSelectedImages, selectedImages, type TStoredImage} from '../../stores';
 
 export const slugify = (...args: (string | number)[]): string => {
   const value = args.join(' ')
@@ -27,6 +27,28 @@ export function createFolder(name:string) {
 
     selectedImages.set([...folders, {folder: slugified, displayName: name, images: []}])
   }
+
+
+
+
+
+}
+export function deleteFolder(name:string) {
+  if (name === "") {
+    return
+  }
+  const folders = get(selectedImages)
+
+
+
+  const newFolders = folders.filter((folder) => folder.folder != name )
+
+
+  selectedImages.set(newFolders)
+
+  const newfolder = get(selectedImages)
+  activeSelectedImages.set(newfolder[0])
+
 
 
 

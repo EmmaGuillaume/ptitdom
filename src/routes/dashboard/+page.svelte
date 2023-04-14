@@ -9,7 +9,7 @@
 
 <div class="flex flex-col md:flex-row">
 	<MenuNavBar />
-	<div class="sticky z-50 top-0 h-fit pile md:h-full">
+	<div class="sticky z-1 top-0 h-fit pile md:h-full">
 		<Pile bind:activeImages />
 	</div>
 	<Library />
