@@ -39,9 +39,9 @@
 		>
 	</div>
 	<div class="p-md w-full">
-		<button class="rounded-full mx-auto grid place-items-center" on:click={play}>
+		<a class="rounded-full mx-auto grid place-items-center" href="/play">
 			<img class="w-xl mx-auto" src="/images/icons/play.svg" alt="" srcset="" />
-		</button>
+		</a>
 	</div>
 	<Modale bind:isActive />
 </section>
