@@ -43,9 +43,7 @@
 	</CardsGrid>
 	<div>
 		<!-- TODO : Btn doit ouvrir nav bar -->
-		<Button href="/legacy" classes="!p-0 underline text-primary text-l-p bg-white"
-			>Changer de paquet</Button
-		>
+
 		<!-- <button
 			class="bg-blue p-4 rounded font-comforta-regular mt-4"
 			on:click={() => handleClick(activeImages.images)}>Poser une question</button

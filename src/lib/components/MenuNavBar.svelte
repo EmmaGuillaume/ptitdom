@@ -19,7 +19,7 @@
 
 <!--  -->
 <section
-	class="z-50 sticky top-0 left-0 h-screen w-60 min-w-[15rem] text-white bg-blue flex flex-col items-start justify-between"
+	class="z-50 sticky top-0 left-0 h-screen w-60 min-w-[18%] text-white bg-blue flex flex-col items-start justify-between"
 >
 	<div class="w-full">
 		<a href="/">
