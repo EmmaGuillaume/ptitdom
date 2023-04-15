@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Burger from '$lib/components/Burger.svelte';
 	import Library from '$lib/components/Library.svelte';
 	import MenuNavBar from '$lib/components/MenuNavBar.svelte';
 	import Pile from '$lib/components/Pile.svelte';
@@ -8,7 +9,8 @@
 </script>
 
 <div class="flex flex-col md:flex-row">
-	<MenuNavBar />
+	<!-- <MenuNavBar /> -->
+	<Burger />
 	<div class="sticky z-1 top-0 h-fit pile md:h-full">
 		<Pile bind:activeImages />
 	</div>

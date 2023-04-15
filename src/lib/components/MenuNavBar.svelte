@@ -49,4 +49,9 @@
 </section>
 
 <style>
+	@media screen and (max-width: 900px) {
+		section {
+			display: none;
+		}
+	}
 </style>
