@@ -9,6 +9,6 @@
 
 <section class="px-2xl mr-0 h-screen">
 	<InGameNavBar />
-	<Burger />
+	<!-- <Burger /> -->
 	<PlayZone bind:activeImages />
 </section>

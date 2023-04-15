@@ -13,7 +13,7 @@
 	}) as TCategorie;
 </script>
 
-<div class="mr-40" id={categoriesNames.name}>
+<div class="md:mr-40" id={categoriesNames.name}>
 	<H2>{categoriesNames.name}</H2>
 	<CardsGrid>
 		{#each categoriesNames.images as image}
