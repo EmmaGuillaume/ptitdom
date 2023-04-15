@@ -26,18 +26,8 @@
 </script>
 
 <div
-	class="relative md:static w-full bg-lightblue h-fit md:h-screen px-md flex flex-col justify-between"
+	class="h-[20%] pb-md md:pb-0 z-100 top-0 md:static w-full bg-lightblue md:h-screen px-md flex flex-col justify-between"
 >
-	<div class="absolute left-0 top-0 px-md md:hidden">
-		<a class="rounded-full mx-auto grid place-items-center" href="/play">
-			<img class="w-xl mx-auto" src="/images/icons/burger.svg" alt="" srcset="" />
-		</a>
-	</div>
-	<div class="absolute right-0 top-0 px-md md:hidden">
-		<a class="rounded-full mx-auto grid place-items-center pt-lgs" href="/play">
-			<img class="w-xl mx-auto" src="/images/icons/play-blue.svg" alt="" srcset="" />
-		</a>
-	</div>
 	<div class="pt-lg mt-[15px] flex flex-col">
 		<article>
 			<H2 classes="px-2xl text-h1 h-fit  pb-md md:pl-0 font-bold break-words"
@@ -50,7 +40,7 @@
 			{/if}
 		</article>
 		<div class="overflow-y-scroll max-h-[70vh]">
-			<CardsGrid classes="gap-2 !grid-cols-5 md:!grid-cols-2  ">
+			<CardsGrid classes="gap-2 !grid-cols-5 md:!grid-cols-2 md:mb-0 ">
 				{#each activeImages.images as image}
 					<button on:click={() => handleClick(image)}>
 						<img

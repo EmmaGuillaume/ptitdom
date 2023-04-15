@@ -6,13 +6,12 @@
 	import { page } from '$app/stores';
 
 	import ButtonModal from './ButtonModal.svelte';
+	import InitButton from './root/InitButton.svelte';
 	const folder = $page.params.folder;
 
 	const handleClick = (folder: TStoredImage) => {
 		$activeSelectedImages = folder;
 	};
-
-	import InitButton from './root/InitButton.svelte';
 
 	$: hambOpen = false;
 
@@ -22,11 +21,11 @@
 </script>
 
 <section>
-	<InitButton onClick={handleClickBurger} classes="fixed top-10 left-10 z-[70]">
+	<InitButton onClick={handleClickBurger} classes="fixed top-5 left-5 z-[70]">
 		{#if hambOpen}
-			<img class="w-14 h-14" src="/images/close-burger.svg" alt="" />
+			<img class="w-md h-md" src="/images/icons/back-arrow-white.svg" alt="" />
 		{:else}
-			<img class="w-14 h-14" src="/images/open-burger.svg" alt="" />
+			<img class="w-lg h-lg" src="/images/icons/burger.png" alt="" />
 		{/if}
 	</InitButton>
 
@@ -37,7 +36,7 @@
 	>
 		<nav class="w-full">
 			<section
-				class=" z-50 fixed top-0 left-0 h-screen w-full bg-white flex flex-col items-center justify-between"
+				class=" z-50 fixed top-0 left-0 h-screen w-full text-white bg-blue flex flex-col items-center justify-between"
 			>
 				<div class="w-full">
 					<div class=" w-full flex justify-around">
@@ -48,20 +47,20 @@
 						{#each $selectedImages as folder}
 							<NavBarPile onClick={handleClick} {folder} />
 							<ButtonModal
-								classes="!text-start w-full px-0 my-1 px-8 py-4 bg-white text-md md:text-md"
+								classes="!text-start w-full px-0 my-1 px-8 py-4 text-white bg-blue text-md md:text-md"
 								>+ Ajouter un paquet</ButtonModal
 							>
 						{/each}
 					</div>
 				</div>
 				<div class="px-8 mb-8 flex justify-center">
-					<ActionsBar classes="flex w-fit !mb-0 !mx-0 !static !px-0 !py-2 !bg-white !filter-none">
+					<ActionsBar classes="flex w-fit !mb-0 !mx-0 !static !px-0 !py-2 !bg-blue !filter-none">
 						<Button
-							classes="!w-fit !py-0 px-0 bg-white"
+							classes="!w-fit !py-0 px-0 text-white bg-blue"
 							icon={{
 								src: '/images/icons/play.svg',
 								alt: '',
-								classes: 'w-6/12 mx-auto',
+								classes: 'w-full mx-auto',
 								position: 'bottom'
 							}}
 							href="/folders/{folder}/play"
