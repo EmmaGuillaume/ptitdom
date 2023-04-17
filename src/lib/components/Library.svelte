@@ -12,14 +12,14 @@
 	}
 </script>
 
-<div class="pl-[7%]">
-	<div class="sticky top-0 bg-white pb-lg pt-lg">
+<div class="px-md md:pl-[7%]">
+	<div class=" bg-white py-0 md:py-lg">
 		<H1 classes="w-fit h-fit">Bibliothèque d’images</H1>
 
 		<P>Cliquez pour ajouter une image au paquet</P><br />
-		<div class="mt-lg mr-20">
+		<div class="grid grid-cols-3 mb-md md:mt-lg md:mb-0">
 			{#each themes as theme}
-				<a href="/dashboard#{theme.name}"><P classes=" underline  mr-lmd">{theme.name}</P></a>
+				<a href="/dashboard#{theme.name}"><P classes=" underline">{theme.name}</P></a>
 				<!-- <button on:click={() => handleClick(theme.name)}
 					>{theme.name}</button
 				> -->

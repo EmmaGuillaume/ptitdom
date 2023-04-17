@@ -12,7 +12,7 @@
 </script>
 
 {#if isActive}
-	<section class="" on:click={() => (isActive = false)} on:keydown />
+	<section class="z-50" on:click={() => (isActive = false)} on:keydown />
 	<div
 		class={'shadow-lg shadow-primary bg-white pt-6 pb-16 p-12 flex flex-col rounded-xl text-black'}
 	>

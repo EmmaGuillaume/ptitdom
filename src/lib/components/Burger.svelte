@@ -6,27 +6,31 @@
 	import { page } from '$app/stores';
 
 	import ButtonModal from './ButtonModal.svelte';
+	import InitButton from './root/InitButton.svelte';
 	const folder = $page.params.folder;
 
 	const handleClick = (folder: TStoredImage) => {
 		$activeSelectedImages = folder;
 	};
 
-	import InitButton from './root/InitButton.svelte';
-
 	$: hambOpen = false;
-
+	let isActive = false;
 	const handleClickBurger = () => {
 		hambOpen = !hambOpen;
+	};
+	const handleModalClick = () => {
+		console.log('click');
+
+		isActive = true;
 	};
 </script>
 
 <section>
-	<InitButton onClick={handleClickBurger} classes="fixed top-10 left-10 z-[70]">
+	<InitButton onClick={handleClickBurger} classes="fixed top-5 left-5 z-[70]">
 		{#if hambOpen}
-			<img class="w-14 h-14" src="/images/close-burger.svg" alt="" />
+			<img class="w-md h-md" src="/images/icons/back-arrow-white.svg" alt="" />
 		{:else}
-			<img class="w-14 h-14" src="/images/open-burger.svg" alt="" />
+			<img class="w-lg h-lg" src="/images/icons/burger.png" alt="" />
 		{/if}
 	</InitButton>
 
@@ -37,7 +41,7 @@
 	>
 		<nav class="w-full">
 			<section
-				class=" z-50 fixed top-0 left-0 h-screen w-full bg-white flex flex-col items-center justify-between"
+				class=" z-40 fixed top-0 left-0 h-screen w-full text-white bg-blue flex flex-col items-center justify-between"
 			>
 				<div class="w-full">
 					<div class=" w-full flex justify-around">
@@ -48,27 +52,17 @@
 						{#each $selectedImages as folder}
 							<NavBarPile onClick={handleClick} {folder} />
 							<ButtonModal
-								classes="!text-start w-full px-0 my-1 px-8 py-4 bg-white text-md md:text-md"
-								>+ Ajouter un paquet</ButtonModal
+								onClick={handleModalClick}
+								classes="!text-start w-full px-0 my-1 px-md py-md text-p md:text-md"
+								>Nouveau paquet</ButtonModal
 							>
 						{/each}
 					</div>
 				</div>
 				<div class="px-8 mb-8 flex justify-center">
-					<ActionsBar classes="flex w-fit !mb-0 !mx-0 !static !px-0 !py-2 !bg-white !filter-none">
-						<Button
-							classes="!w-fit !py-0 px-0 bg-white"
-							icon={{
-								src: '/images/icons/play.svg',
-								alt: '',
-								classes: 'w-6/12 mx-auto',
-								position: 'bottom'
-							}}
-							href="/folders/{folder}/play"
-						>
-							Jouer</Button
-						></ActionsBar
-					>
+					<a class="rounded-full mx-auto grid place-items-center" href="/play">
+						<img class="w-xl mx-auto" src="/images/icons/play.svg" alt="" srcset="" />
+					</a>
 				</div>
 			</section>
 		</nav>
