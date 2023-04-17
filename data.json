@@ -1,0 +1,472 @@
+[
+	{
+		"name": "accessoires-scolaires",
+		"categories": [
+			{
+				"name": "cartable-enfant",
+				"images": [
+					"/images/data/accessoires-scolaires/cartable-enfant/cartable1.png",
+					"/images/data/accessoires-scolaires/cartable-enfant/cartable2.svg",
+					"/images/data/accessoires-scolaires/cartable-enfant/cartable3.webp"
+				]
+			},
+			{
+				"name": "regles",
+				"images": [
+					"/images/data/accessoires-scolaires/regles/regle1.jpg",
+					"/images/data/accessoires-scolaires/regles/regle2.png",
+					"/images/data/accessoires-scolaires/regles/regle3.jpg"
+				]
+			}
+		]
+	},
+	{
+		"name": "accessoires-sport",
+		"categories": [
+			{
+				"name": "roller",
+				"images": [
+					"/images/data/accessoires-sport/roller/roller2.png",
+					"/images/data/accessoires-sport/roller/roller3.jpg"
+				]
+			}
+		]
+	},
+	{
+		"name": "animaux",
+		"categories": [
+			{
+				"name": "araignees",
+				"images": [
+					"/images/data/animaux/araignees/araignees1.jpeg",
+					"/images/data/animaux/araignees/araignees2.jpeg",
+					"/images/data/animaux/araignees/araignees3.png"
+				]
+			},
+			{
+				"name": "biches",
+				"images": [
+					"/images/data/animaux/biches/biche1.jpeg",
+					"/images/data/animaux/biches/biche2.jpeg",
+					"/images/data/animaux/biches/biche3.jpg",
+					"/images/data/animaux/biches/biche4.jpeg"
+				]
+			},
+			{
+				"name": "chameaux",
+				"images": [
+					"/images/data/animaux/chameaux/chameau1.jpeg",
+					"/images/data/animaux/chameaux/chameau2.png",
+					"/images/data/animaux/chameaux/chameau3.png",
+					"/images/data/animaux/chameaux/chameau4.jpeg"
+				]
+			},
+			{
+				"name": "chats",
+				"images": [
+					"/images/data/animaux/chats/chat1.png",
+					"/images/data/animaux/chats/chat2.png",
+					"/images/data/animaux/chats/chat3.jpeg",
+					"/images/data/animaux/chats/chat4.jpeg",
+					"/images/data/animaux/chats/chat5.webp"
+				]
+			},
+			{
+				"name": "chiens",
+				"images": [
+					"/images/data/animaux/chiens/chien1.png",
+					"/images/data/animaux/chiens/chien2.jpeg",
+					"/images/data/animaux/chiens/chien3.jpeg",
+					"/images/data/animaux/chiens/chien4.jpeg",
+					"/images/data/animaux/chiens/chien5.jpeg"
+				]
+			},
+			{
+				"name": "cochons",
+				"images": [
+					"/images/data/animaux/cochons/cochon1.png",
+					"/images/data/animaux/cochons/cochon2.png",
+					"/images/data/animaux/cochons/cochon3.jpeg",
+					"/images/data/animaux/cochons/cochon4.jpeg",
+					"/images/data/animaux/cochons/cochon5.jpeg"
+				]
+			},
+			{
+				"name": "coq",
+				"images": [
+					"/images/data/animaux/coq/coq1.jpg",
+					"/images/data/animaux/coq/coq2.jpg",
+					"/images/data/animaux/coq/coq3.jpeg"
+				]
+			},
+			{
+				"name": "dauphins",
+				"images": [
+					"/images/data/animaux/dauphins/dauphin1.jpeg",
+					"/images/data/animaux/dauphins/dauphin2.jpeg",
+					"/images/data/animaux/dauphins/dauphin3.jpeg",
+					"/images/data/animaux/dauphins/dauphin4.jpeg"
+				]
+			},
+			{
+				"name": "ecureuils",
+				"images": [
+					"/images/data/animaux/ecureuils/ecureuil1.png",
+					"/images/data/animaux/ecureuils/ecureuil2.jpeg",
+					"/images/data/animaux/ecureuils/ecureuil3.webp",
+					"/images/data/animaux/ecureuils/ecureuil4.jpeg",
+					"/images/data/animaux/ecureuils/ecureuil5.png"
+				]
+			},
+			{
+				"name": "elephant",
+				"images": [
+					"/images/data/animaux/elephant/elephant1.jpeg",
+					"/images/data/animaux/elephant/elephant2.png",
+					"/images/data/animaux/elephant/elephant3.jpeg",
+					"/images/data/animaux/elephant/elephant4.png",
+					"/images/data/animaux/elephant/elephant5.jpeg"
+				]
+			},
+			{
+				"name": "hamsters",
+				"images": [
+					"/images/data/animaux/hamsters/hamster2.jpeg",
+					"/images/data/animaux/hamsters/hamster3.jpeg",
+					"/images/data/animaux/hamsters/hamster4.png",
+					"/images/data/animaux/hamsters/hamster5.jpeg",
+					"/images/data/animaux/hamsters/hamster6.svg"
+				]
+			},
+			{
+				"name": "herissons",
+				"images": [
+					"/images/data/animaux/herissons/herisson1.jpeg",
+					"/images/data/animaux/herissons/herisson2.png",
+					"/images/data/animaux/herissons/herisson3.jpeg",
+					"/images/data/animaux/herissons/herisson4.webp",
+					"/images/data/animaux/herissons/herisson5.jpeg"
+				]
+			},
+			{
+				"name": "lapins",
+				"images": [
+					"/images/data/animaux/lapins/lapin1.jpeg",
+					"/images/data/animaux/lapins/lapin2.png",
+					"/images/data/animaux/lapins/lapin3.jpeg",
+					"/images/data/animaux/lapins/lapin4.jpeg",
+					"/images/data/animaux/lapins/lapin5.jpg"
+				]
+			},
+			{
+				"name": "lions",
+				"images": [
+					"/images/data/animaux/lions/lion1.png",
+					"/images/data/animaux/lions/lion2.jpg",
+					"/images/data/animaux/lions/lion3.jpeg",
+					"/images/data/animaux/lions/lion4.png",
+					"/images/data/animaux/lions/lion5.jpeg"
+				]
+			},
+			{
+				"name": "oiseaux",
+				"images": [
+					"/images/data/animaux/oiseaux/oiseau1.jpeg",
+					"/images/data/animaux/oiseaux/oiseau2.jpeg",
+					"/images/data/animaux/oiseaux/oiseau3.png",
+					"/images/data/animaux/oiseaux/oiseau4.jpeg"
+				]
+			},
+			{
+				"name": "pandas",
+				"images": [
+					"/images/data/animaux/pandas/panda1.png",
+					"/images/data/animaux/pandas/panda2.jpeg",
+					"/images/data/animaux/pandas/panda3.png",
+					"/images/data/animaux/pandas/panda4.jpeg"
+				]
+			},
+			{
+				"name": "poules",
+				"images": [
+					"/images/data/animaux/poules/poule1.jpg",
+					"/images/data/animaux/poules/poule2.png",
+					"/images/data/animaux/poules/poule3.jpeg"
+				]
+			},
+			{
+				"name": "renards",
+				"images": [
+					"/images/data/animaux/renards/renard1.jpeg",
+					"/images/data/animaux/renards/renard2.jpeg",
+					"/images/data/animaux/renards/renard4.jpg",
+					"/images/data/animaux/renards/renard5.jpg"
+				]
+			},
+			{
+				"name": "singes",
+				"images": [
+					"/images/data/animaux/singes/singe1.jpeg",
+					"/images/data/animaux/singes/singe2.jpeg",
+					"/images/data/animaux/singes/singe3.jpeg",
+					"/images/data/animaux/singes/singe4.png",
+					"/images/data/animaux/singes/singe5.jpeg",
+					"/images/data/animaux/singes/singe6.png"
+				]
+			},
+			{
+				"name": "souris",
+				"images": [
+					"/images/data/animaux/souris/souris1.png",
+					"/images/data/animaux/souris/souris2.jpg",
+					"/images/data/animaux/souris/souris2.webp",
+					"/images/data/animaux/souris/souris3.jpeg",
+					"/images/data/animaux/souris/souris4.png"
+				]
+			},
+			{
+				"name": "vaches",
+				"images": [
+					"/images/data/animaux/vaches/vache1.webp",
+					"/images/data/animaux/vaches/vache2.jpg",
+					"/images/data/animaux/vaches/vache3.png",
+					"/images/data/animaux/vaches/vache4.jpeg"
+				]
+			},
+			{
+				"name": "zebres",
+				"images": [
+					"/images/data/animaux/zebres/zebre1.webp",
+					"/images/data/animaux/zebres/zebre2.jpeg",
+					"/images/data/animaux/zebres/zebre3.png",
+					"/images/data/animaux/zebres/zebre4.jpeg"
+				]
+			}
+		]
+	},
+	{
+		"name": "nourritures",
+		"categories": [
+			{
+				"name": "boulangerie",
+				"images": [
+					"/images/data/nourritures/boulangerie/pain1.jpg",
+					"/images/data/nourritures/boulangerie/pain2.jpg",
+					"/images/data/nourritures/boulangerie/pain3.jpg"
+				]
+			},
+			{
+				"name": "chewing-gum",
+				"images": [
+					"/images/data/nourritures/chewing-gum/chewing-gum1.jpg",
+					"/images/data/nourritures/chewing-gum/chewing-gum2.jpg",
+					"/images/data/nourritures/chewing-gum/chewing-gum3.jpg"
+				]
+			},
+			{
+				"name": "confiture",
+				"images": [
+					"/images/data/nourritures/confiture/confiture1.jpg",
+					"/images/data/nourritures/confiture/confiture2.jpg",
+					"/images/data/nourritures/confiture/confiture3.jpg",
+					"/images/data/nourritures/confiture/confiture4.jpg"
+				]
+			},
+			{
+				"name": "fruits",
+				"images": [
+					"/images/data/nourritures/fruits/Sans titre-2.jpg",
+					"/images/data/nourritures/fruits/banane1.jpg",
+					"/images/data/nourritures/fruits/banane2.jpg",
+					"/images/data/nourritures/fruits/banane3.jpg",
+					"/images/data/nourritures/fruits/cerises1.jpg",
+					"/images/data/nourritures/fruits/cerises2.jpg",
+					"/images/data/nourritures/fruits/cerises3.jpg",
+					"/images/data/nourritures/fruits/fraises1.jpg",
+					"/images/data/nourritures/fruits/fraises2.jpg",
+					"/images/data/nourritures/fruits/fraises3.jpg",
+					"/images/data/nourritures/fruits/framboise1.jpg",
+					"/images/data/nourritures/fruits/framboise2.jpg",
+					"/images/data/nourritures/fruits/framboise3.jpg",
+					"/images/data/nourritures/fruits/kiwi1.jpg",
+					"/images/data/nourritures/fruits/kiwi2.jpg",
+					"/images/data/nourritures/fruits/kiwi3.jpg",
+					"/images/data/nourritures/fruits/orange1.jpg",
+					"/images/data/nourritures/fruits/orange2.jpg",
+					"/images/data/nourritures/fruits/orange3.jpg",
+					"/images/data/nourritures/fruits/peches1.jpg",
+					"/images/data/nourritures/fruits/peches2.jpg",
+					"/images/data/nourritures/fruits/peches3.jpg",
+					"/images/data/nourritures/fruits/poires1.jpg",
+					"/images/data/nourritures/fruits/poires2.jpg",
+					"/images/data/nourritures/fruits/poires3.jpg",
+					"/images/data/nourritures/fruits/pommes1.jpg",
+					"/images/data/nourritures/fruits/pommes2.jpg",
+					"/images/data/nourritures/fruits/pommes3.jpg",
+					"/images/data/nourritures/fruits/tomate1.jpg",
+					"/images/data/nourritures/fruits/tomate2.jpg",
+					"/images/data/nourritures/fruits/tomate3.jpg"
+				]
+			},
+			{
+				"name": "legumes-verts",
+				"images": [
+					"/images/data/nourritures/legumes-verts/aubergine1.jpg",
+					"/images/data/nourritures/legumes-verts/aubergine2.jpg",
+					"/images/data/nourritures/legumes-verts/aubergine3.jpg",
+					"/images/data/nourritures/legumes-verts/brocolis1.jpg",
+					"/images/data/nourritures/legumes-verts/brocolis2.jpg",
+					"/images/data/nourritures/legumes-verts/brocolis3.jpg",
+					"/images/data/nourritures/legumes-verts/courgette1.jpg",
+					"/images/data/nourritures/legumes-verts/courgette2.jpg",
+					"/images/data/nourritures/legumes-verts/courgette3.jpg",
+					"/images/data/nourritures/legumes-verts/haricots-verts1.jpg",
+					"/images/data/nourritures/legumes-verts/haricots-verts2.jpg",
+					"/images/data/nourritures/legumes-verts/haricots-verts3.jpg",
+					"/images/data/nourritures/legumes-verts/petits-pois1.jpg",
+					"/images/data/nourritures/legumes-verts/petits-pois2.jpg",
+					"/images/data/nourritures/legumes-verts/petits-pois3.jpg"
+				]
+			},
+			{ "name": "marrons", "images": ["/images/data/nourritures/marrons/marron1.jpg"] },
+			{
+				"name": "noisettes",
+				"images": [
+					"/images/data/nourritures/noisettes/noisettes1.jpg",
+					"/images/data/nourritures/noisettes/noisettes2.jpg",
+					"/images/data/nourritures/noisettes/noisettes3.jpg"
+				]
+			},
+			{
+				"name": "noix",
+				"images": [
+					"/images/data/nourritures/noix/noix1.jpg",
+					"/images/data/nourritures/noix/noix2.jpg",
+					"/images/data/nourritures/noix/noix3.jpg"
+				]
+			}
+		]
+	},
+	{
+		"name": "professions",
+		"categories": [
+			{
+				"name": "boulangers",
+				"images": [
+					"/images/data/professions/boulangers/boulanger1.jpg",
+					"/images/data/professions/boulangers/boulanger2.jpg",
+					"/images/data/professions/boulangers/boulanger3.jpg"
+				]
+			},
+			{
+				"name": "pompiers",
+				"images": [
+					"/images/data/professions/pompiers/pompier1.jpg",
+					"/images/data/professions/pompiers/pompier2.jpg",
+					"/images/data/professions/pompiers/pompier3.jpg"
+				]
+			}
+		]
+	},
+	{
+		"name": "sucre-sale",
+		"categories": [
+			{
+				"name": "boissons",
+				"images": [
+					"/images/data/sucre-sale/boissons/boisson-coca1.jpeg",
+					"/images/data/sucre-sale/boissons/boisson-coca2.jpeg",
+					"/images/data/sucre-sale/boissons/boisson-coca3.jpeg",
+					"/images/data/sucre-sale/boissons/citronnade1.jpeg",
+					"/images/data/sucre-sale/boissons/ice-tea1.jpeg",
+					"/images/data/sucre-sale/boissons/ice-tea2.jpeg"
+				]
+			},
+			{
+				"name": "nourriture",
+				"images": [
+					"/images/data/sucre-sale/nourriture/frite1.jpeg",
+					"/images/data/sucre-sale/nourriture/frite2.png",
+					"/images/data/sucre-sale/nourriture/frite3.JPG",
+					"/images/data/sucre-sale/nourriture/gateau-apero.jpeg"
+				]
+			}
+		]
+	},
+	{
+		"name": "vehicules",
+		"categories": [
+			{
+				"name": "ambulances",
+				"images": [
+					"/images/data/vehicules/ambulances/ambulance1.jpg",
+					"/images/data/vehicules/ambulances/ambulance2.jpg",
+					"/images/data/vehicules/ambulances/ambulance3.jpg"
+				]
+			},
+			{
+				"name": "bus",
+				"images": [
+					"/images/data/vehicules/bus/bus1.jpg",
+					"/images/data/vehicules/bus/bus2.jpg",
+					"/images/data/vehicules/bus/bus3.jpg"
+				]
+			},
+			{
+				"name": "camions",
+				"images": [
+					"/images/data/vehicules/camions/camion1.jpg",
+					"/images/data/vehicules/camions/camion2.jpg",
+					"/images/data/vehicules/camions/camion3.jpg"
+				]
+			}
+		]
+	},
+	{
+		"name": "vetements",
+		"categories": [
+			{
+				"name": "chemises",
+				"images": [
+					"/images/data/vetements/chemises/chemise1.png",
+					"/images/data/vetements/chemises/chemise2.jpeg",
+					"/images/data/vetements/chemises/chemise3.jpeg"
+				]
+			},
+			{ "name": "pulls", "images": ["/images/data/vetements/pulls/pull1.png"] },
+			{
+				"name": "robes",
+				"images": [
+					"/images/data/vetements/robes/robe1.jpeg",
+					"/images/data/vetements/robes/robe2.jpeg",
+					"/images/data/vetements/robes/robe3.png"
+				]
+			},
+			{
+				"name": "sous-vetements",
+				"images": [
+					"/images/data/vetements/sous-vetements/culotte2.png",
+					"/images/data/vetements/sous-vetements/culotte3.webp",
+					"/images/data/vetements/sous-vetements/culotte4.jpeg"
+				]
+			},
+			{
+				"name": "tee-shirt",
+				"images": [
+					"/images/data/vetements/tee-shirt/tee-shirt1.jpeg",
+					"/images/data/vetements/tee-shirt/tee-shirt2.webp"
+				]
+			},
+			{
+				"name": "vestes",
+				"images": [
+					"/images/data/vetements/vestes/veste1.webp",
+					"/images/data/vetements/vestes/veste2.png",
+					"/images/data/vetements/vestes/veste3.jpeg",
+					"/images/data/vetements/vestes/veste4.jpeg",
+					"/images/data/vetements/vestes/veste5.jpeg"
+				]
+			}
+		]
+	}
+]
