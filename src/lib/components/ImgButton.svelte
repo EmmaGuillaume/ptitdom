@@ -2,7 +2,6 @@
 	import type { TImage } from '$data/images';
 	import { setSelectedImages } from '$utils/selected';
 	import { activeSelectedImages, selectedImages, type TStoredImage } from '$src/stores';
-	import { page } from '$app/stores';
 
 	export let image: TImage;
 

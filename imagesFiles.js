@@ -1,18 +1,16 @@
-import {readdirSync, readdir, writeFile} from 'fs'
-
-
-
-
-
-
+import {readdirSync, existsSync, writeFile, unlinkSync} from 'fs'
 
 
 const imagesDir = './static/images/data'
 const imgBaseUrl = imagesDir.split('./static')[1]
 
-console.log(imgBaseUrl);
 const data = []
 
+const isFile = existsSync('src/lib/data/data.json');
+
+if (isFile) {
+  unlinkSync('src/lib/data/data.json')
+}
 
 readdirSync(imagesDir).forEach((dir) => {
 
@@ -28,10 +26,8 @@ readdirSync(imagesDir).forEach((dir) => {
 
   }
 })
-console.log(data);
-console.log(data[0].categories[0].images);
 
-writeFile('data.json', JSON.stringify(data), 'utf8', (err) => {
+writeFile('src/lib/data/data.json', JSON.stringify(data), 'utf8', (err) => {
   console.log(err);
 });
 
@@ -46,8 +42,8 @@ function readTheme(theme) {
   list.forEach((categorie) => {
     const categorieObj = {name: categorie, images: []}
 
-
-    categorieObj.images = readImages(`${theme.name}/${categorie}`)
+    const images = readImages(`${theme.name}/${categorie}`, categorie)
+    categorieObj.images = images
     theme.categories.push(categorieObj)
 
 
@@ -58,7 +54,7 @@ function readTheme(theme) {
 }
 
 
-function readImages(path) {
+function readImages(path, categorie) {
 
   const finalList = []
 
@@ -66,7 +62,13 @@ function readImages(path) {
   imagesList = imagesList.filter(item => !(/(^|\/)\.[^\/\.]/g).test(item));
 
   imagesList.forEach((image) => {
-    finalList.push(`${imgBaseUrl}/${path}/${image}`)
+
+    const imageObj = {
+      src: `${imgBaseUrl}/${path}/${image}`,
+      alt: image.split('.')[0],
+      catergorie: categorie
+    }
+    finalList.push(imageObj)
   })
 
   return finalList

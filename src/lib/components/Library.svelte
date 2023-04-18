@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { themes } from '$lib/data/themes';
+	import data from '$lib/data/data.json';
 	import H1 from './H1.svelte';
 	import H2 from './H2.svelte';
 	import LibraryTheme from './LibraryTheme.svelte';
@@ -18,7 +18,7 @@
 
 		<P>Cliquez pour ajouter une image au paquet</P><br />
 		<div class="grid grid-cols-3 mb-md md:mt-lg md:mb-0">
-			{#each themes as theme}
+			{#each data as theme}
 				<a href="/dashboard#{theme.name}"><P classes=" underline">{theme.name}</P></a>
 				<!-- <button on:click={() => handleClick(theme.name)}
 					>{theme.name}</button
@@ -27,12 +27,12 @@
 		</div>
 	</div>
 
-	{#each themes as theme}
+	{#each data as theme}
 		{#if !filter || filter === theme.name}
 			<div class="divTheme" id={theme.name}>
 				<H2 classes="w-[99%] border-b-[1px] mb-md  mt-lg first:mt-0">{theme.name}</H2>
-				{#each theme.categoriesName as categorieName}
-					<LibraryTheme categorieName={categorieName.name} />
+				{#each theme.categories as categorie}
+					<LibraryTheme {categorie} />
 				{/each}
 			</div>
 		{/if}

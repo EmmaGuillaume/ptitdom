@@ -1,22 +1,17 @@
 <script lang="ts">
-	import { categories, type TCategorie } from '$lib/data/categories';
-	import type { TThemes } from '$lib/data/themes';
+	import type { TImage } from '$lib/data/images';
 	import CardsGrid from './CardsGrid.svelte';
 	import H2 from './H2.svelte';
 
 	import ImgButton from './ImgButton.svelte';
 
-	export let categorieName: string;
-
-	let categoriesNames = categories.find((categorie) => {
-		return categorie.name === categorieName;
-	}) as TCategorie;
+	export let categorie: { name: string; images: TImage[] };
 </script>
 
-<div class="md:mr-40" id={categoriesNames.name}>
-	<H2>{categoriesNames.name}</H2>
+<div class="md:mr-40" id={categorie.name}>
+	<H2>{categorie.name}</H2>
 	<CardsGrid>
-		{#each categoriesNames.images as image}
+		{#each categorie.images as image}
 			<ImgButton {image} />
 		{/each}
 	</CardsGrid>
