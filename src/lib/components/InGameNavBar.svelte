@@ -20,7 +20,7 @@
 	<section on:click={handleMenuToggle} class="z-40 fixed w-screen h-screen bg-blue opacity-[0.7]" />
 {/if}
 <section
-	class={`transition duration-150 z-50 fixed top-0 left-0 h-screen w-60 min-w-[18%] text-white bg-blue  ${
+	class={`transition duration-150 z-50 fixed top-0 left-0 h-[100svh] w-60 min-w-[18%] text-white bg-blue  ${
 		open === false ? '-translate-x-full' : ''
 	}`}
 >

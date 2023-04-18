@@ -1,13 +1,9 @@
 <script lang="ts">
-	import { questions } from '$utils/questions';
-
-	import type { TImage } from '$lib/data/images';
 	import CardsGrid from '$lib/components/CardsGrid.svelte';
-	import { selectedImages, type TStoredImage } from '$src/stores';
-	import H1 from './H1.svelte';
-	import Button from './Button.svelte';
-	import ImgButton from './ImgButton.svelte';
 	import InGameImage from './InGameImage.svelte';
+
+	import type { TStoredImage } from '$src/stores';
+	import type { TImage } from '$lib/data/images';
 	// export let data;
 	// const { folder } = data;
 	export let activeImages: TStoredImage;
@@ -28,13 +24,9 @@
 
 	$: question = '';
 
-	const handleClick = (images: TImage[]) => {
-		question = questions(images);
-	};
 	function clickImg(name: string) {
 		activeList.push(name);
 	}
-	function toggleActive(element) {}
 </script>
 
 <section class="mr-0 h-screen flex justify-between flex-col">

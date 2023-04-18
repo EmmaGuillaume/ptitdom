@@ -3,11 +3,10 @@
 	import Button from '$lib/components/Button.svelte';
 	import { activeSelectedImages, selectedImages, type TStoredImage } from '$src/stores';
 	import NavBarPile from './NavBarPile.svelte';
-	import { page } from '$app/stores';
 
 	import ButtonModal from './ButtonModal.svelte';
 	import InitButton from './root/InitButton.svelte';
-	const folder = $page.params.folder;
+	import Modale from './Modale.svelte';
 
 	const handleClick = (folder: TStoredImage) => {
 		$activeSelectedImages = folder;
@@ -19,8 +18,6 @@
 		hambOpen = !hambOpen;
 	};
 	const handleModalClick = () => {
-		console.log('click');
-
 		isActive = true;
 	};
 </script>
@@ -41,7 +38,7 @@
 	>
 		<nav class="w-full">
 			<section
-				class=" z-40 fixed top-0 left-0 h-screen w-full text-white bg-blue flex flex-col items-center justify-between"
+				class=" z-40 fixed top-0 left-0 h-[100dvh] w-full text-white bg-blue flex flex-col items-center justify-between"
 			>
 				<div class="w-full">
 					<div class=" w-full flex justify-around">
@@ -51,12 +48,12 @@
 						<h2 class="text-2xl px-9 mb-2 text-left">Paquets</h2>
 						{#each $selectedImages as folder}
 							<NavBarPile onClick={handleClick} {folder} />
-							<ButtonModal
-								onClick={handleModalClick}
-								classes="!text-start w-full px-0 my-1 px-md py-md text-p md:text-md"
-								>Nouveau paquet</ButtonModal
-							>
 						{/each}
+						<ButtonModal
+							onClick={handleModalClick}
+							classes="!text-start w-full px-0 my-1 px-md py-md text-p md:text-md"
+							>Nouveau paquet</ButtonModal
+						>
 					</div>
 				</div>
 				<div class="px-8 mb-8 flex justify-center">
@@ -67,6 +64,7 @@
 			</section>
 		</nav>
 	</div>
+	<Modale bind:isActive />
 </section>
 
 <style>
